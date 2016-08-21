@@ -114,6 +114,16 @@ SWIFT_CLASS("_TtC12FinalProject11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
+
+SWIFT_CLASS("_TtC12FinalProject26ColorSelectorTableViewCell")
+@interface ColorSelectorTableViewCell : UITableViewCell
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -145,7 +155,6 @@ SWIFT_CLASS("_TtC12FinalProject6Column")
 @class ProjectSettingsTableViewController;
 @class UIStoryboardSegue;
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC12FinalProject18MenuViewController")
 @interface MenuViewController : UIViewController
@@ -203,7 +212,6 @@ SWIFT_CLASS("_TtC12FinalProject27NotificationsViewController")
 
 @class UITableView;
 @class NSIndexPath;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC12FinalProject34ProjectCreationTableViewController")
 @interface ProjectCreationTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>

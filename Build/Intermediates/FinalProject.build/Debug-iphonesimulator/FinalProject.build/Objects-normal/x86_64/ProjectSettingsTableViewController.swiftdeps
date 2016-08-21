@@ -9,13 +9,13 @@ provides-member:
 - ["P12FinalProject30ProjectSettingsTableVCDelegate", ""]
 - ["C12FinalProject34ProjectSettingsTableViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- "UITableViewController"
-- "ProjectSettingsTableVCDelegate"
 - !private "AnyObject"
+- "ProjectSettingsTableVCDelegate"
 - "ProjectSettingsTableViewController"
+- "UITableViewController"
 depends-member:
 - ["Ps9AnyObject", "back"]
 - ["Ps9AnyObject", "delegate"]

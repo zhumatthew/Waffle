@@ -11,20 +11,20 @@ provides-member:
 - ["C12FinalProject7Project", "projectTicketCount"]
 - ["C12FinalProject7Project", "childColumn"]
 provides-dynamic-lookup:
-- "childColumn"
+- "projectColorMain"
+- "projectCreationDate"
 - "projectNotifications"
 - "projectName"
-- "projectCreationDate"
-- "projectColorMain"
+- "childColumn"
 - "projectTicketCount"
 - "projectColorSecondary"
 depends-top-level:
-- "NSSet"
-- "Project"
+- "String"
 - "NSDate"
 - "NSObject"
-- "String"
 - "NSNumber"
+- "NSSet"
+- "Project"
 depends-member:
 - ["Ps9AnyObject", "childColumn"]
 - ["Ps9AnyObject", "projectColorMain"]

@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "fb489460d5761f545861072c5b0e944a"
-build_time: [525132171, 934716000]
+build_time: [525133154, 509898000]
 inputs:
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Service/TraskService.swift": [525122129, 0]
   "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/Protocol/NamedEntity.swift": [524902619, 0]
@@ -11,7 +11,8 @@ inputs:
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/TicketCreationTableViewController.swift": [525117603, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/ProjectDirectoryTableViewCell.swift": [525117609, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Model/Ticket.swift": [525117614, 0]
-  "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/TicketsPageViewController.swift": [525132165, 0]
+  "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/ColorSelectorTableViewCell.swift": [9223372036854775807, 0]
+  "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/TicketsPageViewController.swift": [525132640, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Model/Columns+CoreDataProperties.swift": [525117614, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Model/Ticket+CoreDataProperties.swift": [525117616, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/MenuViewController.swift": [525117612, 0]

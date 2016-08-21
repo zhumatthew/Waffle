@@ -6,11 +6,11 @@ provides-nominal:
 provides-member:
 - ["C12FinalProject26TicketColumnViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
-- "TicketColumnViewController"
 - "UIViewController"
+- "TicketColumnViewController"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "init"]

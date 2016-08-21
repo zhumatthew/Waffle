@@ -1,17 +1,17 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "ProjectDirectoryTableViewCell"
+- "ColorSelectorTableViewCell"
 provides-nominal:
-- "C12FinalProject29ProjectDirectoryTableViewCell"
+- "C12FinalProject26ColorSelectorTableViewCell"
 provides-member:
-- ["C12FinalProject29ProjectDirectoryTableViewCell", ""]
+- ["C12FinalProject26ColorSelectorTableViewCell", ""]
 provides-dynamic-lookup:
 - "awakeFromNib"
 - "setSelected"
 depends-top-level:
-- "Bool"
-- "ProjectDirectoryTableViewCell"
+- "ColorSelectorTableViewCell"
 - "UITableViewCell"
+- "Bool"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "init"]
@@ -21,6 +21,11 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "setSelected"]
 - ["Ps11CVarArgType", ""]
+- ["C12FinalProject26ColorSelectorTableViewCell", "Bool"]
+- ["C12FinalProject26ColorSelectorTableViewCell", "awakeFromNib"]
+- ["C12FinalProject26ColorSelectorTableViewCell", "deinit"]
+- ["C12FinalProject26ColorSelectorTableViewCell", "init"]
+- ["C12FinalProject26ColorSelectorTableViewCell", "setSelected"]
 - ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "setSelected"]
@@ -49,11 +54,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "setSelected"]
 - ["PSo16NSObjectProtocol", ""]
-- ["C12FinalProject29ProjectDirectoryTableViewCell", "Bool"]
-- ["C12FinalProject29ProjectDirectoryTableViewCell", "awakeFromNib"]
-- ["C12FinalProject29ProjectDirectoryTableViewCell", "deinit"]
-- ["C12FinalProject29ProjectDirectoryTableViewCell", "init"]
-- ["C12FinalProject29ProjectDirectoryTableViewCell", "setSelected"]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
@@ -106,6 +106,7 @@ depends-member:
 depends-nominal:
 - "Ps9AnyObject"
 - "Ps11CVarArgType"
+- "C12FinalProject26ColorSelectorTableViewCell"
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
@@ -113,7 +114,6 @@ depends-nominal:
 - "PSo8NSCoding"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- "C12FinalProject29ProjectDirectoryTableViewCell"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -141,4 +141,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "84902f12113cd30a80a1b75ff7159eb7"
+interface-hash: "78fbbf91235a8395a3724f96fe343bef"

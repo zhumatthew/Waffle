@@ -7,8 +7,8 @@ provides-member:
 - ["P12FinalProject11NamedEntity", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "NamedEntity"
 - "String"
+- "NamedEntity"
 depends-member:
 - ["P12FinalProject11NamedEntity", "String"]
 - ["P12FinalProject11NamedEntity", "entityName"]
