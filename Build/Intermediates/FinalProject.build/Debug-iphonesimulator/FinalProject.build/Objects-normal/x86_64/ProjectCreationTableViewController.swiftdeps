@@ -13,36 +13,39 @@ provides-member:
 - ["OC12FinalProject34ProjectCreationTableViewController8Sections", ""]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", ""]
 provides-dynamic-lookup:
-- "numberOfSectionsInTableView"
-- "tableView"
-- "tableView"
-- "tableView"
-- "didReceiveMemoryWarning"
-- "projectCreationTableView"
 - "viewDidLoad"
+- "tableView"
+- "tableView"
+- "tableView"
+- "projectCreationTableView"
+- "numberOfSectionsInTableView"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "+"
-- !private "&&"
+- "UITableView"
+- "UITableViewController"
+- "NSFetchedResultsControllerDelegate"
 - "NSFetchedResultsController"
+- "CreateProjectTableVCDelegate"
+- "=="
+- "ProjectCreationTableViewController"
+- "StringLiteralType"
+- !private "<"
 - "Array"
 - "Int"
-- "ProjectCreationTableViewController"
-- !private "<"
-- "StringLiteralType"
-- "=="
-- "NSFetchedResultsControllerDelegate"
-- "UITableViewController"
-- "CreateProjectTableVCDelegate"
-- "UITableViewCell"
 - !private "+="
-- "NSIndexPath"
-- "UITableView"
+- "UITableViewCell"
+- !private "+"
+- !private "ColorSelectorTableViewCell"
+- !private "&&"
 - "BooleanLiteralType"
+- "NSIndexPath"
 depends-member:
 - ["Ps9AnyObject", "DefaultColumnName"]
 - ["Ps9AnyObject", "DefaultName"]
 - !private ["Ps9AnyObject", "DetailRows"]
 - !private ["Ps9AnyObject", "Sections"]
+- !private ["Ps9AnyObject", "becomeFirstResponder"]
+- !private ["Ps9AnyObject", "colorTextField"]
 - ["Ps9AnyObject", "columnCount"]
 - ["Ps9AnyObject", "controller"]
 - ["Ps9AnyObject", "controllerDidChangeContent"]
@@ -91,6 +94,8 @@ depends-member:
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "Sections"]
+- !private ["Ps11CVarArgType", "becomeFirstResponder"]
+- !private ["Ps11CVarArgType", "colorTextField"]
 - ["Ps11CVarArgType", "columnCount"]
 - ["Ps11CVarArgType", "controller"]
 - ["Ps11CVarArgType", "controllerDidChangeContent"]
@@ -118,6 +123,7 @@ depends-member:
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "count"]
 - !private ["Ps14CollectionType", "subscript"]
+- !private ["C12FinalProject26ColorSelectorTableViewCell", "colorTextField"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "hashValue"]
@@ -130,6 +136,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "Sections"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "becomeFirstResponder"]
+- !private ["Ps28CustomDebugStringConvertible", "colorTextField"]
 - ["Ps28CustomDebugStringConvertible", "columnCount"]
 - ["Ps28CustomDebugStringConvertible", "controller"]
 - ["Ps28CustomDebugStringConvertible", "controllerDidChangeContent"]
@@ -162,6 +170,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Sections"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "becomeFirstResponder"]
+- !private ["Ps23CustomStringConvertible", "colorTextField"]
 - ["Ps23CustomStringConvertible", "columnCount"]
 - ["Ps23CustomStringConvertible", "controller"]
 - ["Ps23CustomStringConvertible", "controllerDidChangeContent"]
@@ -207,6 +217,8 @@ depends-member:
 - ["Ps9Equatable", "SecondaryColorSelector"]
 - !private ["Ps9Equatable", "Sections"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "becomeFirstResponder"]
+- !private ["Ps9Equatable", "colorTextField"]
 - ["Ps9Equatable", "columnCount"]
 - ["Ps9Equatable", "controller"]
 - ["Ps9Equatable", "controllerDidChangeContent"]
@@ -246,6 +258,8 @@ depends-member:
 - ["Ps8Hashable", "SecondaryColorSelector"]
 - !private ["Ps8Hashable", "Sections"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "becomeFirstResponder"]
+- !private ["Ps8Hashable", "colorTextField"]
 - ["Ps8Hashable", "columnCount"]
 - ["Ps8Hashable", "controller"]
 - ["Ps8Hashable", "controllerDidChangeContent"]
@@ -308,6 +322,8 @@ depends-member:
 - ["PSo8NSCoding", "DefaultName"]
 - !private ["PSo8NSCoding", "DetailRows"]
 - !private ["PSo8NSCoding", "Sections"]
+- !private ["PSo8NSCoding", "becomeFirstResponder"]
+- !private ["PSo8NSCoding", "colorTextField"]
 - ["PSo8NSCoding", "columnCount"]
 - ["PSo8NSCoding", "controller"]
 - ["PSo8NSCoding", "controllerDidChangeContent"]
@@ -356,11 +372,13 @@ depends-member:
 - ["PSo34NSFetchedResultsControllerDelegate", "controller"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controllerDidChangeContent"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controllerWillChangeContent"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "tableView"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "title"]
 - ["PSo34NSFetchedResultsControllerDelegate", ""]
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["CSo11NSIndexPath", "section"]
 - ["CSo8NSObject", "Array"]
+- !private ["CSo8NSObject", "ColorSelectorTableViewCell"]
 - ["CSo8NSObject", "CreateProjectTableVCDelegate"]
 - ["CSo8NSObject", "DefaultColumnName"]
 - ["CSo8NSObject", "DefaultName"]
@@ -371,6 +389,8 @@ depends-member:
 - ["CSo8NSObject", "Sections"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
+- !private ["CSo8NSObject", "becomeFirstResponder"]
+- !private ["CSo8NSObject", "colorTextField"]
 - ["CSo8NSObject", "columnCount"]
 - ["CSo8NSObject", "controller"]
 - ["CSo8NSObject", "controllerDidChangeContent"]
@@ -394,6 +414,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "DefaultName"]
 - !private ["PSo16NSObjectProtocol", "DetailRows"]
 - !private ["PSo16NSObjectProtocol", "Sections"]
+- !private ["PSo16NSObjectProtocol", "becomeFirstResponder"]
+- !private ["PSo16NSObjectProtocol", "colorTextField"]
 - ["PSo16NSObjectProtocol", "columnCount"]
 - ["PSo16NSObjectProtocol", "controller"]
 - ["PSo16NSObjectProtocol", "controllerDidChangeContent"]
@@ -418,6 +440,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "section"]
 - !private ["Sq", "deinit"]
 - ["C12FinalProject34ProjectCreationTableViewController", "Array"]
+- !private ["C12FinalProject34ProjectCreationTableViewController", "ColorSelectorTableViewCell"]
 - ["C12FinalProject34ProjectCreationTableViewController", "CreateProjectTableVCDelegate"]
 - !private ["C12FinalProject34ProjectCreationTableViewController", "DefaultColumnName"]
 - !private ["C12FinalProject34ProjectCreationTableViewController", "DefaultName"]
@@ -480,14 +503,20 @@ depends-member:
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "hashValue"]
+- !private ["PSo29UIAccessibilityIdentification", "becomeFirstResponder"]
+- !private ["PSo29UIAccessibilityIdentification", "colorTextField"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
+- !private ["PSo12UIAppearance", "becomeFirstResponder"]
+- !private ["PSo12UIAppearance", "colorTextField"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - ["PSo21UIAppearanceContainer", "DefaultColumnName"]
 - ["PSo21UIAppearanceContainer", "DefaultName"]
 - !private ["PSo21UIAppearanceContainer", "DetailRows"]
 - !private ["PSo21UIAppearanceContainer", "Sections"]
+- !private ["PSo21UIAppearanceContainer", "becomeFirstResponder"]
+- !private ["PSo21UIAppearanceContainer", "colorTextField"]
 - ["PSo21UIAppearanceContainer", "columnCount"]
 - ["PSo21UIAppearanceContainer", "controller"]
 - ["PSo21UIAppearanceContainer", "controllerDidChangeContent"]
@@ -526,14 +555,21 @@ depends-member:
 - !private ["PSo18UIContentContainer", "title"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
+- !private ["CSo9UIControl", "becomeFirstResponder"]
+- !private ["PSo17UICoordinateSpace", "becomeFirstResponder"]
+- !private ["PSo17UICoordinateSpace", "colorTextField"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
+- !private ["PSo13UIDynamicItem", "becomeFirstResponder"]
+- !private ["PSo13UIDynamicItem", "colorTextField"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - ["PSo18UIFocusEnvironment", "DefaultColumnName"]
 - ["PSo18UIFocusEnvironment", "DefaultName"]
 - !private ["PSo18UIFocusEnvironment", "DetailRows"]
 - !private ["PSo18UIFocusEnvironment", "Sections"]
+- !private ["PSo18UIFocusEnvironment", "becomeFirstResponder"]
+- !private ["PSo18UIFocusEnvironment", "colorTextField"]
 - ["PSo18UIFocusEnvironment", "columnCount"]
 - ["PSo18UIFocusEnvironment", "controller"]
 - ["PSo18UIFocusEnvironment", "controllerDidChangeContent"]
@@ -552,7 +588,10 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "title"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo27UIGestureRecognizerDelegate", "colorTextField"]
+- !private ["PSo10UIKeyInput", "becomeFirstResponder"]
 - ["CSo11UIResponder", "Array"]
+- !private ["CSo11UIResponder", "ColorSelectorTableViewCell"]
 - ["CSo11UIResponder", "CreateProjectTableVCDelegate"]
 - ["CSo11UIResponder", "DefaultColumnName"]
 - ["CSo11UIResponder", "DefaultName"]
@@ -563,6 +602,8 @@ depends-member:
 - ["CSo11UIResponder", "Sections"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
+- !private ["CSo11UIResponder", "becomeFirstResponder"]
+- !private ["CSo11UIResponder", "colorTextField"]
 - ["CSo11UIResponder", "columnCount"]
 - ["CSo11UIResponder", "controller"]
 - ["CSo11UIResponder", "controllerDidChangeContent"]
@@ -624,8 +665,10 @@ depends-member:
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo11UITableView", "reloadData"]
+- !private ["CSo15UITableViewCell", "colorTextField"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - ["CSo21UITableViewController", "Array"]
+- !private ["CSo21UITableViewController", "ColorSelectorTableViewCell"]
 - ["CSo21UITableViewController", "CreateProjectTableVCDelegate"]
 - ["CSo21UITableViewController", "DefaultColumnName"]
 - ["CSo21UITableViewController", "DefaultName"]
@@ -692,10 +735,15 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "title"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", ""]
+- !private ["CSo11UITextField", "becomeFirstResponder"]
+- !private ["PSo11UITextInput", "becomeFirstResponder"]
+- !private ["PSo17UITextInputTraits", "becomeFirstResponder"]
 - ["PSo18UITraitEnvironment", "DefaultColumnName"]
 - ["PSo18UITraitEnvironment", "DefaultName"]
 - !private ["PSo18UITraitEnvironment", "DetailRows"]
 - !private ["PSo18UITraitEnvironment", "Sections"]
+- !private ["PSo18UITraitEnvironment", "becomeFirstResponder"]
+- !private ["PSo18UITraitEnvironment", "colorTextField"]
 - ["PSo18UITraitEnvironment", "columnCount"]
 - ["PSo18UITraitEnvironment", "controller"]
 - ["PSo18UITraitEnvironment", "controllerDidChangeContent"]
@@ -714,9 +762,12 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "title"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "becomeFirstResponder"]
+- !private ["CSo6UIView", "colorTextField"]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo6UIView", "reloadData"]
 - ["CSo16UIViewController", "Array"]
+- !private ["CSo16UIViewController", "ColorSelectorTableViewCell"]
 - ["CSo16UIViewController", "CreateProjectTableVCDelegate"]
 - ["CSo16UIViewController", "DefaultColumnName"]
 - ["CSo16UIViewController", "DefaultName"]
@@ -783,6 +834,8 @@ depends-member:
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+- !private ["Ps12_Reflectable", "becomeFirstResponder"]
+- !private ["Ps12_Reflectable", "colorTextField"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps12_Reflectable", "hashValue"]
@@ -803,6 +856,7 @@ depends-nominal:
 - !private "Ps11BooleanType"
 - "Ps11CVarArgType"
 - !private "Ps14CollectionType"
+- !private "C12FinalProject26ColorSelectorTableViewCell"
 - !private "Ps10Comparable"
 - "P12FinalProject28CreateProjectTableVCDelegate"
 - "Ps28CustomDebugStringConvertible"
@@ -844,9 +898,12 @@ depends-nominal:
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
+- !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
+- !private "PSo27UIGestureRecognizerDelegate"
+- !private "PSo10UIKeyInput"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
@@ -856,6 +913,9 @@ depends-nominal:
 - "CSo21UITableViewController"
 - "PSo21UITableViewDataSource"
 - "PSo19UITableViewDelegate"
+- !private "CSo11UITextField"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"

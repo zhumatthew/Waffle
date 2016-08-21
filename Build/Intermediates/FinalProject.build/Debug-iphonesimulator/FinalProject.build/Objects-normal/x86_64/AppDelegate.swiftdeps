@@ -7,22 +7,22 @@ provides-member:
 - ["C12FinalProject11AppDelegate", ""]
 provides-dynamic-lookup:
 - "application"
-- "applicationWillTerminate"
-- "window"
-- "applicationDidEnterBackground"
-- "applicationWillEnterForeground"
-- "applicationWillResignActive"
 - "applicationDidBecomeActive"
+- "window"
+- "applicationWillEnterForeground"
+- "applicationDidEnterBackground"
+- "applicationWillTerminate"
+- "applicationWillResignActive"
 depends-top-level:
 - "UIResponder"
+- !private "BooleanLiteralType"
 - "Bool"
 - "AnyObject"
 - "UIApplicationDelegate"
 - "NSObject"
-- "UIApplication"
 - "AppDelegate"
 - "UIWindow"
-- !private "BooleanLiteralType"
+- "UIApplication"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

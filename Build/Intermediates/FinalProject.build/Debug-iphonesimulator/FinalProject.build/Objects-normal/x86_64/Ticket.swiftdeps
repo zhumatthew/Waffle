@@ -7,8 +7,8 @@ provides-member:
 - ["C12FinalProject6Ticket", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Ticket"
 - "Column"
+- "Ticket"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

@@ -8,8 +8,8 @@ provides-dynamic-lookup:
 depends-top-level:
 - "NamedEntity"
 - "NSManagedObject"
-- "NSEntityDescription"
 - "NSManagedObjectContext"
+- "NSEntityDescription"
 depends-member:
 - !private ["Ps9AnyObject", "insertNewObjectForEntityForName"]
 - ["Ps9AnyObject", "insertNewObjectForNamedEntity"]

@@ -13,9 +13,9 @@ provides-member:
 - ["C12FinalProject6Ticket", "ticketTitle"]
 - ["C12FinalProject6Ticket", "parentColumn"]
 provides-dynamic-lookup:
+- "ticketMilestone"
 - "parentColumn"
 - "ticketComments"
-- "ticketMilestone"
 - "ticketTitle"
 - "ticketDetail"
 - "ticketNumber"
@@ -24,8 +24,8 @@ provides-dynamic-lookup:
 - "ticketLabel"
 depends-top-level:
 - "Ticket"
-- "String"
 - "NSDate"
+- "String"
 - "Column"
 - "NSNumber"
 depends-member:
