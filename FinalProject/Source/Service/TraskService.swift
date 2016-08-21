@@ -124,6 +124,7 @@ class TraskService {
         }
     }
     
+    // MARK: Move Ticket
     func moveTicket(ticket: Ticket, column: Column) throws {
         let context = CoreDataService.sharedCoreDataService.mainQueueContext
         
@@ -137,7 +138,7 @@ class TraskService {
     }
  
     // MARK: Edit Project Attributes
-    func editProject(project: Project, newName: String, newMainColor: NSObject, newSecondaryColor: NSObject, newColumnNum: NSNumber, newNotificationStatus: Bool) throws {
+    func editProject(project: Project, newName: String, newMainColor: NSObject, newSecondaryColor: NSObject,newNotificationStatus: Bool) throws {
         let context = CoreDataService.sharedCoreDataService.mainQueueContext
         
         //Attribute Changes

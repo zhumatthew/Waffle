@@ -43,6 +43,7 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         }
     }
     
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell
         switch Sections.AllSections[indexPath.section] {
