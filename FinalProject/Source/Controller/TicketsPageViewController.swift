@@ -61,7 +61,6 @@ class TicketsPageViewContainerController: UIViewController, UIPageViewController
             return nil
         }
         
-//        pageControl.currentPage = previousIndex
         return orderedViewControllers[previousIndex]
     }
     
@@ -81,7 +80,6 @@ class TicketsPageViewContainerController: UIViewController, UIPageViewController
             return nil
         }
         
-//        pageControl.currentPage = nextIndex
         return orderedViewControllers[nextIndex]
     }
     
