@@ -304,15 +304,18 @@ SWIFT_CLASS("_TtC12FinalProject33TicketCreationTableViewController")
 @end
 
 @class UIPageViewController;
+@class UIPageControl;
 
 SWIFT_CLASS("_TtC12FinalProject34TicketsPageViewContainerController")
 @interface TicketsPageViewContainerController : UIViewController <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 @property (nonatomic, strong) UIPageViewController * _Null_unspecified pageViewController;
+@property (nonatomic, strong) UIPageControl * _Null_unspecified pageControl;
 @property (nonatomic, readonly, copy) NSArray<UIViewController *> * _Nonnull orderedViewControllers;
 - (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)pageViewController viewControllerBeforeViewController:(UIViewController * _Nonnull)viewController;
 - (UIViewController * _Nullable)pageViewController:(UIPageViewController * _Nonnull)pageViewController viewControllerAfterViewController:(UIViewController * _Nonnull)viewController;
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController * _Nonnull)pageViewController;
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController * _Nonnull)pageViewController;
+- (void)pageViewController:(UIPageViewController * _Nonnull)pageViewController willTransitionToViewControllers:(NSArray<UIViewController *> * _Nonnull)pendingViewControllers;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;

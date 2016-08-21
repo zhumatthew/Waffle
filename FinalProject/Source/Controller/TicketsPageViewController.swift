@@ -18,6 +18,7 @@ protocol TicketsPageVCDelegate: class {
 class TicketsPageViewContainerController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     /* Outlets and Actions */
     var pageViewController: UIPageViewController!
+    var pageControl: UIPageControl!
     weak var delegateMenu : TicketsPageVCDelegate?
     
     @IBAction private func back(sender: AnyObject) {
@@ -60,6 +61,7 @@ class TicketsPageViewContainerController: UIViewController, UIPageViewController
             return nil
         }
         
+//        pageControl.currentPage = previousIndex
         return orderedViewControllers[previousIndex]
     }
     
@@ -79,6 +81,7 @@ class TicketsPageViewContainerController: UIViewController, UIPageViewController
             return nil
         }
         
+//        pageControl.currentPage = nextIndex
         return orderedViewControllers[nextIndex]
     }
     
@@ -95,13 +98,25 @@ class TicketsPageViewContainerController: UIViewController, UIPageViewController
         return firstViewControllerIndex
     }
     
+
+    
+    func pageViewController(pageViewController: UIPageViewController, willTransitionToViewControllers pendingViewControllers: [UIViewController]) {
+        pageControl.currentPage = orderedViewControllers.indexOf(pendingViewControllers.first!)!
+    }
+    
     
     /* View Controller Functions */
     override func viewDidLoad() {
         super.viewDidLoad()
+        //        100,self.view.frame.size.height-100,self.view.frame.size.width-200,100
+        pageControl = UIPageControl(frame: CGRect(x: 100.0, y: self.view.frame.height - 100.0, width: self.view.frame.width - 200.0, height: 100.0))
+        pageControl.numberOfPages = orderedViewControllers.count
+        view.addSubview(pageControl)
+        
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -115,10 +130,14 @@ class TicketsPageViewContainerController: UIViewController, UIPageViewController
             
             if let firstViewController = orderedViewControllers.first {
                 pageViewController.setViewControllers([firstViewController],
-                                   direction: .Forward,
-                                   animated: true,
-                                   completion: nil)
+                                                      direction: .Forward,
+                                                      animated: true,
+                                                      completion: nil)
+                
             }
+//            orderedViewControllers.
+//            pageControl.currentPage = orderedViewControllers.indexOf(segue.destinationViewController)!
+            
         }
         else {
             super.prepareForSegue(segue, sender: sender)
