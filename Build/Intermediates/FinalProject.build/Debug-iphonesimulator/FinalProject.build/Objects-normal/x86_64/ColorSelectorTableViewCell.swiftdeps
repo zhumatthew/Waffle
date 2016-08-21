@@ -6,102 +6,153 @@ provides-nominal:
 provides-member:
 - ["C12FinalProject26ColorSelectorTableViewCell", ""]
 provides-dynamic-lookup:
-- "awakeFromNib"
+- "colorLabel"
 - "setSelected"
+- "awakeFromNib"
 depends-top-level:
 - "ColorSelectorTableViewCell"
 - "UITableViewCell"
+- "UILabel"
+- !private "StringLiteralType"
 - "Bool"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
+- ["Ps9AnyObject", "colorLabel"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "setSelected"]
+- !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", ""]
 - ["Ps11CVarArgType", "awakeFromNib"]
+- ["Ps11CVarArgType", "colorLabel"]
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "setSelected"]
+- !private ["Ps11CVarArgType", "text"]
 - ["Ps11CVarArgType", ""]
 - ["C12FinalProject26ColorSelectorTableViewCell", "Bool"]
+- ["C12FinalProject26ColorSelectorTableViewCell", "UILabel"]
 - ["C12FinalProject26ColorSelectorTableViewCell", "awakeFromNib"]
+- ["C12FinalProject26ColorSelectorTableViewCell", "colorLabel"]
 - ["C12FinalProject26ColorSelectorTableViewCell", "deinit"]
 - ["C12FinalProject26ColorSelectorTableViewCell", "init"]
 - ["C12FinalProject26ColorSelectorTableViewCell", "setSelected"]
 - ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- ["Ps28CustomDebugStringConvertible", "colorLabel"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "setSelected"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "awakeFromNib"]
+- ["Ps23CustomStringConvertible", "colorLabel"]
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "setSelected"]
+- !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "awakeFromNib"]
+- ["Ps9Equatable", "colorLabel"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "setSelected"]
+- !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", ""]
 - ["Ps8Hashable", "awakeFromNib"]
+- ["Ps8Hashable", "colorLabel"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "setSelected"]
+- !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", ""]
 - ["PSo8NSCoding", "awakeFromNib"]
+- ["PSo8NSCoding", "colorLabel"]
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "setSelected"]
+- !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", ""]
 - ["CSo8NSObject", "Bool"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "awakeFromNib"]
+- ["CSo8NSObject", "colorLabel"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "setSelected"]
+- !private ["CSo8NSObject", "text"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
+- ["PSo16NSObjectProtocol", "colorLabel"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "setSelected"]
+- !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["Sq", "deinit"]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
+- ["PSo29UIAccessibilityIdentification", "colorLabel"]
 - ["PSo29UIAccessibilityIdentification", "init"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - ["PSo12UIAppearance", "awakeFromNib"]
+- ["PSo12UIAppearance", "colorLabel"]
 - ["PSo12UIAppearance", "init"]
 - ["PSo12UIAppearance", "setSelected"]
+- !private ["PSo12UIAppearance", "text"]
 - ["PSo12UIAppearance", ""]
 - ["PSo21UIAppearanceContainer", "awakeFromNib"]
+- ["PSo21UIAppearanceContainer", "colorLabel"]
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
+- !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo17UICoordinateSpace", "awakeFromNib"]
+- ["PSo17UICoordinateSpace", "colorLabel"]
 - ["PSo17UICoordinateSpace", "init"]
 - ["PSo17UICoordinateSpace", "setSelected"]
+- !private ["PSo17UICoordinateSpace", "text"]
 - ["PSo17UICoordinateSpace", ""]
 - ["PSo13UIDynamicItem", "awakeFromNib"]
+- ["PSo13UIDynamicItem", "colorLabel"]
 - ["PSo13UIDynamicItem", "init"]
 - ["PSo13UIDynamicItem", "setSelected"]
+- !private ["PSo13UIDynamicItem", "text"]
 - ["PSo13UIDynamicItem", ""]
 - ["PSo18UIFocusEnvironment", "awakeFromNib"]
+- ["PSo18UIFocusEnvironment", "colorLabel"]
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "setSelected"]
+- !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", ""]
 - ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
+- ["PSo27UIGestureRecognizerDelegate", "colorLabel"]
 - ["PSo27UIGestureRecognizerDelegate", "init"]
 - ["PSo27UIGestureRecognizerDelegate", "setSelected"]
 - ["PSo27UIGestureRecognizerDelegate", ""]
+- !private ["CSo7UILabel", "text"]
 - ["CSo11UIResponder", "Bool"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "awakeFromNib"]
+- ["CSo11UIResponder", "colorLabel"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "setSelected"]
+- !private ["CSo11UIResponder", "text"]
 - ["CSo15UITableViewCell", "Bool"]
+- ["CSo15UITableViewCell", "UILabel"]
 - ["CSo15UITableViewCell", "awakeFromNib"]
+- ["CSo15UITableViewCell", "colorLabel"]
 - ["CSo15UITableViewCell", "init"]
 - ["CSo15UITableViewCell", "setSelected"]
 - ["CSo15UITableViewCell", ""]
 - ["PSo18UITraitEnvironment", "awakeFromNib"]
+- ["PSo18UITraitEnvironment", "colorLabel"]
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "setSelected"]
+- !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "Bool"]
+- ["CSo6UIView", "UILabel"]
 - ["CSo6UIView", "awakeFromNib"]
+- ["CSo6UIView", "colorLabel"]
 - ["CSo6UIView", "init"]
 - ["CSo6UIView", "setSelected"]
+- !private ["CSo6UIView", "text"]
 - ["Ps12_Reflectable", "awakeFromNib"]
+- ["Ps12_Reflectable", "colorLabel"]
 - ["Ps12_Reflectable", "init"]
 - ["Ps12_Reflectable", "setSelected"]
+- !private ["Ps12_Reflectable", "text"]
 - ["Ps12_Reflectable", ""]
 depends-nominal:
 - "Ps9AnyObject"
@@ -114,6 +165,7 @@ depends-nominal:
 - "PSo8NSCoding"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "Sq"
 - "PSo29UIAccessibilityIdentification"
 - "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -121,6 +173,7 @@ depends-nominal:
 - "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - "PSo27UIGestureRecognizerDelegate"
+- !private "CSo7UILabel"
 - "CSo11UIResponder"
 - "CSo15UITableViewCell"
 - "PSo18UITraitEnvironment"
@@ -141,4 +194,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "78fbbf91235a8395a3724f96fe343bef"
+interface-hash: "015bad687f1892cdf983cac4f4764c68"

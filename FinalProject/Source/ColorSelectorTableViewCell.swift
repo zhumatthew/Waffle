@@ -10,8 +10,11 @@ import UIKit
 
 class ColorSelectorTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var colorLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        colorLabel.text = "Hello world"
         // Initialization code
     }
 
