@@ -37,7 +37,7 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         case .DetailRows:
             return DetailRows.AllRows.count
         case .ColumnRows:
-            return ColumnRows.AllRows.count
+            return columnCount + 1
         case .NotificationRow:
             return 1
         }
@@ -58,29 +58,14 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
                 return cell
             }
         case .ColumnRows:
-            switch ColumnRows.AllRows[indexPath.row] {
-            case .Column1:
-                let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
-                return cell
-            case .Column2:
-                let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
-                return cell
-            case .Column3:
-                let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
-                return cell
-            case .Column4:
-                let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
-                return cell
-            case .Column5:
-                let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
-                return cell
-            case .Column6:
-                let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
-                return cell
-            case .AddColumn:
-                let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationAddColumnCell") as UITableViewCell!
-                return cell
+            var cell: UITableViewCell
+            if indexPath.row < columnCount {
+                cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
+            } else {
+                cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationAddColumnCell") as UITableViewCell!
             }
+            return cell
+
         case .NotificationRow:
             let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationNotificationsCell") as UITableViewCell!
             return cell
@@ -105,17 +90,17 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         static let AllRows: Array<DetailRows> = [.ProjectTitle, .MainColorSelector, .SecondaryColorSelector]
     }
     
-    enum ColumnRows {
-        case Column1
-        case Column2
-        case Column3
-        case Column4
-        case Column5
-        case Column6
-        case AddColumn
-        
-        static let AllRows: Array<ColumnRows> = [.Column1, .Column2, .Column3, .Column4, .Column5, .Column6, .AddColumn]
-    }
+//    enum ColumnRows {
+//        case Column1
+//        case Column2
+//        case Column3
+//        case Column4
+//        case Column5
+//        case Column6
+//        case AddColumn
+//        
+//        static let AllRows: Array<ColumnRows> = [.Column1, .Column2, .Column3, .Column4, .Column5, .Column6, .AddColumn]
+//    }
     
     weak var delegate : CreateProjectTableVCDelegate?
     //var ColumnRows: Int = TraskService.fetchedResultsControllerForColumnsInProject(project).count
@@ -124,6 +109,7 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
     private var fetchedResultsController: NSFetchedResultsController?
     private var horizontalSwipeToEditMode = false
     private var ignoreUpdates = false
+    private var columnCount = 3
     
     // MARK : Properties (IBOutlet)
     @IBOutlet weak private var projectCreationTableView: UITableView!

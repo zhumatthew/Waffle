@@ -7,43 +7,40 @@ provides-nominal:
 - "C12FinalProject34ProjectCreationTableViewController"
 - "OC12FinalProject34ProjectCreationTableViewController8Sections"
 - "OC12FinalProject34ProjectCreationTableViewController10DetailRows"
-- "OC12FinalProject34ProjectCreationTableViewController10ColumnRows"
-- "OC12FinalProject34ProjectCreationTableViewController15NotificationRow"
 provides-member:
 - ["P12FinalProject28CreateProjectTableVCDelegate", ""]
 - ["C12FinalProject34ProjectCreationTableViewController", ""]
 - ["OC12FinalProject34ProjectCreationTableViewController8Sections", ""]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", ""]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", ""]
-- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", ""]
 provides-dynamic-lookup:
 - "viewDidLoad"
+- "projectCreationTableView"
+- "tableView"
+- "tableView"
 - "numberOfSectionsInTableView"
 - "didReceiveMemoryWarning"
-- "tableView"
-- "tableView"
-- "projectCreationTableView"
 depends-top-level:
-- "BooleanLiteralType"
-- "NSIndexPath"
-- "UITableViewCell"
-- "ProjectCreationTableViewController"
-- "NSFetchedResultsController"
-- "CreateProjectTableVCDelegate"
-- "StringLiteralType"
-- "NSFetchedResultsControllerDelegate"
-- "UITableViewController"
-- "=="
-- "UITableView"
-- "Array"
 - "Int"
+- "NSFetchedResultsController"
+- "ProjectCreationTableViewController"
+- !private "+"
+- "StringLiteralType"
+- "CreateProjectTableVCDelegate"
+- "UITableViewCell"
+- !private "<"
+- "NSIndexPath"
+- "NSFetchedResultsControllerDelegate"
+- "=="
+- "Array"
+- "BooleanLiteralType"
+- "UITableView"
+- "UITableViewController"
 depends-member:
-- !private ["Ps9AnyObject", "ColumnRows"]
 - ["Ps9AnyObject", "DefaultColumnName"]
 - ["Ps9AnyObject", "DefaultName"]
 - !private ["Ps9AnyObject", "DetailRows"]
-- !private ["Ps9AnyObject", "NotificationRow"]
 - !private ["Ps9AnyObject", "Sections"]
+- ["Ps9AnyObject", "columnCount"]
 - ["Ps9AnyObject", "controller"]
 - ["Ps9AnyObject", "controllerDidChangeContent"]
 - ["Ps9AnyObject", "controllerWillChangeContent"]
@@ -81,14 +78,16 @@ depends-member:
 - !private ["Ps21BitwiseOperationsType", "Distance"]
 - !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
 - !private ["Ps21BitwiseOperationsType", "hashValue"]
-- !private ["Ps11CVarArgType", "ColumnRows"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - ["Ps11CVarArgType", "DefaultColumnName"]
 - ["Ps11CVarArgType", "DefaultName"]
 - !private ["Ps11CVarArgType", "DetailRows"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
-- !private ["Ps11CVarArgType", "NotificationRow"]
 - !private ["Ps11CVarArgType", "Sections"]
+- ["Ps11CVarArgType", "columnCount"]
 - ["Ps11CVarArgType", "controller"]
 - ["Ps11CVarArgType", "controllerDidChangeContent"]
 - ["Ps11CVarArgType", "controllerWillChangeContent"]
@@ -114,32 +113,19 @@ depends-member:
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "count"]
 - !private ["Ps14CollectionType", "subscript"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "AddColumn"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "AllRows"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "Array"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "Column1"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "Column2"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "Column3"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "Column4"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "Column5"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "Column6"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "ColumnRows"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "deinit"]
-- ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", "hashValue"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "hashValue"]
 - ["P12FinalProject28CreateProjectTableVCDelegate", "ProjectCreationTableViewController"]
 - ["P12FinalProject28CreateProjectTableVCDelegate", "projectCreationVCDidFinish"]
-- !private ["Ps28CustomDebugStringConvertible", "ColumnRows"]
 - ["Ps28CustomDebugStringConvertible", "DefaultColumnName"]
 - ["Ps28CustomDebugStringConvertible", "DefaultName"]
 - !private ["Ps28CustomDebugStringConvertible", "DetailRows"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
-- !private ["Ps28CustomDebugStringConvertible", "NotificationRow"]
 - !private ["Ps28CustomDebugStringConvertible", "Sections"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- ["Ps28CustomDebugStringConvertible", "columnCount"]
 - ["Ps28CustomDebugStringConvertible", "controller"]
 - ["Ps28CustomDebugStringConvertible", "controllerDidChangeContent"]
 - ["Ps28CustomDebugStringConvertible", "controllerWillChangeContent"]
@@ -160,7 +146,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "ColumnRows"]
 - ["Ps23CustomStringConvertible", "DefaultColumnName"]
 - ["Ps23CustomStringConvertible", "DefaultName"]
 - !private ["Ps23CustomStringConvertible", "DetailRows"]
@@ -168,9 +153,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Generator"]
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["Ps23CustomStringConvertible", "NotificationRow"]
 - !private ["Ps23CustomStringConvertible", "Sections"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "columnCount"]
 - ["Ps23CustomStringConvertible", "controller"]
 - ["Ps23CustomStringConvertible", "controllerDidChangeContent"]
 - ["Ps23CustomStringConvertible", "controllerWillChangeContent"]
@@ -200,15 +186,8 @@ depends-member:
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "SecondaryColorSelector"]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "deinit"]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "hashValue"]
-- ["Ps9Equatable", "AddColumn"]
 - !private ["Ps9Equatable", "AllRows"]
 - !private ["Ps9Equatable", "AllSections"]
-- ["Ps9Equatable", "Column1"]
-- ["Ps9Equatable", "Column2"]
-- ["Ps9Equatable", "Column3"]
-- ["Ps9Equatable", "Column4"]
-- ["Ps9Equatable", "Column5"]
-- ["Ps9Equatable", "Column6"]
 - ["Ps9Equatable", "ColumnRows"]
 - ["Ps9Equatable", "DefaultColumnName"]
 - ["Ps9Equatable", "DefaultName"]
@@ -220,7 +199,8 @@ depends-member:
 - ["Ps9Equatable", "ProjectTitle"]
 - ["Ps9Equatable", "SecondaryColorSelector"]
 - !private ["Ps9Equatable", "Sections"]
-- ["Ps9Equatable", "Switch"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "columnCount"]
 - ["Ps9Equatable", "controller"]
 - ["Ps9Equatable", "controllerDidChangeContent"]
 - ["Ps9Equatable", "controllerWillChangeContent"]
@@ -244,15 +224,8 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - !private ["Ps16ForwardIndexType", "hashValue"]
 - !private ["Ps13GeneratorType", "Element"]
-- ["Ps8Hashable", "AddColumn"]
 - !private ["Ps8Hashable", "AllRows"]
 - !private ["Ps8Hashable", "AllSections"]
-- ["Ps8Hashable", "Column1"]
-- ["Ps8Hashable", "Column2"]
-- ["Ps8Hashable", "Column3"]
-- ["Ps8Hashable", "Column4"]
-- ["Ps8Hashable", "Column5"]
-- ["Ps8Hashable", "Column6"]
 - ["Ps8Hashable", "ColumnRows"]
 - ["Ps8Hashable", "DefaultColumnName"]
 - ["Ps8Hashable", "DefaultName"]
@@ -264,7 +237,8 @@ depends-member:
 - ["Ps8Hashable", "ProjectTitle"]
 - ["Ps8Hashable", "SecondaryColorSelector"]
 - !private ["Ps8Hashable", "Sections"]
-- ["Ps8Hashable", "Switch"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "columnCount"]
 - ["Ps8Hashable", "controller"]
 - ["Ps8Hashable", "controllerDidChangeContent"]
 - ["Ps8Hashable", "controllerWillChangeContent"]
@@ -321,12 +295,11 @@ depends-member:
 - !private ["Ps16MutableSliceable", "SubSequence"]
 - !private ["Ps16MutableSliceable", "count"]
 - !private ["Ps16MutableSliceable", "subscript"]
-- !private ["PSo8NSCoding", "ColumnRows"]
 - ["PSo8NSCoding", "DefaultColumnName"]
 - ["PSo8NSCoding", "DefaultName"]
 - !private ["PSo8NSCoding", "DetailRows"]
-- !private ["PSo8NSCoding", "NotificationRow"]
 - !private ["PSo8NSCoding", "Sections"]
+- ["PSo8NSCoding", "columnCount"]
 - ["PSo8NSCoding", "controller"]
 - ["PSo8NSCoding", "controllerDidChangeContent"]
 - ["PSo8NSCoding", "controllerWillChangeContent"]
@@ -347,12 +320,11 @@ depends-member:
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "section"]
-- !private ["PSo26NSExtensionRequestHandling", "ColumnRows"]
 - ["PSo26NSExtensionRequestHandling", "DefaultColumnName"]
 - ["PSo26NSExtensionRequestHandling", "DefaultName"]
 - !private ["PSo26NSExtensionRequestHandling", "DetailRows"]
-- !private ["PSo26NSExtensionRequestHandling", "NotificationRow"]
 - !private ["PSo26NSExtensionRequestHandling", "Sections"]
+- ["PSo26NSExtensionRequestHandling", "columnCount"]
 - ["PSo26NSExtensionRequestHandling", "controller"]
 - ["PSo26NSExtensionRequestHandling", "controllerDidChangeContent"]
 - ["PSo26NSExtensionRequestHandling", "controllerWillChangeContent"]
@@ -368,10 +340,9 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "title"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
-- !private ["PSo34NSFetchedResultsControllerDelegate", "ColumnRows"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "DetailRows"]
-- !private ["PSo34NSFetchedResultsControllerDelegate", "NotificationRow"]
 - !private ["PSo34NSFetchedResultsControllerDelegate", "Sections"]
+- !private ["PSo34NSFetchedResultsControllerDelegate", "columnCount"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controller"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controllerDidChangeContent"]
 - ["PSo34NSFetchedResultsControllerDelegate", "controllerWillChangeContent"]
@@ -380,7 +351,6 @@ depends-member:
 - !private ["CSo11NSIndexPath", "row"]
 - !private ["CSo11NSIndexPath", "section"]
 - ["CSo8NSObject", "Array"]
-- ["CSo8NSObject", "ColumnRows"]
 - ["CSo8NSObject", "CreateProjectTableVCDelegate"]
 - ["CSo8NSObject", "DefaultColumnName"]
 - ["CSo8NSObject", "DefaultName"]
@@ -388,10 +358,10 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "NSFetchedResultsController"]
 - ["CSo8NSObject", "NSIndexPath"]
-- ["CSo8NSObject", "NotificationRow"]
 - ["CSo8NSObject", "Sections"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "columnCount"]
 - ["CSo8NSObject", "controller"]
 - ["CSo8NSObject", "controllerDidChangeContent"]
 - ["CSo8NSObject", "controllerWillChangeContent"]
@@ -409,12 +379,11 @@ depends-member:
 - ["CSo8NSObject", "tableView"]
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "viewDidLoad"]
-- !private ["PSo16NSObjectProtocol", "ColumnRows"]
 - ["PSo16NSObjectProtocol", "DefaultColumnName"]
 - ["PSo16NSObjectProtocol", "DefaultName"]
 - !private ["PSo16NSObjectProtocol", "DetailRows"]
-- !private ["PSo16NSObjectProtocol", "NotificationRow"]
 - !private ["PSo16NSObjectProtocol", "Sections"]
+- ["PSo16NSObjectProtocol", "columnCount"]
 - ["PSo16NSObjectProtocol", "controller"]
 - ["PSo16NSObjectProtocol", "controllerDidChangeContent"]
 - ["PSo16NSObjectProtocol", "controllerWillChangeContent"]
@@ -435,15 +404,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "section"]
-- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "AllRows"]
-- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "Array"]
-- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "NotificationRow"]
-- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "Switch"]
-- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "deinit"]
-- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "hashValue"]
 - !private ["Sq", "deinit"]
 - ["C12FinalProject34ProjectCreationTableViewController", "Array"]
-- ["C12FinalProject34ProjectCreationTableViewController", "ColumnRows"]
 - ["C12FinalProject34ProjectCreationTableViewController", "CreateProjectTableVCDelegate"]
 - !private ["C12FinalProject34ProjectCreationTableViewController", "DefaultColumnName"]
 - !private ["C12FinalProject34ProjectCreationTableViewController", "DefaultName"]
@@ -451,10 +413,10 @@ depends-member:
 - ["C12FinalProject34ProjectCreationTableViewController", "Int"]
 - ["C12FinalProject34ProjectCreationTableViewController", "NSFetchedResultsController"]
 - ["C12FinalProject34ProjectCreationTableViewController", "NSIndexPath"]
-- ["C12FinalProject34ProjectCreationTableViewController", "NotificationRow"]
 - ["C12FinalProject34ProjectCreationTableViewController", "Sections"]
 - ["C12FinalProject34ProjectCreationTableViewController", "UITableView"]
 - ["C12FinalProject34ProjectCreationTableViewController", "UITableViewCell"]
+- !private ["C12FinalProject34ProjectCreationTableViewController", "columnCount"]
 - ["C12FinalProject34ProjectCreationTableViewController", "controller"]
 - ["C12FinalProject34ProjectCreationTableViewController", "controllerDidChangeContent"]
 - ["C12FinalProject34ProjectCreationTableViewController", "controllerWillChangeContent"]
@@ -508,12 +470,11 @@ depends-member:
 - !private ["Ps10Strideable", "hashValue"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
-- !private ["PSo21UIAppearanceContainer", "ColumnRows"]
 - ["PSo21UIAppearanceContainer", "DefaultColumnName"]
 - ["PSo21UIAppearanceContainer", "DefaultName"]
 - !private ["PSo21UIAppearanceContainer", "DetailRows"]
-- !private ["PSo21UIAppearanceContainer", "NotificationRow"]
 - !private ["PSo21UIAppearanceContainer", "Sections"]
+- ["PSo21UIAppearanceContainer", "columnCount"]
 - ["PSo21UIAppearanceContainer", "controller"]
 - ["PSo21UIAppearanceContainer", "controllerDidChangeContent"]
 - ["PSo21UIAppearanceContainer", "controllerWillChangeContent"]
@@ -530,12 +491,11 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "title"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "ColumnRows"]
 - ["PSo18UIContentContainer", "DefaultColumnName"]
 - ["PSo18UIContentContainer", "DefaultName"]
 - !private ["PSo18UIContentContainer", "DetailRows"]
-- !private ["PSo18UIContentContainer", "NotificationRow"]
 - !private ["PSo18UIContentContainer", "Sections"]
+- ["PSo18UIContentContainer", "columnCount"]
 - ["PSo18UIContentContainer", "controller"]
 - ["PSo18UIContentContainer", "controllerDidChangeContent"]
 - ["PSo18UIContentContainer", "controllerWillChangeContent"]
@@ -553,12 +513,11 @@ depends-member:
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
-- !private ["PSo18UIFocusEnvironment", "ColumnRows"]
 - ["PSo18UIFocusEnvironment", "DefaultColumnName"]
 - ["PSo18UIFocusEnvironment", "DefaultName"]
 - !private ["PSo18UIFocusEnvironment", "DetailRows"]
-- !private ["PSo18UIFocusEnvironment", "NotificationRow"]
 - !private ["PSo18UIFocusEnvironment", "Sections"]
+- ["PSo18UIFocusEnvironment", "columnCount"]
 - ["PSo18UIFocusEnvironment", "controller"]
 - ["PSo18UIFocusEnvironment", "controllerDidChangeContent"]
 - ["PSo18UIFocusEnvironment", "controllerWillChangeContent"]
@@ -576,7 +535,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", ""]
 - ["CSo11UIResponder", "Array"]
-- ["CSo11UIResponder", "ColumnRows"]
 - ["CSo11UIResponder", "CreateProjectTableVCDelegate"]
 - ["CSo11UIResponder", "DefaultColumnName"]
 - ["CSo11UIResponder", "DefaultName"]
@@ -584,10 +542,10 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "NSFetchedResultsController"]
 - ["CSo11UIResponder", "NSIndexPath"]
-- ["CSo11UIResponder", "NotificationRow"]
 - ["CSo11UIResponder", "Sections"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "columnCount"]
 - ["CSo11UIResponder", "controller"]
 - ["CSo11UIResponder", "controllerDidChangeContent"]
 - ["CSo11UIResponder", "controllerWillChangeContent"]
@@ -604,12 +562,11 @@ depends-member:
 - !private ["CSo11UIResponder", "title"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
-- !private ["PSo20UIScrollViewDelegate", "ColumnRows"]
 - ["PSo20UIScrollViewDelegate", "DefaultColumnName"]
 - ["PSo20UIScrollViewDelegate", "DefaultName"]
 - !private ["PSo20UIScrollViewDelegate", "DetailRows"]
-- !private ["PSo20UIScrollViewDelegate", "NotificationRow"]
 - !private ["PSo20UIScrollViewDelegate", "Sections"]
+- ["PSo20UIScrollViewDelegate", "columnCount"]
 - ["PSo20UIScrollViewDelegate", "controller"]
 - ["PSo20UIScrollViewDelegate", "controllerDidChangeContent"]
 - ["PSo20UIScrollViewDelegate", "controllerWillChangeContent"]
@@ -625,12 +582,11 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "title"]
 - ["PSo20UIScrollViewDelegate", "viewDidLoad"]
 - ["PSo20UIScrollViewDelegate", ""]
-- !private ["PSo16UIStateRestoring", "ColumnRows"]
 - ["PSo16UIStateRestoring", "DefaultColumnName"]
 - ["PSo16UIStateRestoring", "DefaultName"]
 - !private ["PSo16UIStateRestoring", "DetailRows"]
-- !private ["PSo16UIStateRestoring", "NotificationRow"]
 - !private ["PSo16UIStateRestoring", "Sections"]
+- ["PSo16UIStateRestoring", "columnCount"]
 - ["PSo16UIStateRestoring", "controller"]
 - ["PSo16UIStateRestoring", "controllerDidChangeContent"]
 - ["PSo16UIStateRestoring", "controllerWillChangeContent"]
@@ -649,7 +605,6 @@ depends-member:
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - ["CSo21UITableViewController", "Array"]
-- ["CSo21UITableViewController", "ColumnRows"]
 - ["CSo21UITableViewController", "CreateProjectTableVCDelegate"]
 - ["CSo21UITableViewController", "DefaultColumnName"]
 - ["CSo21UITableViewController", "DefaultName"]
@@ -657,10 +612,10 @@ depends-member:
 - ["CSo21UITableViewController", "Int"]
 - ["CSo21UITableViewController", "NSFetchedResultsController"]
 - ["CSo21UITableViewController", "NSIndexPath"]
-- ["CSo21UITableViewController", "NotificationRow"]
 - ["CSo21UITableViewController", "Sections"]
 - ["CSo21UITableViewController", "UITableView"]
 - ["CSo21UITableViewController", "UITableViewCell"]
+- ["CSo21UITableViewController", "columnCount"]
 - ["CSo21UITableViewController", "controller"]
 - ["CSo21UITableViewController", "controllerDidChangeContent"]
 - ["CSo21UITableViewController", "controllerWillChangeContent"]
@@ -676,12 +631,11 @@ depends-member:
 - !private ["CSo21UITableViewController", "title"]
 - ["CSo21UITableViewController", "viewDidLoad"]
 - ["CSo21UITableViewController", ""]
-- !private ["PSo21UITableViewDataSource", "ColumnRows"]
 - ["PSo21UITableViewDataSource", "DefaultColumnName"]
 - ["PSo21UITableViewDataSource", "DefaultName"]
 - !private ["PSo21UITableViewDataSource", "DetailRows"]
-- !private ["PSo21UITableViewDataSource", "NotificationRow"]
 - !private ["PSo21UITableViewDataSource", "Sections"]
+- ["PSo21UITableViewDataSource", "columnCount"]
 - ["PSo21UITableViewDataSource", "controller"]
 - ["PSo21UITableViewDataSource", "controllerDidChangeContent"]
 - ["PSo21UITableViewDataSource", "controllerWillChangeContent"]
@@ -697,12 +651,11 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "title"]
 - ["PSo21UITableViewDataSource", "viewDidLoad"]
 - ["PSo21UITableViewDataSource", ""]
-- !private ["PSo19UITableViewDelegate", "ColumnRows"]
 - ["PSo19UITableViewDelegate", "DefaultColumnName"]
 - ["PSo19UITableViewDelegate", "DefaultName"]
 - !private ["PSo19UITableViewDelegate", "DetailRows"]
-- !private ["PSo19UITableViewDelegate", "NotificationRow"]
 - !private ["PSo19UITableViewDelegate", "Sections"]
+- ["PSo19UITableViewDelegate", "columnCount"]
 - ["PSo19UITableViewDelegate", "controller"]
 - ["PSo19UITableViewDelegate", "controllerDidChangeContent"]
 - ["PSo19UITableViewDelegate", "controllerWillChangeContent"]
@@ -718,12 +671,11 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "title"]
 - ["PSo19UITableViewDelegate", "viewDidLoad"]
 - ["PSo19UITableViewDelegate", ""]
-- !private ["PSo18UITraitEnvironment", "ColumnRows"]
 - ["PSo18UITraitEnvironment", "DefaultColumnName"]
 - ["PSo18UITraitEnvironment", "DefaultName"]
 - !private ["PSo18UITraitEnvironment", "DetailRows"]
-- !private ["PSo18UITraitEnvironment", "NotificationRow"]
 - !private ["PSo18UITraitEnvironment", "Sections"]
+- ["PSo18UITraitEnvironment", "columnCount"]
 - ["PSo18UITraitEnvironment", "controller"]
 - ["PSo18UITraitEnvironment", "controllerDidChangeContent"]
 - ["PSo18UITraitEnvironment", "controllerWillChangeContent"]
@@ -742,7 +694,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
 - ["CSo16UIViewController", "Array"]
-- ["CSo16UIViewController", "ColumnRows"]
 - ["CSo16UIViewController", "CreateProjectTableVCDelegate"]
 - ["CSo16UIViewController", "DefaultColumnName"]
 - ["CSo16UIViewController", "DefaultName"]
@@ -750,10 +701,10 @@ depends-member:
 - ["CSo16UIViewController", "Int"]
 - ["CSo16UIViewController", "NSFetchedResultsController"]
 - ["CSo16UIViewController", "NSIndexPath"]
-- ["CSo16UIViewController", "NotificationRow"]
 - ["CSo16UIViewController", "Sections"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "columnCount"]
 - ["CSo16UIViewController", "controller"]
 - ["CSo16UIViewController", "controllerDidChangeContent"]
 - ["CSo16UIViewController", "controllerWillChangeContent"]
@@ -773,6 +724,7 @@ depends-member:
 - !private ["Ps10_ArrayType", "SubSequence"]
 - !private ["Ps10_ArrayType", "count"]
 - !private ["Ps10_ArrayType", "subscript"]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
@@ -795,6 +747,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
@@ -806,6 +759,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "Index"]
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps12_Reflectable", "hashValue"]
@@ -820,9 +774,11 @@ depends-nominal:
 - !private "Vs10ArraySlice"
 - !private "Ps22BidirectionalIndexType"
 - !private "Ps21BitwiseOperationsType"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
 - "Ps11CVarArgType"
 - !private "Ps14CollectionType"
-- "OC12FinalProject34ProjectCreationTableViewController10ColumnRows"
 - !private "Ps10Comparable"
 - "P12FinalProject28CreateProjectTableVCDelegate"
 - "Ps28CustomDebugStringConvertible"
@@ -850,7 +806,6 @@ depends-nominal:
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
-- "OC12FinalProject34ProjectCreationTableViewController15NotificationRow"
 - !private "Sq"
 - "C12FinalProject34ProjectCreationTableViewController"
 - !private "Ps21RandomAccessIndexType"
@@ -881,6 +836,7 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps14_Incrementable"
@@ -905,4 +861,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "efc26052fde4136e3050a42dd80edce0"
+interface-hash: "c632dbaa4fa74903994721018483fc23"
