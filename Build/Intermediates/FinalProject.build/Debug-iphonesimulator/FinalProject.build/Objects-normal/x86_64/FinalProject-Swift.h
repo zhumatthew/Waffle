@@ -114,12 +114,12 @@ SWIFT_CLASS("_TtC12FinalProject11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UILabel;
+@class UITextField;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC12FinalProject26ColorSelectorTableViewCell")
 @interface ColorSelectorTableViewCell : UITableViewCell
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified colorLabel;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified colorTextField;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -293,7 +293,7 @@ SWIFT_CLASS("_TtC12FinalProject26TicketColumnViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
+@class UILabel;
 
 SWIFT_CLASS("_TtC12FinalProject33TicketCreationTableViewController")
 @interface TicketCreationTableViewController : UITableViewController <UITextFieldDelegate>

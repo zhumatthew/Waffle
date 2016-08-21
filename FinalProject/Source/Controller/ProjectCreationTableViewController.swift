@@ -76,6 +76,14 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
                 tableView.reloadData()
             }
         }
+        
+        if (Sections.AllSections[indexPath.section] == .DetailRows && DetailRows.AllRows[indexPath.row] == .MainColorSelector) {
+            let cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath) as! ColorSelectorTableViewCell
+            cell.colorTextField.becomeFirstResponder()
+//            let cell = tableView(tableView, cellForRowAtIndexPath: indexPath) // as! ColorSelectorTableViewCell
+            
+            
+        }
     }
     
     // MARK: Section/Row Enums
