@@ -1,0 +1,78 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Project"
+provides-nominal:
+- "C12FinalProject7Project"
+provides-member:
+- ["C12FinalProject7Project", ""]
+provides-dynamic-lookup:
+- "entityName"
+depends-top-level:
+- "Project"
+- "NSManagedObject"
+- !private "StringLiteralType"
+- "NamedEntity"
+- "String"
+depends-member:
+- ["Ps9AnyObject", "entityName"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", ""]
+- ["Ps11CVarArgType", "entityName"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", ""]
+- ["Ps28CustomDebugStringConvertible", "entityName"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- ["Ps23CustomStringConvertible", "entityName"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", ""]
+- ["Ps9Equatable", "entityName"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", ""]
+- ["Ps8Hashable", "entityName"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", ""]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "entityName"]
+- ["CSo15NSManagedObject", "init"]
+- ["CSo15NSManagedObject", ""]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "entityName"]
+- ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "entityName"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", ""]
+- ["P12FinalProject11NamedEntity", "entityName"]
+- ["P12FinalProject11NamedEntity", ""]
+- ["C12FinalProject7Project", "String"]
+- ["C12FinalProject7Project", "deinit"]
+- ["C12FinalProject7Project", "entityName"]
+- ["C12FinalProject7Project", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "P12FinalProject11NamedEntity"
+- "C12FinalProject7Project"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/zhumatthew/Desktop/finalProject/Build/Products/Debug-iphonesimulator/CoreDataService.framework/Modules/CoreDataService.swiftmodule/x86_64.swiftmodule"
+- "/Users/zhumatthew/Desktop/finalProject/Build/Products/Debug-iphonesimulator/CoreDataService.framework/Headers/CoreDataService-Swift.h"
+- "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/CoreDataService.h"
+- "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "1d783cef863643e5e073676979e2d2e4"

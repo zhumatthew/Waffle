@@ -1,0 +1,8 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "71563418b01c0005d71b52fc766ec816"
+build_time: [525117888, 171822000]
+inputs:
+  "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/Extension/NSEntityDescription_Service.swift": [522346133, 0]
+  "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/CoreDataService.swift": [522346133, 0]
+  "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/Protocol/NamedEntity.swift": [524902619, 0]
+  "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/Extension/NSFetchRequest_Service.swift": [522346133, 0]

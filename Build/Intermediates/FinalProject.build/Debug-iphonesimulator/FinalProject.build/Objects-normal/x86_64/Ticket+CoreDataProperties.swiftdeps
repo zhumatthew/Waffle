@@ -1,0 +1,198 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C12FinalProject6Ticket", ""]
+- ["C12FinalProject6Ticket", "ticketAssignee"]
+- ["C12FinalProject6Ticket", "ticketComments"]
+- ["C12FinalProject6Ticket", "ticketCreationDate"]
+- ["C12FinalProject6Ticket", "ticketDetail"]
+- ["C12FinalProject6Ticket", "ticketLabel"]
+- ["C12FinalProject6Ticket", "ticketMilestone"]
+- ["C12FinalProject6Ticket", "ticketNumber"]
+- ["C12FinalProject6Ticket", "ticketTitle"]
+- ["C12FinalProject6Ticket", "parentColumn"]
+provides-dynamic-lookup:
+- "ticketLabel"
+- "ticketNumber"
+- "ticketAssignee"
+- "ticketCreationDate"
+- "ticketDetail"
+- "ticketTitle"
+- "ticketComments"
+- "parentColumn"
+- "ticketMilestone"
+depends-top-level:
+- "NSNumber"
+- "NSDate"
+- "Column"
+- "Ticket"
+- "String"
+depends-member:
+- ["Ps9AnyObject", "parentColumn"]
+- ["Ps9AnyObject", "ticketAssignee"]
+- ["Ps9AnyObject", "ticketComments"]
+- ["Ps9AnyObject", "ticketCreationDate"]
+- ["Ps9AnyObject", "ticketDetail"]
+- ["Ps9AnyObject", "ticketLabel"]
+- ["Ps9AnyObject", "ticketMilestone"]
+- ["Ps9AnyObject", "ticketNumber"]
+- ["Ps9AnyObject", "ticketTitle"]
+- ["Ps11CVarArgType", "parentColumn"]
+- ["Ps11CVarArgType", "ticketAssignee"]
+- ["Ps11CVarArgType", "ticketComments"]
+- ["Ps11CVarArgType", "ticketCreationDate"]
+- ["Ps11CVarArgType", "ticketDetail"]
+- ["Ps11CVarArgType", "ticketLabel"]
+- ["Ps11CVarArgType", "ticketMilestone"]
+- ["Ps11CVarArgType", "ticketNumber"]
+- ["Ps11CVarArgType", "ticketTitle"]
+- ["C12FinalProject6Column", "Column"]
+- ["C12FinalProject6Column", "NSDate"]
+- ["C12FinalProject6Column", "NSNumber"]
+- ["C12FinalProject6Column", "String"]
+- ["C12FinalProject6Column", "parentColumn"]
+- ["C12FinalProject6Column", "ticketAssignee"]
+- ["C12FinalProject6Column", "ticketComments"]
+- ["C12FinalProject6Column", "ticketCreationDate"]
+- ["C12FinalProject6Column", "ticketDetail"]
+- ["C12FinalProject6Column", "ticketLabel"]
+- ["C12FinalProject6Column", "ticketMilestone"]
+- ["C12FinalProject6Column", "ticketNumber"]
+- ["C12FinalProject6Column", "ticketTitle"]
+- ["Ps28CustomDebugStringConvertible", "parentColumn"]
+- ["Ps28CustomDebugStringConvertible", "ticketAssignee"]
+- ["Ps28CustomDebugStringConvertible", "ticketComments"]
+- ["Ps28CustomDebugStringConvertible", "ticketCreationDate"]
+- ["Ps28CustomDebugStringConvertible", "ticketDetail"]
+- ["Ps28CustomDebugStringConvertible", "ticketLabel"]
+- ["Ps28CustomDebugStringConvertible", "ticketMilestone"]
+- ["Ps28CustomDebugStringConvertible", "ticketNumber"]
+- ["Ps28CustomDebugStringConvertible", "ticketTitle"]
+- ["Ps23CustomStringConvertible", "parentColumn"]
+- ["Ps23CustomStringConvertible", "ticketAssignee"]
+- ["Ps23CustomStringConvertible", "ticketComments"]
+- ["Ps23CustomStringConvertible", "ticketCreationDate"]
+- ["Ps23CustomStringConvertible", "ticketDetail"]
+- ["Ps23CustomStringConvertible", "ticketLabel"]
+- ["Ps23CustomStringConvertible", "ticketMilestone"]
+- ["Ps23CustomStringConvertible", "ticketNumber"]
+- ["Ps23CustomStringConvertible", "ticketTitle"]
+- ["Ps9Equatable", "parentColumn"]
+- ["Ps9Equatable", "ticketAssignee"]
+- ["Ps9Equatable", "ticketComments"]
+- ["Ps9Equatable", "ticketCreationDate"]
+- ["Ps9Equatable", "ticketDetail"]
+- ["Ps9Equatable", "ticketLabel"]
+- ["Ps9Equatable", "ticketMilestone"]
+- ["Ps9Equatable", "ticketNumber"]
+- ["Ps9Equatable", "ticketTitle"]
+- ["Ps8Hashable", "parentColumn"]
+- ["Ps8Hashable", "ticketAssignee"]
+- ["Ps8Hashable", "ticketComments"]
+- ["Ps8Hashable", "ticketCreationDate"]
+- ["Ps8Hashable", "ticketDetail"]
+- ["Ps8Hashable", "ticketLabel"]
+- ["Ps8Hashable", "ticketMilestone"]
+- ["Ps8Hashable", "ticketNumber"]
+- ["Ps8Hashable", "ticketTitle"]
+- ["CSo15NSManagedObject", "Column"]
+- ["CSo15NSManagedObject", "NSDate"]
+- ["CSo15NSManagedObject", "NSNumber"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "parentColumn"]
+- ["CSo15NSManagedObject", "ticketAssignee"]
+- ["CSo15NSManagedObject", "ticketComments"]
+- ["CSo15NSManagedObject", "ticketCreationDate"]
+- ["CSo15NSManagedObject", "ticketDetail"]
+- ["CSo15NSManagedObject", "ticketLabel"]
+- ["CSo15NSManagedObject", "ticketMilestone"]
+- ["CSo15NSManagedObject", "ticketNumber"]
+- ["CSo15NSManagedObject", "ticketTitle"]
+- ["CSo8NSObject", "Column"]
+- ["CSo8NSObject", "NSDate"]
+- ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "parentColumn"]
+- ["CSo8NSObject", "ticketAssignee"]
+- ["CSo8NSObject", "ticketComments"]
+- ["CSo8NSObject", "ticketCreationDate"]
+- ["CSo8NSObject", "ticketDetail"]
+- ["CSo8NSObject", "ticketLabel"]
+- ["CSo8NSObject", "ticketMilestone"]
+- ["CSo8NSObject", "ticketNumber"]
+- ["CSo8NSObject", "ticketTitle"]
+- ["PSo16NSObjectProtocol", "parentColumn"]
+- ["PSo16NSObjectProtocol", "ticketAssignee"]
+- ["PSo16NSObjectProtocol", "ticketComments"]
+- ["PSo16NSObjectProtocol", "ticketCreationDate"]
+- ["PSo16NSObjectProtocol", "ticketDetail"]
+- ["PSo16NSObjectProtocol", "ticketLabel"]
+- ["PSo16NSObjectProtocol", "ticketMilestone"]
+- ["PSo16NSObjectProtocol", "ticketNumber"]
+- ["PSo16NSObjectProtocol", "ticketTitle"]
+- ["P12FinalProject11NamedEntity", "parentColumn"]
+- ["P12FinalProject11NamedEntity", "ticketAssignee"]
+- ["P12FinalProject11NamedEntity", "ticketComments"]
+- ["P12FinalProject11NamedEntity", "ticketCreationDate"]
+- ["P12FinalProject11NamedEntity", "ticketDetail"]
+- ["P12FinalProject11NamedEntity", "ticketLabel"]
+- ["P12FinalProject11NamedEntity", "ticketMilestone"]
+- ["P12FinalProject11NamedEntity", "ticketNumber"]
+- ["P12FinalProject11NamedEntity", "ticketTitle"]
+- ["C12FinalProject7Project", "Column"]
+- ["C12FinalProject7Project", "NSDate"]
+- ["C12FinalProject7Project", "NSNumber"]
+- ["C12FinalProject7Project", "String"]
+- ["C12FinalProject7Project", "parentColumn"]
+- ["C12FinalProject7Project", "ticketAssignee"]
+- ["C12FinalProject7Project", "ticketComments"]
+- ["C12FinalProject7Project", "ticketCreationDate"]
+- ["C12FinalProject7Project", "ticketDetail"]
+- ["C12FinalProject7Project", "ticketLabel"]
+- ["C12FinalProject7Project", "ticketMilestone"]
+- ["C12FinalProject7Project", "ticketNumber"]
+- ["C12FinalProject7Project", "ticketTitle"]
+- ["C12FinalProject6Ticket", "Column"]
+- ["C12FinalProject6Ticket", "NSDate"]
+- ["C12FinalProject6Ticket", "NSNumber"]
+- ["C12FinalProject6Ticket", "String"]
+- ["C12FinalProject6Ticket", "parentColumn"]
+- ["C12FinalProject6Ticket", "ticketAssignee"]
+- ["C12FinalProject6Ticket", "ticketComments"]
+- ["C12FinalProject6Ticket", "ticketCreationDate"]
+- ["C12FinalProject6Ticket", "ticketDetail"]
+- ["C12FinalProject6Ticket", "ticketLabel"]
+- ["C12FinalProject6Ticket", "ticketMilestone"]
+- ["C12FinalProject6Ticket", "ticketNumber"]
+- ["C12FinalProject6Ticket", "ticketTitle"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "C12FinalProject6Column"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "P12FinalProject11NamedEntity"
+- "C12FinalProject7Project"
+- "C12FinalProject6Ticket"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/zhumatthew/Desktop/finalProject/Build/Products/Debug-iphonesimulator/CoreDataService.framework/Modules/CoreDataService.swiftmodule/x86_64.swiftmodule"
+- "/Users/zhumatthew/Desktop/finalProject/Build/Products/Debug-iphonesimulator/CoreDataService.framework/Headers/CoreDataService-Swift.h"
+- "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/CoreDataService.h"
+- "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "091abd37b5060a66fe6221600c047853"

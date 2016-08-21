@@ -1,0 +1,128 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["C12FinalProject6Column", ""]
+- ["C12FinalProject6Column", "columnName"]
+- ["C12FinalProject6Column", "columnTicketCount"]
+- ["C12FinalProject6Column", "columnIndex"]
+- ["C12FinalProject6Column", "childTicket"]
+- ["C12FinalProject6Column", "parentProject"]
+provides-dynamic-lookup:
+- "columnName"
+- "columnTicketCount"
+- "parentProject"
+- "childTicket"
+- "columnIndex"
+depends-top-level:
+- "NSNumber"
+- "Project"
+- "Column"
+- "NSSet"
+- "String"
+depends-member:
+- ["Ps9AnyObject", "childTicket"]
+- ["Ps9AnyObject", "columnIndex"]
+- ["Ps9AnyObject", "columnName"]
+- ["Ps9AnyObject", "columnTicketCount"]
+- ["Ps9AnyObject", "parentProject"]
+- ["Ps11CVarArgType", "childTicket"]
+- ["Ps11CVarArgType", "columnIndex"]
+- ["Ps11CVarArgType", "columnName"]
+- ["Ps11CVarArgType", "columnTicketCount"]
+- ["Ps11CVarArgType", "parentProject"]
+- ["C12FinalProject6Column", "NSNumber"]
+- ["C12FinalProject6Column", "NSSet"]
+- ["C12FinalProject6Column", "Project"]
+- ["C12FinalProject6Column", "String"]
+- ["C12FinalProject6Column", "childTicket"]
+- ["C12FinalProject6Column", "columnIndex"]
+- ["C12FinalProject6Column", "columnName"]
+- ["C12FinalProject6Column", "columnTicketCount"]
+- ["C12FinalProject6Column", "parentProject"]
+- ["Ps28CustomDebugStringConvertible", "childTicket"]
+- ["Ps28CustomDebugStringConvertible", "columnIndex"]
+- ["Ps28CustomDebugStringConvertible", "columnName"]
+- ["Ps28CustomDebugStringConvertible", "columnTicketCount"]
+- ["Ps28CustomDebugStringConvertible", "parentProject"]
+- ["Ps23CustomStringConvertible", "childTicket"]
+- ["Ps23CustomStringConvertible", "columnIndex"]
+- ["Ps23CustomStringConvertible", "columnName"]
+- ["Ps23CustomStringConvertible", "columnTicketCount"]
+- ["Ps23CustomStringConvertible", "parentProject"]
+- ["Ps9Equatable", "childTicket"]
+- ["Ps9Equatable", "columnIndex"]
+- ["Ps9Equatable", "columnName"]
+- ["Ps9Equatable", "columnTicketCount"]
+- ["Ps9Equatable", "parentProject"]
+- ["Ps8Hashable", "childTicket"]
+- ["Ps8Hashable", "columnIndex"]
+- ["Ps8Hashable", "columnName"]
+- ["Ps8Hashable", "columnTicketCount"]
+- ["Ps8Hashable", "parentProject"]
+- ["CSo15NSManagedObject", "NSNumber"]
+- ["CSo15NSManagedObject", "NSSet"]
+- ["CSo15NSManagedObject", "Project"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "childTicket"]
+- ["CSo15NSManagedObject", "columnIndex"]
+- ["CSo15NSManagedObject", "columnName"]
+- ["CSo15NSManagedObject", "columnTicketCount"]
+- ["CSo15NSManagedObject", "parentProject"]
+- ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "NSSet"]
+- ["CSo8NSObject", "Project"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "childTicket"]
+- ["CSo8NSObject", "columnIndex"]
+- ["CSo8NSObject", "columnName"]
+- ["CSo8NSObject", "columnTicketCount"]
+- ["CSo8NSObject", "parentProject"]
+- ["PSo16NSObjectProtocol", "childTicket"]
+- ["PSo16NSObjectProtocol", "columnIndex"]
+- ["PSo16NSObjectProtocol", "columnName"]
+- ["PSo16NSObjectProtocol", "columnTicketCount"]
+- ["PSo16NSObjectProtocol", "parentProject"]
+- ["P12FinalProject11NamedEntity", "childTicket"]
+- ["P12FinalProject11NamedEntity", "columnIndex"]
+- ["P12FinalProject11NamedEntity", "columnName"]
+- ["P12FinalProject11NamedEntity", "columnTicketCount"]
+- ["P12FinalProject11NamedEntity", "parentProject"]
+- ["C12FinalProject7Project", "NSNumber"]
+- ["C12FinalProject7Project", "NSSet"]
+- ["C12FinalProject7Project", "Project"]
+- ["C12FinalProject7Project", "String"]
+- ["C12FinalProject7Project", "childTicket"]
+- ["C12FinalProject7Project", "columnIndex"]
+- ["C12FinalProject7Project", "columnName"]
+- ["C12FinalProject7Project", "columnTicketCount"]
+- ["C12FinalProject7Project", "parentProject"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Ps11CVarArgType"
+- "C12FinalProject6Column"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "CSo15NSManagedObject"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "P12FinalProject11NamedEntity"
+- "C12FinalProject7Project"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/zhumatthew/Desktop/finalProject/Build/Products/Debug-iphonesimulator/CoreDataService.framework/Modules/CoreDataService.swiftmodule/x86_64.swiftmodule"
+- "/Users/zhumatthew/Desktop/finalProject/Build/Products/Debug-iphonesimulator/CoreDataService.framework/Headers/CoreDataService-Swift.h"
+- "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/CoreDataService.h"
+- "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+interface-hash: "6dd1765faae3be196d7cee0b25fa53be"
