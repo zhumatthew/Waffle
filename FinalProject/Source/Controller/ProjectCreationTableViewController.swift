@@ -39,10 +39,10 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         case .ColumnRows:
             return ColumnRows.AllRows.count
         case .NotificationRow:
-            return NotificationRow.AllRows.count
+            return 1
         }
     }
-
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         switch Sections.AllSections[indexPath.section] {
         case .DetailRows:
@@ -82,11 +82,9 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
                 return cell
             }
         case .NotificationRow:
-            switch NotificationRow.AllRows[indexPath.row] {
-            case .Switch:
-                let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationNotificationsCell") as UITableViewCell!
-                return cell
-            }
+            let cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationNotificationsCell") as UITableViewCell!
+            return cell
+            
         }
     }
     
@@ -119,12 +117,6 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         static let AllRows: Array<ColumnRows> = [.Column1, .Column2, .Column3, .Column4, .Column5, .Column6, .AddColumn]
     }
     
-    enum NotificationRow {
-        case Switch
-        
-        static let AllRows: Array<NotificationRow> = [.Switch]
-    }
-
     weak var delegate : CreateProjectTableVCDelegate?
     //var ColumnRows: Int = TraskService.fetchedResultsControllerForColumnsInProject(project).count
     

@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 - "setSelected"
 - "awakeFromNib"
 depends-top-level:
-- "Bool"
 - "ProjectDirectoryTableViewCell"
+- "Bool"
 - "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]

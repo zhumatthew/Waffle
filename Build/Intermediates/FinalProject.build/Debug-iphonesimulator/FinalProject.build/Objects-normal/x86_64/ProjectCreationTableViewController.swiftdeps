@@ -17,26 +17,26 @@ provides-member:
 - ["OC12FinalProject34ProjectCreationTableViewController10ColumnRows", ""]
 - ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", ""]
 provides-dynamic-lookup:
+- "viewDidLoad"
+- "numberOfSectionsInTableView"
+- "didReceiveMemoryWarning"
 - "tableView"
 - "tableView"
 - "projectCreationTableView"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "numberOfSectionsInTableView"
 depends-top-level:
-- "CreateProjectTableVCDelegate"
-- "NSFetchedResultsControllerDelegate"
-- "=="
-- "UITableViewCell"
-- "StringLiteralType"
-- "Int"
+- "BooleanLiteralType"
 - "NSIndexPath"
-- "UITableViewController"
+- "UITableViewCell"
 - "ProjectCreationTableViewController"
+- "NSFetchedResultsController"
+- "CreateProjectTableVCDelegate"
+- "StringLiteralType"
+- "NSFetchedResultsControllerDelegate"
+- "UITableViewController"
+- "=="
 - "UITableView"
 - "Array"
-- "NSFetchedResultsController"
-- "BooleanLiteralType"
+- "Int"
 depends-member:
 - !private ["Ps9AnyObject", "ColumnRows"]
 - ["Ps9AnyObject", "DefaultColumnName"]
@@ -220,8 +220,7 @@ depends-member:
 - ["Ps9Equatable", "ProjectTitle"]
 - ["Ps9Equatable", "SecondaryColorSelector"]
 - !private ["Ps9Equatable", "Sections"]
-- ["Ps9Equatable", "SwitchOff"]
-- ["Ps9Equatable", "SwitchOn"]
+- ["Ps9Equatable", "Switch"]
 - ["Ps9Equatable", "controller"]
 - ["Ps9Equatable", "controllerDidChangeContent"]
 - ["Ps9Equatable", "controllerWillChangeContent"]
@@ -265,8 +264,7 @@ depends-member:
 - ["Ps8Hashable", "ProjectTitle"]
 - ["Ps8Hashable", "SecondaryColorSelector"]
 - !private ["Ps8Hashable", "Sections"]
-- ["Ps8Hashable", "SwitchOff"]
-- ["Ps8Hashable", "SwitchOn"]
+- ["Ps8Hashable", "Switch"]
 - ["Ps8Hashable", "controller"]
 - ["Ps8Hashable", "controllerDidChangeContent"]
 - ["Ps8Hashable", "controllerWillChangeContent"]
@@ -440,8 +438,7 @@ depends-member:
 - ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "AllRows"]
 - ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "Array"]
 - ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "NotificationRow"]
-- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "SwitchOff"]
-- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "SwitchOn"]
+- ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "Switch"]
 - ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "deinit"]
 - ["OC12FinalProject34ProjectCreationTableViewController15NotificationRow", "hashValue"]
 - !private ["Sq", "deinit"]
@@ -908,4 +905,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "90dbbeb81a8d698f767162a5c08d5cbd"
+interface-hash: "efc26052fde4136e3050a42dd80edce0"

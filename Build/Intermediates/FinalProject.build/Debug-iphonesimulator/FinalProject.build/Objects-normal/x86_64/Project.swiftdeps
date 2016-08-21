@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "entityName"
 depends-top-level:
-- "Project"
-- "NSManagedObject"
-- !private "StringLiteralType"
 - "NamedEntity"
 - "String"
+- "NSManagedObject"
+- "Project"
+- !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "entityName"]
 - ["Ps9AnyObject", "init"]

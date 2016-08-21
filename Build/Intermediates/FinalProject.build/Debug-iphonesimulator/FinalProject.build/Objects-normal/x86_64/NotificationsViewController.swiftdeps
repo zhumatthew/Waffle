@@ -6,19 +6,19 @@ provides-nominal:
 provides-member:
 - ["C12FinalProject27NotificationsViewController", ""]
 provides-dynamic-lookup:
-- "closeNotificationsButton"
-- "viewDidLoad"
 - "removeAnimate"
-- "didReceiveMemoryWarning"
 - "showAnimate"
+- "didReceiveMemoryWarning"
+- "viewDidLoad"
+- "closeNotificationsButton"
 depends-top-level:
-- !private "Bool"
-- !private "CGAffineTransformMakeScale"
+- !private "UIColor"
 - !private "UIView"
 - "AnyObject"
-- !private "UIColor"
 - "NotificationsViewController"
+- !private "Bool"
 - "UIViewController"
+- !private "CGAffineTransformMakeScale"
 depends-member:
 - !private ["Ps9AnyObject", "CGAffineTransformMakeScale"]
 - !private ["Ps9AnyObject", "UIColor"]
