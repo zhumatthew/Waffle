@@ -13,28 +13,31 @@ provides-member:
 - ["OC12FinalProject34ProjectCreationTableViewController8Sections", ""]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "projectCreationTableView"
-- "tableView"
-- "tableView"
 - "numberOfSectionsInTableView"
+- "tableView"
+- "tableView"
+- "tableView"
+- "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
-- "Int"
-- "NSFetchedResultsController"
-- "ProjectCreationTableViewController"
-- !private "+"
-- "StringLiteralType"
 - "CreateProjectTableVCDelegate"
-- "UITableViewCell"
+- !private "&&"
 - !private "<"
-- "NSIndexPath"
+- "StringLiteralType"
 - "NSFetchedResultsControllerDelegate"
 - "=="
-- "Array"
+- "UITableViewCell"
+- "Int"
 - "BooleanLiteralType"
-- "UITableView"
+- "ProjectCreationTableViewController"
+- "NSIndexPath"
+- !private "+="
 - "UITableViewController"
+- "Array"
+- "UITableView"
+- "NSFetchedResultsController"
+- !private "+"
 depends-member:
 - ["Ps9AnyObject", "DefaultColumnName"]
 - ["Ps9AnyObject", "DefaultName"]
@@ -53,6 +56,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
 - ["Ps9AnyObject", "projectCreationTableView"]
+- !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "row"]
 - !private ["Ps9AnyObject", "section"]
 - ["Ps9AnyObject", "tableView"]
@@ -101,6 +105,7 @@ depends-member:
 - ["Ps11CVarArgType", "init"]
 - ["Ps11CVarArgType", "numberOfSectionsInTableView"]
 - ["Ps11CVarArgType", "projectCreationTableView"]
+- !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "row"]
 - !private ["Ps11CVarArgType", "section"]
 - ["Ps11CVarArgType", "tableView"]
@@ -139,6 +144,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps28CustomDebugStringConvertible", "projectCreationTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "section"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -171,6 +177,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
 - ["Ps23CustomStringConvertible", "projectCreationTableView"]
+- !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - !private ["Ps23CustomStringConvertible", "section"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
@@ -214,6 +221,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
 - ["Ps9Equatable", "projectCreationTableView"]
+- !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "row"]
 - !private ["Ps9Equatable", "section"]
 - ["Ps9Equatable", "tableView"]
@@ -252,6 +260,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
 - ["Ps8Hashable", "projectCreationTableView"]
+- !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "row"]
 - !private ["Ps8Hashable", "section"]
 - ["Ps8Hashable", "tableView"]
@@ -312,6 +321,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
 - ["PSo8NSCoding", "projectCreationTableView"]
+- !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "row"]
 - !private ["PSo8NSCoding", "section"]
 - ["PSo8NSCoding", "tableView"]
@@ -374,6 +384,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
 - ["CSo8NSObject", "projectCreationTableView"]
+- !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "row"]
 - !private ["CSo8NSObject", "section"]
 - ["CSo8NSObject", "tableView"]
@@ -396,6 +407,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
 - ["PSo16NSObjectProtocol", "projectCreationTableView"]
+- !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "row"]
 - !private ["PSo16NSObjectProtocol", "section"]
 - ["PSo16NSObjectProtocol", "tableView"]
@@ -469,7 +481,9 @@ depends-member:
 - !private ["Ps10Strideable", "IntegerLiteralType"]
 - !private ["Ps10Strideable", "hashValue"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo12UIAppearance", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo12UIAppearance", "reloadData"]
 - ["PSo21UIAppearanceContainer", "DefaultColumnName"]
 - ["PSo21UIAppearanceContainer", "DefaultName"]
 - !private ["PSo21UIAppearanceContainer", "DetailRows"]
@@ -487,6 +501,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
 - ["PSo21UIAppearanceContainer", "projectCreationTableView"]
+- !private ["PSo21UIAppearanceContainer", "reloadData"]
 - ["PSo21UIAppearanceContainer", "tableView"]
 - !private ["PSo21UIAppearanceContainer", "title"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
@@ -512,7 +527,9 @@ depends-member:
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCellWithIdentifier"]
+- !private ["PSo13UIDynamicItem", "reloadData"]
 - ["PSo18UIFocusEnvironment", "DefaultColumnName"]
 - ["PSo18UIFocusEnvironment", "DefaultName"]
 - !private ["PSo18UIFocusEnvironment", "DetailRows"]
@@ -530,6 +547,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UIFocusEnvironment", "projectCreationTableView"]
+- !private ["PSo18UIFocusEnvironment", "reloadData"]
 - ["PSo18UIFocusEnvironment", "tableView"]
 - !private ["PSo18UIFocusEnvironment", "title"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
@@ -558,10 +576,12 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
 - ["CSo11UIResponder", "projectCreationTableView"]
+- !private ["CSo11UIResponder", "reloadData"]
 - ["CSo11UIResponder", "tableView"]
 - !private ["CSo11UIResponder", "title"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - !private ["CSo12UIScrollView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo12UIScrollView", "reloadData"]
 - ["PSo20UIScrollViewDelegate", "DefaultColumnName"]
 - ["PSo20UIScrollViewDelegate", "DefaultName"]
 - !private ["PSo20UIScrollViewDelegate", "DetailRows"]
@@ -603,6 +623,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
 - !private ["CSo11UITableView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo11UITableView", "reloadData"]
 - !private ["CSo15UITableViewCell", "deinit"]
 - ["CSo21UITableViewController", "Array"]
 - ["CSo21UITableViewController", "CreateProjectTableVCDelegate"]
@@ -688,11 +709,13 @@ depends-member:
 - ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
 - ["PSo18UITraitEnvironment", "projectCreationTableView"]
+- !private ["PSo18UITraitEnvironment", "reloadData"]
 - ["PSo18UITraitEnvironment", "tableView"]
 - !private ["PSo18UITraitEnvironment", "title"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "dequeueReusableCellWithIdentifier"]
+- !private ["CSo6UIView", "reloadData"]
 - ["CSo16UIViewController", "Array"]
 - ["CSo16UIViewController", "CreateProjectTableVCDelegate"]
 - ["CSo16UIViewController", "DefaultColumnName"]
@@ -763,6 +786,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dequeueReusableCellWithIdentifier"]
 - !private ["Ps12_Reflectable", "hashValue"]
+- !private ["Ps12_Reflectable", "reloadData"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
@@ -861,4 +885,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "c632dbaa4fa74903994721018483fc23"
+interface-hash: "eb1ae1239fff83fb9e791e47cb1bbfce"

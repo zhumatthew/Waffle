@@ -433,7 +433,7 @@
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FeN-Re-Jjl">
                                             <rect key="frame" x="536" y="10" width="51" height="31"/>
                                         </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status of Project's Ticket Milestone Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZN-hS-Ilm">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status of Project's Ticket Milestone Notifications" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ZN-hS-Ilm">
                                             <rect key="frame" x="207" y="17" width="314" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -446,6 +446,7 @@
                                         <constraint firstItem="uPB-4b-LY1" firstAttribute="centerY" secondItem="zJs-mf-RCP" secondAttribute="centerY" id="NlK-sF-pbA"/>
                                         <constraint firstItem="FeN-Re-Jjl" firstAttribute="centerY" secondItem="zJs-mf-RCP" secondAttribute="centerY" id="Rzf-ug-BFj"/>
                                         <constraint firstItem="uPB-4b-LY1" firstAttribute="leading" secondItem="zJs-mf-RCP" secondAttribute="leading" constant="15" id="TbG-Uy-ENX"/>
+                                        <constraint firstItem="6ZN-hS-Ilm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uPB-4b-LY1" secondAttribute="trailing" constant="8" symbolic="YES" id="kAh-13-VXW"/>
                                         <constraint firstAttribute="trailing" secondItem="FeN-Re-Jjl" secondAttribute="trailing" constant="15" id="rqq-bY-XD9"/>
                                     </constraints>
                                 </tableViewCellContentView>

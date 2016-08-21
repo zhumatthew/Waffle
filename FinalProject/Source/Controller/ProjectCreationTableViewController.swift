@@ -73,6 +73,13 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         }
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (Sections.AllSections[indexPath.section] == .ColumnRows && indexPath.row == columnCount) {
+            columnCount += 1
+            tableView.reloadData()
+        }
+    }
+    
     // MARK: Section/Row Enums
     enum Sections {
         case DetailRows
