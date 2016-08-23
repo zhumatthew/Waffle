@@ -2,7 +2,7 @@
 //  ColorSelectorTableViewCell.swift
 //  FinalProject
 //
-//  Created by Matt Zhu on 8/21/16.
+//  Created by Kyle Holmberg on 8/21/16.
 //
 //
 

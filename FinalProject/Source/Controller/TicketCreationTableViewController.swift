@@ -221,5 +221,5 @@ class TicketCreationTableViewController: UITableViewController, UITextFieldDeleg
         static let AllRows: Array<LogisticsRows> = [.MilestoneDateLabel, .MilestoneDataPicker, .GroupingLabel, .GroupingPicker, .Assignee]
     }
     
-    let groupingOptions = ["None", "Bug", "Duplicate", "Enhancement", "Help Wanted", "In Progress", "Invalid", "Question", "Ready", "High Priority", "Low Priority"]
+    let groupingOptions = ["None", "Bug", "Duplicate", "Enhancement", "Help Wanted", "High Priority", "In Progress", "Invalid", "Low Priority", "Question", "Ready"]
 }

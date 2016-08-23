@@ -222,34 +222,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlF-0W-hUv">
-                                <rect key="frame" x="280" y="50" width="39" height="30"/>
+                                <rect key="frame" x="280" y="40" width="39" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="yeh-K7-l7P"/>
+                                </constraints>
                                 <state key="normal" title="Close"/>
                                 <connections>
                                     <action selector="closeNotificationsButton:" destination="1uV-Ys-3NW" eventType="touchUpInside" id="t6c-mK-Y6L"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpZ-vm-ycb">
-                                <rect key="frame" x="150" y="100" width="300" height="400"/>
+                                <rect key="frame" x="60" y="80" width="480" height="460"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="jX6-Sy-zHC"/>
-                                    <constraint firstAttribute="height" constant="400" id="wqb-F7-g3x"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bpZ-vm-ycb" firstAttribute="centerY" secondItem="DVK-xb-KX9" secondAttribute="centerY" id="C9h-vx-sYK"/>
-                            <constraint firstItem="HlF-0W-hUv" firstAttribute="centerX" secondItem="bpZ-vm-ycb" secondAttribute="centerX" id="U1J-5U-cCO"/>
-                            <constraint firstItem="bpZ-vm-ycb" firstAttribute="top" secondItem="HlF-0W-hUv" secondAttribute="bottom" constant="20" id="UuD-Pe-0ya"/>
-                            <constraint firstItem="bpZ-vm-ycb" firstAttribute="centerX" secondItem="DVK-xb-KX9" secondAttribute="centerX" id="iA6-wz-Kan"/>
-                            <constraint firstItem="HlF-0W-hUv" firstAttribute="centerX" secondItem="bpZ-vm-ycb" secondAttribute="centerX" id="qRA-r1-mvd"/>
+                            <constraint firstItem="bpZ-vm-ycb" firstAttribute="centerX" secondItem="DVK-xb-KX9" secondAttribute="centerX" id="6lV-Hy-tBM"/>
+                            <constraint firstAttribute="trailing" secondItem="bpZ-vm-ycb" secondAttribute="trailing" constant="60" id="7bS-zy-nec"/>
+                            <constraint firstItem="bpZ-vm-ycb" firstAttribute="top" secondItem="HlF-0W-hUv" secondAttribute="bottom" constant="20" id="F8u-Dh-THr"/>
+                            <constraint firstItem="HlF-0W-hUv" firstAttribute="top" secondItem="KmR-EO-hax" secondAttribute="bottom" constant="20" id="Som-q4-kFT"/>
+                            <constraint firstItem="bpZ-vm-ycb" firstAttribute="leading" secondItem="DVK-xb-KX9" secondAttribute="leading" constant="60" id="bYU-sN-nqc"/>
+                            <constraint firstItem="NYe-QP-m2O" firstAttribute="top" secondItem="bpZ-vm-ycb" secondAttribute="bottom" constant="60" id="c9G-qi-lMJ"/>
+                            <constraint firstItem="HlF-0W-hUv" firstAttribute="centerX" secondItem="DVK-xb-KX9" secondAttribute="centerX" id="qmN-r4-n9p"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="U1J-5U-cCO"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9c-17-o3S" userLabel="First Responder" sceneMemberID="firstResponder"/>
