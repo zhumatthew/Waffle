@@ -53,7 +53,6 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationTitleCell") as UITableViewCell!
             case .MainColorSelector:
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationMainColorCell") as UITableViewCell!
-                return cell
             case .SecondaryColorSelector:
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationSecondaryColorCell") as UITableViewCell!
             }
