@@ -50,7 +50,7 @@ class TraskService {
     }
  
     // MARK: Add Project to Directory
-    func addProject(name: String, mainColor: NSObject, textColor: NSObject, possibleColumnsArray: [String], notificationsStatus: Bool, orderIndex: Int) throws {
+    func addProject(name: String, mainColor: String, textColor: String, possibleColumnsArray: [String], notificationsStatus: Bool, orderIndex: Int) throws {
         let context = CoreDataService.sharedCoreDataService.mainQueueContext
         let project = NSEntityDescription.insertNewObjectForNamedEntity(Project.self, inManagedObjectContext: context)
         
@@ -138,7 +138,7 @@ class TraskService {
     }
  
     // MARK: Edit Project Attributes
-    func editProject(project: Project, newName: String, newMainColor: NSObject, newTextColor: NSObject,newNotificationStatus: Bool) throws {
+    func editProject(project: Project, newName: String, newMainColor: String, newTextColor: String,newNotificationStatus: Bool) throws {
         let context = CoreDataService.sharedCoreDataService.mainQueueContext
         
         //Attribute Changes

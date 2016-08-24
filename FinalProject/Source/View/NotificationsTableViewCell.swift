@@ -1,5 +1,5 @@
 //
-//  TitleTableViewCell.swift
+//  NotificationsTableViewCell.swift
 //  FinalProject
 //
 //  Created by Kyle Holmberg on 8/24/16.
@@ -8,15 +8,13 @@
 
 import UIKit
 
-class TitleTableViewCell: UITableViewCell, UITextFieldDelegate {
+class NotificationsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var notificationSwitch: UISwitch!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        titleTextField.delegate = self
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

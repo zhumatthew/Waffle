@@ -14,8 +14,8 @@ import CoreData
 
 extension Project {
 
-    @NSManaged var projectColorMain: NSObject
-    @NSManaged var projectColorText: NSObject
+    @NSManaged var projectColorMain: String
+    @NSManaged var projectColorText: String
     @NSManaged var projectName: String
     @NSManaged var projectNotifications: NSNumber
     @NSManaged var projectCreationDate: NSDate

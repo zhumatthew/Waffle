@@ -43,8 +43,9 @@
 		97B552D71D4F4E1100621F98 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B552D61D4F4E1100621F98 /* MenuViewController.swift */; };
 		97B552DD1D4F4EA800621F98 /* TicketsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B552DC1D4F4EA800621F98 /* TicketsPageViewController.swift */; };
 		97B552DF1D4F4EC500621F98 /* ProjectDirectoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B552DE1D4F4EC500621F98 /* ProjectDirectoryTableViewController.swift */; };
+		97EA97101D6D95BD00DD0929 /* NotificationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA970F1D6D95BD00DD0929 /* NotificationsTableViewCell.swift */; };
+		97EA97121D6D95C300DD0929 /* ColorSelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EA97111D6D95C300DD0929 /* ColorSelectorTableViewCell.swift */; };
 		97F22DEE1D6937F0001253B2 /* TicketCreationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F22DED1D6937F0001253B2 /* TicketCreationTableViewController.swift */; };
-		B3B131E21D6A6060008EEF03 /* ColorSelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B131E11D6A6060008EEF03 /* ColorSelectorTableViewCell.swift */; };
 		B3B131E41D6D83D6008EEF03 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B131E31D6D83D6008EEF03 /* TitleTableViewCell.swift */; };
 		B3B131E61D6D83F1008EEF03 /* ColumnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B131E51D6D83F1008EEF03 /* ColumnTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -140,8 +141,9 @@
 		97B552D61D4F4E1100621F98 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		97B552DC1D4F4EA800621F98 /* TicketsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsPageViewController.swift; sourceTree = "<group>"; };
 		97B552DE1D4F4EC500621F98 /* ProjectDirectoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDirectoryTableViewController.swift; sourceTree = "<group>"; };
+		97EA970F1D6D95BD00DD0929 /* NotificationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationsTableViewCell.swift; path = View/NotificationsTableViewCell.swift; sourceTree = "<group>"; };
+		97EA97111D6D95C300DD0929 /* ColorSelectorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorSelectorTableViewCell.swift; path = View/ColorSelectorTableViewCell.swift; sourceTree = "<group>"; };
 		97F22DED1D6937F0001253B2 /* TicketCreationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TicketCreationTableViewController.swift; path = FinalProject/Source/Controller/TicketCreationTableViewController.swift; sourceTree = SOURCE_ROOT; };
-		B3B131E11D6A6060008EEF03 /* ColorSelectorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectorTableViewCell.swift; sourceTree = "<group>"; };
 		B3B131E31D6D83D6008EEF03 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleTableViewCell.swift; path = View/TitleTableViewCell.swift; sourceTree = "<group>"; };
 		B3B131E51D6D83F1008EEF03 /* ColumnTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColumnTableViewCell.swift; path = View/ColumnTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -266,8 +268,8 @@
 				562BB1371B55627000B73F46 /* AppDelegate.swift */,
 				97B552D61D4F4E1100621F98 /* MenuViewController.swift */,
 				97B552DE1D4F4EC500621F98 /* ProjectDirectoryTableViewController.swift */,
-				978B7B421D6702DA00172F1B /* ProjectCreationTableViewController.swift */,
 				978B7ADB1D64511100172F1B /* ProjectDirectoryTableViewCell.swift */,
+				978B7B421D6702DA00172F1B /* ProjectCreationTableViewController.swift */,
 				97B552DC1D4F4EA800621F98 /* TicketsPageViewController.swift */,
 				978B7AD31D62F85500172F1B /* TicketColumnViewController.swift */,
 				97F22DED1D6937F0001253B2 /* TicketCreationTableViewController.swift */,
@@ -372,7 +374,8 @@
 		B3B131DE1D6A6005008EEF03 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B3B131E11D6A6060008EEF03 /* ColorSelectorTableViewCell.swift */,
+				97EA970F1D6D95BD00DD0929 /* NotificationsTableViewCell.swift */,
+				97EA97111D6D95C300DD0929 /* ColorSelectorTableViewCell.swift */,
 				B3B131E31D6D83D6008EEF03 /* TitleTableViewCell.swift */,
 				B3B131E51D6D83F1008EEF03 /* ColumnTableViewCell.swift */,
 			);
@@ -590,9 +593,10 @@
 				978B7AE91D661E0000172F1B /* NSEntityDescription_Service.swift in Sources */,
 				97F22DEE1D6937F0001253B2 /* TicketCreationTableViewController.swift in Sources */,
 				56BEFEBE1B68C3E0006F0664 /* Model.xcdatamodeld in Sources */,
+				97EA97101D6D95BD00DD0929 /* NotificationsTableViewCell.swift in Sources */,
 				978B7ADD1D64511100172F1B /* ProjectDirectoryTableViewCell.swift in Sources */,
 				978B7B3B1D66DDAB00172F1B /* Ticket.swift in Sources */,
-				B3B131E21D6A6060008EEF03 /* ColorSelectorTableViewCell.swift in Sources */,
+				97EA97121D6D95C300DD0929 /* ColorSelectorTableViewCell.swift in Sources */,
 				97B552DD1D4F4EA800621F98 /* TicketsPageViewController.swift in Sources */,
 				978B7B3C1D66DDAB00172F1B /* Columns+CoreDataProperties.swift in Sources */,
 				978B7B3A1D66DDAB00172F1B /* Ticket+CoreDataProperties.swift in Sources */,

@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
+import CoreDataService
 
-extension UITableViewController: UITextFieldDelegate{
+extension UITableViewController: UITextFieldDelegate {
     func addToolBar(textField: UITextField){
         let toolBar = UIToolbar()
         toolBar.barStyle = UIBarStyle.Default
@@ -152,6 +154,7 @@ class TicketCreationTableViewController: UITableViewController, UIPickerViewDele
         super.init(coder: aDecoder)
     }
     
+    
     // MARK: Properties
     var selectedColumn: Column!
     var selectedTicket: Ticket? {
@@ -181,10 +184,6 @@ class TicketCreationTableViewController: UITableViewController, UIPickerViewDele
             }
         }
     }
-    
-    //MARK: Delegates
-    //var delegate: TicketCreationTableViewControllerDelegate!
-    
     
     
     // MARK: Properties (Private)
