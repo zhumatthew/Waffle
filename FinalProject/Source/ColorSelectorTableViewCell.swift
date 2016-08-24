@@ -12,6 +12,17 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
 
     @IBOutlet weak var colorTextField: UITextField!
     
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return colorPickerData.count
+    }
+    
+    let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
+    var colorSelection: String!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -20,6 +31,11 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
 
         colorTextField.inputView = pickerView
         colorTextField.inputAccessoryView = toolbar
+        
+        colorSelection = colorPickerData.first
+        
+        colorTextField.text = colorSelection
+        
         
         
 //        datePicker = UIDatePicker(frame: CGRectZero)

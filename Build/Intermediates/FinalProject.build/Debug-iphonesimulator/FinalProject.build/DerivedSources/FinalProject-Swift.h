@@ -115,12 +115,17 @@ SWIFT_CLASS("_TtC12FinalProject11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPickerView;
 @class UITextField;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC12FinalProject26ColorSelectorTableViewCell")
-@interface ColorSelectorTableViewCell : UITableViewCell
+@interface ColorSelectorTableViewCell : UITableViewCell <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified colorTextField;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull colorPickerData;
+@property (nonatomic, copy) NSString * _Null_unspecified colorSelection;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
@@ -294,7 +299,6 @@ SWIFT_CLASS("_TtC12FinalProject26TicketColumnViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIPickerView;
 @class UIDatePicker;
 @class UILabel;
 
