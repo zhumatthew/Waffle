@@ -8,9 +8,19 @@
 
 import UIKit
 
-class ColorSelectorTableViewCell: UITableViewCell {
+class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var colorTextField: UITextField!
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return colorPickerData.count
+    }
+    
+    let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
     
     override func awakeFromNib() {
         super.awakeFromNib()
