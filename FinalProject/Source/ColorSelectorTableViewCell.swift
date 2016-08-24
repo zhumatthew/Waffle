@@ -10,8 +10,6 @@ import UIKit
 
 class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var colorTextField: UITextField!
-    let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
-    var colorSelection: String!
     
     let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
     var colorSelection: String!
@@ -33,6 +31,10 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return colorPickerData[row]
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
