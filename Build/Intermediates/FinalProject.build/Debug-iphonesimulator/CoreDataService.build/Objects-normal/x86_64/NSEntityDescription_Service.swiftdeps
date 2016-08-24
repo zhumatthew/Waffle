@@ -6,10 +6,10 @@ provides-member:
 - ["CSo19NSEntityDescription", "insertNewObjectForNamedEntity"]
 provides-dynamic-lookup:
 depends-top-level:
+- "NSEntityDescription"
+- "NSManagedObjectContext"
 - "NamedEntity"
 - "NSManagedObject"
-- "NSManagedObjectContext"
-- "NSEntityDescription"
 depends-member:
 - !private ["Ps9AnyObject", "insertNewObjectForEntityForName"]
 - ["Ps9AnyObject", "insertNewObjectForNamedEntity"]

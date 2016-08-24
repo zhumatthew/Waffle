@@ -15,11 +15,43 @@ protocol CreateProjectTableVCDelegate: class {
 }
 
 class ProjectCreationTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+    
+    @IBOutlet weak var navItem: UINavigationItem!
+    
+    func addProject() {
+        
+        let name = (tableView.cellForRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0)) as! TitleTableViewCell).titleTextField.text
+        let color = (tableView.cellForRowAtIndexPath(NSIndexPath(forRow: 1, inSection: 0)) as! ColorSelectorTableViewCell).colorTextField.text
+        var columns = Array<String>()
+        for row in 0...tableView(tableView, numberOfRowsInSection: 1) {
+            columns.append((tableView.cellForRowAtIndexPath(NSIndexPath(forRow: row, inSection: 1)) as! ColumnTableViewCell).columnTextField.text!)
+        }
+//        TraskService.addProject(name: , mainColor: NSObject, textColor: NSObject, possibleColumnsArray: [String], notificationsStatus: Bool, orderIndex: Int)
+//        TraskService.addProject(<#T##TraskService#>)
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+    
     // MARK: View Controller Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Add Project"
+        
+        let button = UIButton(type: .Custom)
+        button.setTitle("Add", forState: .Normal)
+        //        button.layer.backgroundColor = UIColor(red: 0.0, green: 0.6, blue: 0.0, alpha: 1.0).CGColor
+        button.addTarget(self, action: #selector(ProjectCreationTableViewController.addProject), forControlEvents: .TouchUpInside)
+        button.bounds = CGRectMake(0,0,70,34)
+        button.tintColor = UIColor.redColor()
+        // button.tintColor = self.view.tintColor
+        button.titleLabel?.textColor = UIColor.redColor()
+        button.enabled = true
+        let item = UIBarButtonItem(customView: button)
+        item.tintColor = UIColor.redColor()
+        item.enabled = true
+        self.navItem.rightBarButtonItem = item
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

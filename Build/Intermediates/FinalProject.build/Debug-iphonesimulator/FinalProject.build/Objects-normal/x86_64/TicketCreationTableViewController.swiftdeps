@@ -12,59 +12,58 @@ provides-member:
 - ["OC12FinalProject33TicketCreationTableViewControllerP33_15B56BFD407AE97F4E0855FD3965B09410DetailRows", ""]
 - ["OC12FinalProject33TicketCreationTableViewControllerP33_15B56BFD407AE97F4E0855FD3965B09413LogisticsRows", ""]
 provides-dynamic-lookup:
-- "descriptionTextField"
-- "commentsTextField"
-- "viewDidLoad"
-- "groupingLabel"
-- "selectedColumn"
-- "pickerView"
-- "pickerView"
-- "pickerView"
-- "milestoneDatePicker"
-- "didReceiveMemoryWarning"
-- "tableView"
-- "tableView"
-- "ticketCreationTableView"
-- "selectedTicket"
-- "milestoneLabel"
-- "titleTextField"
 - "milestoneDataPickerShow"
-- "numberOfComponentsInPickerView"
+- "groupingLabel"
+- "didReceiveMemoryWarning"
 - "viewWillAppear"
 - "assigneeTextField"
+- "titleTextField"
+- "tableView"
+- "tableView"
+- "pickerView"
+- "pickerView"
+- "pickerView"
+- "selectedColumn"
+- "milestoneDatePicker"
+- "numberOfComponentsInPickerView"
+- "viewDidLoad"
+- "milestoneLabel"
+- "descriptionTextField"
+- "selectedTicket"
+- "ticketCreationTableView"
 - "groupingPicker"
+- "commentsTextField"
 - "groupingOptions"
 depends-top-level:
-- "UIPickerViewDataSource"
-- "StringLiteralType"
+- "NSCoder"
 - "UITableViewController"
+- "Ticket"
 - "CGFloat"
 - !private "NSDateFormatterStyle"
-- !private "NSDateComponents"
+- !private "=="
+- "TicketCreationTableViewController"
+- !private "NSCalendar"
 - "NSIndexPath"
 - "Column"
-- !private "!"
-- "UITextFieldDelegate"
-- "UITextField"
-- "UIPickerViewDelegate"
-- "String"
-- !private "=="
-- "NSCoder"
-- "Array"
-- "Int"
-- "TicketCreationTableViewController"
-- !private "&&"
-- "Bool"
 - "NSDate"
-- "BooleanLiteralType"
-- "UIPickerView"
-- "UILabel"
-- "Ticket"
-- "UIDatePicker"
-- !private "UIColor"
+- "String"
 - "NSDateFormatter"
+- !private "!"
+- "StringLiteralType"
+- "Bool"
+- "UIDatePicker"
 - "UITableView"
-- !private "NSCalendar"
+- "UITextField"
+- "UIPickerViewDataSource"
+- "UILabel"
+- "Int"
+- !private "&&"
+- "UITextFieldDelegate"
+- "UIPickerViewDelegate"
+- "Array"
+- "BooleanLiteralType"
+- !private "NSDateComponents"
+- "UIPickerView"
 depends-member:
 - !private ["Ps9AnyObject", "CreateTicketSections"]
 - ["Ps9AnyObject", "DefaultMilestone"]
@@ -76,9 +75,7 @@ depends-member:
 - ["Ps9AnyObject", "NSDateFormatter"]
 - !private ["Ps9AnyObject", "NSDateFormatterStyle"]
 - !private ["Ps9AnyObject", "TicketCreationTableViewController"]
-- !private ["Ps9AnyObject", "UIColor"]
 - ["Ps9AnyObject", "assigneeTextField"]
-- !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "beginUpdates"]
 - ["Ps9AnyObject", "commentsTextField"]
 - !private ["Ps9AnyObject", "currentCalendar"]
@@ -99,7 +96,6 @@ depends-member:
 - ["Ps9AnyObject", "groupingOptions"]
 - ["Ps9AnyObject", "groupingPicker"]
 - ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "lightGrayColor"]
 - !private ["Ps9AnyObject", "localizedStringFromDate"]
 - ["Ps9AnyObject", "milestoneDataPickerShow"]
 - ["Ps9AnyObject", "milestoneDatePicker"]
@@ -172,9 +168,7 @@ depends-member:
 - ["Ps11CVarArgType", "NSDateFormatter"]
 - !private ["Ps11CVarArgType", "NSDateFormatterStyle"]
 - !private ["Ps11CVarArgType", "TicketCreationTableViewController"]
-- !private ["Ps11CVarArgType", "UIColor"]
 - ["Ps11CVarArgType", "assigneeTextField"]
-- !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "beginUpdates"]
 - ["Ps11CVarArgType", "commentsTextField"]
 - !private ["Ps11CVarArgType", "currentCalendar"]
@@ -196,7 +190,6 @@ depends-member:
 - ["Ps11CVarArgType", "groupingPicker"]
 - !private ["Ps11CVarArgType", "hashValue"]
 - ["Ps11CVarArgType", "init"]
-- !private ["Ps11CVarArgType", "lightGrayColor"]
 - !private ["Ps11CVarArgType", "localizedStringFromDate"]
 - ["Ps11CVarArgType", "milestoneDataPickerShow"]
 - ["Ps11CVarArgType", "milestoneDatePicker"]
@@ -263,9 +256,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Some"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "TicketCreationTableViewController"]
-- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - ["Ps28CustomDebugStringConvertible", "assigneeTextField"]
-- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "beginUpdates"]
 - ["Ps28CustomDebugStringConvertible", "commentsTextField"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
@@ -287,7 +278,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "groupingOptions"]
 - ["Ps28CustomDebugStringConvertible", "groupingPicker"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "lightGrayColor"]
 - !private ["Ps28CustomDebugStringConvertible", "localizedStringFromDate"]
 - ["Ps28CustomDebugStringConvertible", "milestoneDataPickerShow"]
 - ["Ps28CustomDebugStringConvertible", "milestoneDatePicker"]
@@ -340,10 +330,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "NSDateFormatterStyle"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "TicketCreationTableViewController"]
-- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - ["Ps23CustomStringConvertible", "assigneeTextField"]
-- !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "beginUpdates"]
 - ["Ps23CustomStringConvertible", "commentsTextField"]
 - !private ["Ps23CustomStringConvertible", "count"]
@@ -366,7 +354,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "groupingPicker"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "lightGrayColor"]
 - !private ["Ps23CustomStringConvertible", "localizedStringFromDate"]
 - ["Ps23CustomStringConvertible", "milestoneDataPickerShow"]
 - ["Ps23CustomStringConvertible", "milestoneDatePicker"]
@@ -430,10 +417,8 @@ depends-member:
 - !private ["Ps9Equatable", "NoStyle"]
 - !private ["Ps9Equatable", "TicketCreationTableViewController"]
 - !private ["Ps9Equatable", "Title"]
-- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "assigneeTextField"]
-- !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "beginUpdates"]
 - ["Ps9Equatable", "commentsTextField"]
 - !private ["Ps9Equatable", "currentCalendar"]
@@ -455,7 +440,6 @@ depends-member:
 - ["Ps9Equatable", "groupingPicker"]
 - !private ["Ps9Equatable", "hashValue"]
 - ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "lightGrayColor"]
 - !private ["Ps9Equatable", "localizedStringFromDate"]
 - ["Ps9Equatable", "milestoneDataPickerShow"]
 - ["Ps9Equatable", "milestoneDatePicker"]
@@ -521,10 +505,8 @@ depends-member:
 - !private ["Ps8Hashable", "NoStyle"]
 - !private ["Ps8Hashable", "TicketCreationTableViewController"]
 - !private ["Ps8Hashable", "Title"]
-- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "assigneeTextField"]
-- !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "beginUpdates"]
 - ["Ps8Hashable", "commentsTextField"]
 - !private ["Ps8Hashable", "currentCalendar"]
@@ -546,7 +528,6 @@ depends-member:
 - ["Ps8Hashable", "groupingPicker"]
 - !private ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "lightGrayColor"]
 - !private ["Ps8Hashable", "localizedStringFromDate"]
 - ["Ps8Hashable", "milestoneDataPickerShow"]
 - ["Ps8Hashable", "milestoneDatePicker"]
@@ -636,9 +617,7 @@ depends-member:
 - ["PSo8NSCoding", "NSDateFormatter"]
 - !private ["PSo8NSCoding", "NSDateFormatterStyle"]
 - !private ["PSo8NSCoding", "TicketCreationTableViewController"]
-- !private ["PSo8NSCoding", "UIColor"]
 - ["PSo8NSCoding", "assigneeTextField"]
-- !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "beginUpdates"]
 - ["PSo8NSCoding", "commentsTextField"]
 - !private ["PSo8NSCoding", "currentCalendar"]
@@ -659,7 +638,6 @@ depends-member:
 - ["PSo8NSCoding", "groupingOptions"]
 - ["PSo8NSCoding", "groupingPicker"]
 - ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "lightGrayColor"]
 - !private ["PSo8NSCoding", "localizedStringFromDate"]
 - ["PSo8NSCoding", "milestoneDataPickerShow"]
 - ["PSo8NSCoding", "milestoneDatePicker"]
@@ -696,7 +674,6 @@ depends-member:
 - !private ["PSo9NSCopying", "currentCalendar"]
 - !private ["PSo9NSCopying", "dateByAddingComponents"]
 - ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "lightGrayColor"]
 - !private ["PSo9NSCopying", "localizedStringFromDate"]
 - !private ["PSo9NSCopying", "row"]
 - !private ["PSo9NSCopying", "section"]
@@ -718,7 +695,6 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "NSDateFormatter"]
 - !private ["PSo26NSExtensionRequestHandling", "NSDateFormatterStyle"]
 - !private ["PSo26NSExtensionRequestHandling", "TicketCreationTableViewController"]
-- !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - ["PSo26NSExtensionRequestHandling", "assigneeTextField"]
 - ["PSo26NSExtensionRequestHandling", "commentsTextField"]
 - ["PSo26NSExtensionRequestHandling", "dateFormatter"]
@@ -790,14 +766,12 @@ depends-member:
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "Ticket"]
 - !private ["CSo8NSObject", "TicketCreationTableViewController"]
-- !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIDatePicker"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIPickerView"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITextField"]
 - ["CSo8NSObject", "assigneeTextField"]
-- !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "beginUpdates"]
 - ["CSo8NSObject", "commentsTextField"]
 - !private ["CSo8NSObject", "currentCalendar"]
@@ -818,7 +792,6 @@ depends-member:
 - ["CSo8NSObject", "groupingOptions"]
 - ["CSo8NSObject", "groupingPicker"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "lightGrayColor"]
 - !private ["CSo8NSObject", "localizedStringFromDate"]
 - ["CSo8NSObject", "milestoneDataPickerShow"]
 - ["CSo8NSObject", "milestoneDatePicker"]
@@ -863,9 +836,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "NSDateFormatter"]
 - !private ["PSo16NSObjectProtocol", "NSDateFormatterStyle"]
 - !private ["PSo16NSObjectProtocol", "TicketCreationTableViewController"]
-- !private ["PSo16NSObjectProtocol", "UIColor"]
 - ["PSo16NSObjectProtocol", "assigneeTextField"]
-- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "beginUpdates"]
 - ["PSo16NSObjectProtocol", "commentsTextField"]
 - !private ["PSo16NSObjectProtocol", "currentCalendar"]
@@ -886,7 +857,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "groupingOptions"]
 - ["PSo16NSObjectProtocol", "groupingPicker"]
 - ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "lightGrayColor"]
 - !private ["PSo16NSObjectProtocol", "localizedStringFromDate"]
 - ["PSo16NSObjectProtocol", "milestoneDataPickerShow"]
 - ["PSo16NSObjectProtocol", "milestoneDatePicker"]
@@ -925,7 +895,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "currentCalendar"]
 - !private ["PSo14NSSecureCoding", "dateByAddingComponents"]
 - ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "lightGrayColor"]
 - !private ["PSo14NSSecureCoding", "row"]
 - !private ["PSo14NSSecureCoding", "section"]
 - !private ["PSo14NSSecureCoding", "weekOfYear"]
@@ -1004,7 +973,6 @@ depends-member:
 - ["C12FinalProject33TicketCreationTableViewController", "String"]
 - ["C12FinalProject33TicketCreationTableViewController", "Ticket"]
 - !private ["C12FinalProject33TicketCreationTableViewController", "TicketCreationTableViewController"]
-- !private ["C12FinalProject33TicketCreationTableViewController", "UIColor"]
 - ["C12FinalProject33TicketCreationTableViewController", "UIDatePicker"]
 - ["C12FinalProject33TicketCreationTableViewController", "UILabel"]
 - ["C12FinalProject33TicketCreationTableViewController", "UIPickerView"]
@@ -1051,7 +1019,6 @@ depends-member:
 - ["C12FinalProject33TicketCreationTableViewController", "titleTextField"]
 - ["C12FinalProject33TicketCreationTableViewController", "viewDidLoad"]
 - ["C12FinalProject33TicketCreationTableViewController", "viewWillAppear"]
-- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "beginUpdates"]
 - !private ["PSo29UIAccessibilityIdentification", "dataSource"]
 - !private ["PSo29UIAccessibilityIdentification", "date"]
@@ -1059,7 +1026,6 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "deselectRowAtIndexPath"]
 - !private ["PSo29UIAccessibilityIdentification", "endUpdates"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
-- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "beginUpdates"]
 - !private ["PSo12UIAppearance", "dataSource"]
 - !private ["PSo12UIAppearance", "date"]
@@ -1077,9 +1043,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "NSDateFormatter"]
 - !private ["PSo21UIAppearanceContainer", "NSDateFormatterStyle"]
 - !private ["PSo21UIAppearanceContainer", "TicketCreationTableViewController"]
-- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - ["PSo21UIAppearanceContainer", "assigneeTextField"]
-- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "beginUpdates"]
 - ["PSo21UIAppearanceContainer", "commentsTextField"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
@@ -1127,7 +1091,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["CSo7UIColor", "lightGrayColor"]
 - !private ["PSo18UIContentContainer", "CreateTicketSections"]
 - ["PSo18UIContentContainer", "DefaultMilestone"]
 - ["PSo18UIContentContainer", "DefaultTitle"]
@@ -1138,7 +1101,6 @@ depends-member:
 - ["PSo18UIContentContainer", "NSDateFormatter"]
 - !private ["PSo18UIContentContainer", "NSDateFormatterStyle"]
 - !private ["PSo18UIContentContainer", "TicketCreationTableViewController"]
-- !private ["PSo18UIContentContainer", "UIColor"]
 - ["PSo18UIContentContainer", "assigneeTextField"]
 - ["PSo18UIContentContainer", "commentsTextField"]
 - ["PSo18UIContentContainer", "dateFormatter"]
@@ -1181,7 +1143,6 @@ depends-member:
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", ""]
 - !private ["CSo9UIControl", "date"]
-- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "beginUpdates"]
 - !private ["PSo17UICoordinateSpace", "dataSource"]
 - !private ["PSo17UICoordinateSpace", "date"]
@@ -1190,7 +1151,6 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "endUpdates"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["CSo12UIDatePicker", "date"]
-- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "beginUpdates"]
 - !private ["PSo13UIDynamicItem", "dataSource"]
 - !private ["PSo13UIDynamicItem", "date"]
@@ -1208,9 +1168,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "NSDateFormatter"]
 - !private ["PSo18UIFocusEnvironment", "NSDateFormatterStyle"]
 - !private ["PSo18UIFocusEnvironment", "TicketCreationTableViewController"]
-- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - ["PSo18UIFocusEnvironment", "assigneeTextField"]
-- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "beginUpdates"]
 - ["PSo18UIFocusEnvironment", "commentsTextField"]
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
@@ -1270,7 +1228,6 @@ depends-member:
 - ["PSo22UIPickerViewDataSource", "NSDateFormatter"]
 - !private ["PSo22UIPickerViewDataSource", "NSDateFormatterStyle"]
 - !private ["PSo22UIPickerViewDataSource", "TicketCreationTableViewController"]
-- !private ["PSo22UIPickerViewDataSource", "UIColor"]
 - !private ["PSo22UIPickerViewDataSource", "dpShowDate"]
 - !private ["PSo22UIPickerViewDataSource", "dpShowDateVisible"]
 - !private ["PSo22UIPickerViewDataSource", "dpVisibleToggle"]
@@ -1284,7 +1241,6 @@ depends-member:
 - !private ["PSo22UIPickerViewDataSource", "pvShowOptionsVisible"]
 - !private ["PSo22UIPickerViewDataSource", "pvVisibleToggle"]
 - !private ["PSo22UIPickerViewDataSource", "selectedTicket"]
-- !private ["PSo22UIPickerViewDataSource", "tableView"]
 - ["PSo22UIPickerViewDataSource", "textField"]
 - ["PSo22UIPickerViewDataSource", "textFieldDidBeginEditing"]
 - ["PSo22UIPickerViewDataSource", "textFieldDidEndEditing"]
@@ -1309,7 +1265,6 @@ depends-member:
 - ["PSo20UIPickerViewDelegate", "NSDateFormatter"]
 - !private ["PSo20UIPickerViewDelegate", "NSDateFormatterStyle"]
 - !private ["PSo20UIPickerViewDelegate", "TicketCreationTableViewController"]
-- !private ["PSo20UIPickerViewDelegate", "UIColor"]
 - !private ["PSo20UIPickerViewDelegate", "dpShowDate"]
 - !private ["PSo20UIPickerViewDelegate", "dpShowDateVisible"]
 - !private ["PSo20UIPickerViewDelegate", "dpVisibleToggle"]
@@ -1323,7 +1278,6 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "pvShowOptionsVisible"]
 - !private ["PSo20UIPickerViewDelegate", "pvVisibleToggle"]
 - !private ["PSo20UIPickerViewDelegate", "selectedTicket"]
-- !private ["PSo20UIPickerViewDelegate", "tableView"]
 - ["PSo20UIPickerViewDelegate", "textField"]
 - ["PSo20UIPickerViewDelegate", "textFieldDidBeginEditing"]
 - ["PSo20UIPickerViewDelegate", "textFieldDidEndEditing"]
@@ -1359,14 +1313,12 @@ depends-member:
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "Ticket"]
 - !private ["CSo11UIResponder", "TicketCreationTableViewController"]
-- !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIDatePicker"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIPickerView"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITextField"]
 - ["CSo11UIResponder", "assigneeTextField"]
-- !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "beginUpdates"]
 - ["CSo11UIResponder", "commentsTextField"]
 - !private ["CSo11UIResponder", "dataSource"]
@@ -1413,7 +1365,6 @@ depends-member:
 - ["CSo11UIResponder", "titleTextField"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
-- !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "beginUpdates"]
 - !private ["CSo12UIScrollView", "deselectRowAtIndexPath"]
 - !private ["CSo12UIScrollView", "endUpdates"]
@@ -1427,7 +1378,6 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "NSDateFormatter"]
 - !private ["PSo20UIScrollViewDelegate", "NSDateFormatterStyle"]
 - !private ["PSo20UIScrollViewDelegate", "TicketCreationTableViewController"]
-- !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - ["PSo20UIScrollViewDelegate", "assigneeTextField"]
 - ["PSo20UIScrollViewDelegate", "commentsTextField"]
 - ["PSo20UIScrollViewDelegate", "dateFormatter"]
@@ -1479,7 +1429,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "NSDateFormatter"]
 - !private ["PSo16UIStateRestoring", "NSDateFormatterStyle"]
 - !private ["PSo16UIStateRestoring", "TicketCreationTableViewController"]
-- !private ["PSo16UIStateRestoring", "UIColor"]
 - ["PSo16UIStateRestoring", "assigneeTextField"]
 - ["PSo16UIStateRestoring", "commentsTextField"]
 - ["PSo16UIStateRestoring", "dateFormatter"]
@@ -1521,7 +1470,6 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", ""]
-- !private ["CSo11UITableView", "backgroundColor"]
 - !private ["CSo11UITableView", "beginUpdates"]
 - !private ["CSo11UITableView", "deselectRowAtIndexPath"]
 - !private ["CSo11UITableView", "endUpdates"]
@@ -1545,7 +1493,6 @@ depends-member:
 - ["CSo21UITableViewController", "String"]
 - ["CSo21UITableViewController", "Ticket"]
 - !private ["CSo21UITableViewController", "TicketCreationTableViewController"]
-- !private ["CSo21UITableViewController", "UIColor"]
 - ["CSo21UITableViewController", "UIDatePicker"]
 - ["CSo21UITableViewController", "UILabel"]
 - ["CSo21UITableViewController", "UIPickerView"]
@@ -1602,7 +1549,6 @@ depends-member:
 - ["PSo21UITableViewDataSource", "NSDateFormatter"]
 - !private ["PSo21UITableViewDataSource", "NSDateFormatterStyle"]
 - !private ["PSo21UITableViewDataSource", "TicketCreationTableViewController"]
-- !private ["PSo21UITableViewDataSource", "UIColor"]
 - ["PSo21UITableViewDataSource", "assigneeTextField"]
 - ["PSo21UITableViewDataSource", "commentsTextField"]
 - !private ["PSo21UITableViewDataSource", "dataSource"]
@@ -1656,7 +1602,6 @@ depends-member:
 - ["PSo19UITableViewDelegate", "NSDateFormatter"]
 - !private ["PSo19UITableViewDelegate", "NSDateFormatterStyle"]
 - !private ["PSo19UITableViewDelegate", "TicketCreationTableViewController"]
-- !private ["PSo19UITableViewDelegate", "UIColor"]
 - ["PSo19UITableViewDelegate", "assigneeTextField"]
 - ["PSo19UITableViewDelegate", "commentsTextField"]
 - ["PSo19UITableViewDelegate", "dateFormatter"]
@@ -1707,7 +1652,6 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "NSDateFormatter"]
 - !private ["PSo19UITextFieldDelegate", "NSDateFormatterStyle"]
 - !private ["PSo19UITextFieldDelegate", "TicketCreationTableViewController"]
-- !private ["PSo19UITextFieldDelegate", "UIColor"]
 - !private ["PSo19UITextFieldDelegate", "dpShowDate"]
 - !private ["PSo19UITextFieldDelegate", "dpShowDateVisible"]
 - !private ["PSo19UITextFieldDelegate", "dpVisibleToggle"]
@@ -1721,7 +1665,6 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "pvShowOptionsVisible"]
 - !private ["PSo19UITextFieldDelegate", "pvVisibleToggle"]
 - !private ["PSo19UITextFieldDelegate", "selectedTicket"]
-- !private ["PSo19UITextFieldDelegate", "tableView"]
 - ["PSo19UITextFieldDelegate", "textField"]
 - ["PSo19UITextFieldDelegate", "textFieldDidBeginEditing"]
 - ["PSo19UITextFieldDelegate", "textFieldDidEndEditing"]
@@ -1747,9 +1690,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "NSDateFormatter"]
 - !private ["PSo18UITraitEnvironment", "NSDateFormatterStyle"]
 - !private ["PSo18UITraitEnvironment", "TicketCreationTableViewController"]
-- !private ["PSo18UITraitEnvironment", "UIColor"]
 - ["PSo18UITraitEnvironment", "assigneeTextField"]
-- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "beginUpdates"]
 - ["PSo18UITraitEnvironment", "commentsTextField"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
@@ -1797,7 +1738,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "beginUpdates"]
 - !private ["CSo6UIView", "dataSource"]
 - !private ["CSo6UIView", "date"]
@@ -1825,7 +1765,6 @@ depends-member:
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "Ticket"]
 - !private ["CSo16UIViewController", "TicketCreationTableViewController"]
-- !private ["CSo16UIViewController", "UIColor"]
 - ["CSo16UIViewController", "UIDatePicker"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIPickerView"]
@@ -1881,7 +1820,6 @@ depends-member:
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "hashValue"]
-- !private ["Ps24_ColorLiteralConvertible", "lightGrayColor"]
 - ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
@@ -1918,7 +1856,6 @@ depends-member:
 - ["Ps12_Reflectable", "Some"]
 - !private ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
-- !private ["Ps12_Reflectable", "backgroundColor"]
 - !private ["Ps12_Reflectable", "beginUpdates"]
 - !private ["Ps12_Reflectable", "count"]
 - !private ["Ps12_Reflectable", "dataSource"]
@@ -1999,7 +1936,6 @@ depends-nominal:
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- !private "CSo7UIColor"
 - "PSo18UIContentContainer"
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
@@ -2025,7 +1961,6 @@ depends-nominal:
 - "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
-- !private "Ps24_ColorLiteralConvertible"
 - "Ps24_DestructorSafeContainer"
 - !private "Ps14_Incrementable"
 - !private "Ps22_IntegerArithmeticType"
