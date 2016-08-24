@@ -18,6 +18,8 @@ class ColorSelectorTableViewCell: UITableViewCell {
         let pickerView = UIPickerView()
         colorTextField.inputView = pickerView
         
+        colorTextField.text = "Hello World"
+        
 //        datePicker = UIDatePicker(frame: CGRectZero)
 //        datePicker.datePickerMode = .DateAndTime
 //        datePicker.addTarget(self, action: #selector(LentItemDetailViewController.datePickerDidChange(_:)), forControlEvents: .ValueChanged)
