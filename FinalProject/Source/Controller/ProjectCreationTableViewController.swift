@@ -50,17 +50,20 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
             switch DetailRows.AllRows[indexPath.row] {
             case .ProjectTitle:
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationTitleCell") as UITableViewCell!
+                cell.selectionStyle = UITableViewCellSelectionStyle.None
             case .MainColorSelector:
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationMainColorCell") as UITableViewCell!
             }
         case .ColumnRows:
             if indexPath.row < columnCount {
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
+                cell.selectionStyle = UITableViewCellSelectionStyle.None
             } else {
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationAddColumnCell") as UITableViewCell!
             }
         case .NotificationRow:
             cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationNotificationsCell") as UITableViewCell!
+            cell.selectionStyle = UITableViewCellSelectionStyle.None
         }
         return cell
         
@@ -72,12 +75,13 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
                 columnCount += 1
                 tableView.reloadData()
             }
-        }
-        
-        if (Sections.AllSections[indexPath.section] == .DetailRows && DetailRows.AllRows[indexPath.row] == .MainColorSelector) {
+        } else if (Sections.AllSections[indexPath.section] == .DetailRows && DetailRows.AllRows[indexPath.row] == .MainColorSelector) {
             let cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath) as! ColorSelectorTableViewCell
             cell.colorTextField.becomeFirstResponder()
+            
         }
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     // MARK: Section/Row Enums
