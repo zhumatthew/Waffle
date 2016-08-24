@@ -57,5 +57,14 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
 
         // Configure the view for the selected state
     }
-
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return colorPickerData.count
+    }
+    
+    let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
 }
