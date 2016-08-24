@@ -38,5 +38,6 @@ class ColorSelectorTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
 }
