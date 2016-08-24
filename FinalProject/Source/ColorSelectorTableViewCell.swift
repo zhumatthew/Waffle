@@ -11,7 +11,7 @@ import UIKit
 class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var colorTextField: UITextField!
     
-    let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
+    let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple", "Pink", "Beige"]
     var colorSelection: String!
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

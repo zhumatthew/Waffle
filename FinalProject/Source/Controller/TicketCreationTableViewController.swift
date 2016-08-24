@@ -12,9 +12,7 @@ class TicketCreationTableViewController: UITableViewController, UITextFieldDeleg
     // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tableView.backgroundColor = UIColor.lightGrayColor()
-        
+            
         groupingPicker.dataSource = self
         groupingPicker.delegate = self
         

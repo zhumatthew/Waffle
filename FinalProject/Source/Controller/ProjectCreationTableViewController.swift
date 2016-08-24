@@ -52,8 +52,6 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationTitleCell") as UITableViewCell!
             case .MainColorSelector:
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationMainColorCell") as UITableViewCell!
-            case .TextColorSelector:
-                cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationTextColorCell") as UITableViewCell!
             }
         case .ColumnRows:
             if indexPath.row < columnCount {
@@ -79,9 +77,6 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         if (Sections.AllSections[indexPath.section] == .DetailRows && DetailRows.AllRows[indexPath.row] == .MainColorSelector) {
             let cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath) as! ColorSelectorTableViewCell
             cell.colorTextField.becomeFirstResponder()
-//            let cell = tableView(tableView, cellForRowAtIndexPath: indexPath) // as! ColorSelectorTableViewCell
-            
-            
         }
     }
     
@@ -97,9 +92,8 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
     enum DetailRows {
         case ProjectTitle
         case MainColorSelector
-        case TextColorSelector
         
-        static let AllRows: Array<DetailRows> = [.ProjectTitle, .MainColorSelector, .TextColorSelector]
+        static let AllRows: Array<DetailRows> = [.ProjectTitle, .MainColorSelector]
     }
     
     weak var delegate : CreateProjectTableVCDelegate?
