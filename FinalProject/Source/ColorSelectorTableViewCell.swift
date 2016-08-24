@@ -34,8 +34,7 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
         
         colorSelection = colorPickerData.first
         
-        colorTextField.text = colorSelection
-        
+        colorTextField.text = colorSelection        
         
         
 //        datePicker = UIDatePicker(frame: CGRectZero)
