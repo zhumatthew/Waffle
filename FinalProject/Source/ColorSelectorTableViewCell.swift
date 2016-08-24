@@ -21,6 +21,7 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
     }
     
     let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
+    var colorSelection: String!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,6 +31,11 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
 
         colorTextField.inputView = pickerView
         colorTextField.inputAccessoryView = toolbar
+        
+        colorSelection = colorPickerData.first
+        
+        colorTextField.text = colorSelection
+        
         
         
 //        datePicker = UIDatePicker(frame: CGRectZero)

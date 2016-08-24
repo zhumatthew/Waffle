@@ -13,32 +13,32 @@ provides-member:
 - ["OC12FinalProject34ProjectCreationTableViewController8Sections", ""]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
+- "projectCreationTableView"
+- "tableView"
+- "tableView"
+- "tableView"
 - "numberOfSectionsInTableView"
 - "viewDidLoad"
-- "tableView"
-- "tableView"
-- "tableView"
-- "projectCreationTableView"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UITableViewCell"
+- !private "+="
 - "BooleanLiteralType"
+- "ProjectCreationTableViewController"
 - !private "ColorSelectorTableViewCell"
 - "Int"
-- "NSFetchedResultsController"
-- !private "<"
-- "UITableViewController"
-- "NSIndexPath"
 - "UITableView"
-- !private "&&"
-- "ProjectCreationTableViewController"
-- "NSFetchedResultsControllerDelegate"
-- !private "+="
-- "CreateProjectTableVCDelegate"
-- "StringLiteralType"
-- "=="
-- !private "+"
 - "Array"
+- "UITableViewController"
+- !private "&&"
+- "StringLiteralType"
+- "NSFetchedResultsControllerDelegate"
+- "NSFetchedResultsController"
+- "=="
+- "NSIndexPath"
+- "CreateProjectTableVCDelegate"
+- !private "<"
+- !private "+"
+- "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "DefaultColumnName"]
 - ["Ps9AnyObject", "DefaultName"]
@@ -590,6 +590,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "colorTextField"]
 - !private ["PSo10UIKeyInput", "becomeFirstResponder"]
+- !private ["PSo22UIPickerViewDataSource", "colorTextField"]
+- !private ["PSo20UIPickerViewDelegate", "colorTextField"]
 - ["CSo11UIResponder", "Array"]
 - !private ["CSo11UIResponder", "ColorSelectorTableViewCell"]
 - ["CSo11UIResponder", "CreateProjectTableVCDelegate"]
@@ -904,6 +906,8 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "PSo27UIGestureRecognizerDelegate"
 - !private "PSo10UIKeyInput"
+- !private "PSo22UIPickerViewDataSource"
+- !private "PSo20UIPickerViewDelegate"
 - "CSo11UIResponder"
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
