@@ -122,12 +122,14 @@ SWIFT_CLASS("_TtC12FinalProject11AppDelegate")
 SWIFT_CLASS("_TtC12FinalProject26ColorSelectorTableViewCell")
 @interface ColorSelectorTableViewCell : UITableViewCell <UIPickerViewDelegate, UIPickerViewDataSource>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified colorTextField;
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
-- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull colorPickerData;
 @property (nonatomic, copy) NSString * _Null_unspecified colorSelection;
+- (void)pickerDidFinish:(id _Nonnull)sender;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -14,11 +14,17 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
     let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
     var colorSelection: String!
     
+    dynamic func pickerDidFinish(sender: AnyObject) {
+        endEditing(true)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         let pickerView = UIPickerView()
         let toolbar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: 0.0, height: 44.0))
+        
+        toolbar.items = [UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil), UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(ColorSelectorTableViewCell.pickerDidFinish(_:)))]
         
         colorTextField.inputView = pickerView
         colorTextField.inputAccessoryView = toolbar
