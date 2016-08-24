@@ -8,7 +8,27 @@
 
 import UIKit
 
-class TicketCreationTableViewController: UITableViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+extension UITableViewController: UITextFieldDelegate{
+    func addToolBar(textField: UITextField){
+        let toolBar = UIToolbar()
+        toolBar.barStyle = UIBarStyle.Default
+        toolBar.translucent = true
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: #selector(UITableViewController.donePressed))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
+        toolBar.setItems([spaceButton, doneButton], animated: false)
+        toolBar.userInteractionEnabled = true
+        toolBar.sizeToFit()
+        
+        textField.delegate = self
+        textField.inputAccessoryView = toolBar
+    }
+    
+    func donePressed(){
+        view.endEditing(true)
+    }
+}
+
+class TicketCreationTableViewController: UITableViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +38,11 @@ class TicketCreationTableViewController: UITableViewController, UITextFieldDeleg
         
         dpShowDate()
         groupingLabel.text = groupingOptions[0]
+        
+        addToolBar(titleTextField)
+        addToolBar(descriptionTextField)
+        addToolBar(commentsTextField)
+        addToolBar(assigneeTextField)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,12 +66,24 @@ class TicketCreationTableViewController: UITableViewController, UITextFieldDeleg
     
     // MARK: Table View Functions
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if (CreateTicketSections.AllSections[indexPath.section] == .Logistics) {
+        switch CreateTicketSections.AllSections[indexPath.section] {
+        case .Details:
+            switch DetailRows.AllRows[indexPath.row] {
+            case .Title:
+                titleTextField.becomeFirstResponder()
+            case .Description:
+                descriptionTextField.becomeFirstResponder()
+            case .Comments:
+                commentsTextField.becomeFirstResponder()
+            }
+        case .Logistics:
             if (LogisticsRows.AllRows[indexPath.row] == .MilestoneDateLabel) {
                 dpVisibleToggle()
                 dpShowDate()
             } else if (LogisticsRows.AllRows[indexPath.row] == .GroupingLabel) {
                 pvVisibleToggle()
+            } else {
+                assigneeTextField.becomeFirstResponder()
             }
         }
 

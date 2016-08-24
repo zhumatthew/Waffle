@@ -338,8 +338,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField clipsSubviews="YES" contentMode="bottom" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFy-mm-OML">
-                                            <rect key="frame" x="114" y="0.5" width="471" height="49.5"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="iFy-mm-OML">
+                                            <rect key="frame" x="0.0" y="0.5" width="585" height="49.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -347,10 +347,10 @@
                                     <constraints>
                                         <constraint firstItem="dYN-Br-OYq" firstAttribute="centerY" secondItem="bdJ-Ji-s3B" secondAttribute="centerY" id="9yZ-kJ-QY8"/>
                                         <constraint firstItem="iFy-mm-OML" firstAttribute="centerY" secondItem="bdJ-Ji-s3B" secondAttribute="centerY" id="J53-Tb-0zI"/>
+                                        <constraint firstAttribute="trailing" secondItem="iFy-mm-OML" secondAttribute="trailing" constant="15" id="NtD-QB-ScA"/>
                                         <constraint firstItem="iFy-mm-OML" firstAttribute="height" secondItem="bdJ-Ji-s3B" secondAttribute="height" id="aHK-Qg-Rh3"/>
-                                        <constraint firstAttribute="trailing" secondItem="iFy-mm-OML" secondAttribute="trailing" constant="15" id="bRO-3b-vH1"/>
                                         <constraint firstItem="dYN-Br-OYq" firstAttribute="leading" secondItem="bdJ-Ji-s3B" secondAttribute="leading" constant="15" id="bU6-Hw-YcT"/>
-                                        <constraint firstItem="iFy-mm-OML" firstAttribute="leading" secondItem="dYN-Br-OYq" secondAttribute="trailing" id="nw8-gQ-wVx"/>
+                                        <constraint firstItem="iFy-mm-OML" firstAttribute="leading" secondItem="bdJ-Ji-s3B" secondAttribute="leading" id="xEO-C4-QXK"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

@@ -22,6 +22,10 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         self.title = "Add Project"
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -34,11 +38,11 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch Sections.AllSections[section] {
-        case .DetailRows:
-            return DetailRows.AllRows.count
-        case .ColumnRows:
+        case .DetailSection:
+            return DetailSection.AllRows.count
+        case .ColumnSection:
             return columnCount < 6 ? columnCount + 1 : columnCount
-        case .NotificationRow:
+        case .NotificationSection:
             return 1
         }
     }
@@ -46,22 +50,22 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell
         switch Sections.AllSections[indexPath.section] {
-        case .DetailRows:
-            switch DetailRows.AllRows[indexPath.row] {
-            case .ProjectTitle:
+        case .DetailSection:
+            switch DetailSection.AllRows[indexPath.row] {
+            case .ProjectTitleRow:
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationTitleCell") as UITableViewCell!
                 cell.selectionStyle = UITableViewCellSelectionStyle.None
-            case .MainColorSelector:
+            case .ColorSelectorRow:
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationMainColorCell") as UITableViewCell!
             }
-        case .ColumnRows:
+        case .ColumnSection:
             if indexPath.row < columnCount {
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
                 cell.selectionStyle = UITableViewCellSelectionStyle.None
             } else {
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationAddColumnCell") as UITableViewCell!
             }
-        case .NotificationRow:
+        case .NotificationSection:
             cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationNotificationsCell") as UITableViewCell!
             cell.selectionStyle = UITableViewCellSelectionStyle.None
         }
@@ -70,15 +74,21 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if (Sections.AllSections[indexPath.section] == .ColumnRows && indexPath.row == columnCount) {
+        if (Sections.AllSections[indexPath.section] == .DetailSection) {
+            if (DetailSection.AllRows[indexPath.row] == .ProjectTitleRow) {
+                
+            }
+        }
+        
+        
+        if (Sections.AllSections[indexPath.section] == .ColumnSection && indexPath.row == columnCount) {
             if columnCount < 6 {
                 columnCount += 1
                 tableView.reloadData()
             }
-        } else if (Sections.AllSections[indexPath.section] == .DetailRows && DetailRows.AllRows[indexPath.row] == .MainColorSelector) {
+        } else if (Sections.AllSections[indexPath.section] == .DetailSection && DetailSection.AllRows[indexPath.row] == .ColorSelectorRow) {
             let cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath) as! ColorSelectorTableViewCell
             cell.colorTextField.becomeFirstResponder()
-            
         }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
@@ -86,22 +96,22 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
     
     // MARK: Section/Row Enums
     enum Sections {
-        case DetailRows
-        case ColumnRows
-        case NotificationRow
+        case DetailSection
+        case ColumnSection
+        case NotificationSection
         
-        static let AllSections: Array<Sections> = [.DetailRows, .ColumnRows, .NotificationRow]
+        static let AllSections: Array<Sections> = [.DetailSection, .ColumnSection, .NotificationSection]
     }
     
-    enum DetailRows {
-        case ProjectTitle
-        case MainColorSelector
+    enum DetailSection {
+        case ProjectTitleRow
+        case ColorSelectorRow
         
-        static let AllRows: Array<DetailRows> = [.ProjectTitle, .MainColorSelector]
+        static let AllRows: Array<DetailSection> = [.ProjectTitleRow, .ColorSelectorRow]
     }
     
     weak var delegate : CreateProjectTableVCDelegate?
-    //var ColumnRows: Int = TraskService.fetchedResultsControllerForColumnsInProject(project).count
+    //var ColumnSection: Int = TraskService.fetchedResultsControllerForColumnsInProject(project).count
     
     // MARK: Properties (Private)
     private var fetchedResultsController: NSFetchedResultsController?
