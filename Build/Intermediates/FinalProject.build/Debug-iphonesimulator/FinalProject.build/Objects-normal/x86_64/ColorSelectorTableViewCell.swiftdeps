@@ -6,40 +6,43 @@ provides-nominal:
 provides-member:
 - ["C12FinalProject26ColorSelectorTableViewCell", ""]
 provides-dynamic-lookup:
+- "colorPickerData"
 - "numberOfComponentsInPickerView"
 - "colorTextField"
-- "colorPickerData"
-- "pickerView"
-- "pickerView"
-- "pickerView"
+- "awakeFromNib"
 - "setSelected"
 - "pickerDidFinish"
+- "pickerView"
+- "pickerView"
+- "pickerView"
 - "colorSelection"
-- "awakeFromNib"
 depends-top-level:
 - !private "BooleanLiteralType"
-- !private "UIToolbar"
-- "UIPickerViewDelegate"
-- "String"
-- !private "UIBarButtonItem"
-- "Array"
 - "UIPickerViewDataSource"
-- "UITextField"
+- !private "UIToolbar"
+- !private "UIColor"
 - "UITableViewCell"
-- "UIPickerView"
-- "StringLiteralType"
-- !private "CGRect"
-- "Int"
-- "ColorSelectorTableViewCell"
 - "Bool"
+- "UIPickerViewDelegate"
+- "UIPickerView"
+- "Int"
+- !private "CGRect"
+- "Array"
+- "String"
+- "UITextField"
+- !private "UIBarButtonItem"
 - "AnyObject"
+- "StringLiteralType"
+- "ColorSelectorTableViewCell"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "ColorSelectorTableViewCell"]
 - !private ["Ps9AnyObject", "UIBarButtonItem"]
+- !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIPickerView"]
 - !private ["Ps9AnyObject", "UIToolbar"]
 - ["Ps9AnyObject", "awakeFromNib"]
+- !private ["Ps9AnyObject", "clearColor"]
 - ["Ps9AnyObject", "colorPickerData"]
 - ["Ps9AnyObject", "colorSelection"]
 - ["Ps9AnyObject", "colorTextField"]
@@ -55,6 +58,7 @@ depends-member:
 - ["Ps9AnyObject", "pickerView"]
 - ["Ps9AnyObject", "setSelected"]
 - !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "tintColor"]
 - ["Ps9AnyObject", ""]
 - ["Sa", "Element"]
 - !private ["Sa", "Generator"]
@@ -85,9 +89,11 @@ depends-member:
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - !private ["Ps11CVarArgType", "UIBarButtonItem"]
+- !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIPickerView"]
 - !private ["Ps11CVarArgType", "UIToolbar"]
 - ["Ps11CVarArgType", "awakeFromNib"]
+- !private ["Ps11CVarArgType", "clearColor"]
 - ["Ps11CVarArgType", "colorPickerData"]
 - ["Ps11CVarArgType", "colorSelection"]
 - ["Ps11CVarArgType", "colorTextField"]
@@ -103,6 +109,7 @@ depends-member:
 - ["Ps11CVarArgType", "pickerView"]
 - ["Ps11CVarArgType", "setSelected"]
 - !private ["Ps11CVarArgType", "text"]
+- !private ["Ps11CVarArgType", "tintColor"]
 - ["Ps11CVarArgType", ""]
 - ["Ps14CollectionType", "Element"]
 - !private ["Ps14CollectionType", "Generator"]
@@ -119,6 +126,7 @@ depends-member:
 - ["C12FinalProject26ColorSelectorTableViewCell", "Int"]
 - ["C12FinalProject26ColorSelectorTableViewCell", "String"]
 - !private ["C12FinalProject26ColorSelectorTableViewCell", "UIBarButtonItem"]
+- !private ["C12FinalProject26ColorSelectorTableViewCell", "UIColor"]
 - ["C12FinalProject26ColorSelectorTableViewCell", "UIPickerView"]
 - ["C12FinalProject26ColorSelectorTableViewCell", "UITextField"]
 - !private ["C12FinalProject26ColorSelectorTableViewCell", "UIToolbar"]
@@ -142,10 +150,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIBarButtonItem"]
+- !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIPickerView"]
 - !private ["Ps28CustomDebugStringConvertible", "UIToolbar"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - ["Ps28CustomDebugStringConvertible", "awakeFromNib"]
+- !private ["Ps28CustomDebugStringConvertible", "clearColor"]
 - ["Ps28CustomDebugStringConvertible", "colorPickerData"]
 - ["Ps28CustomDebugStringConvertible", "colorSelection"]
 - ["Ps28CustomDebugStringConvertible", "colorTextField"]
@@ -164,6 +174,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "setSelected"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "tintColor"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps23CustomStringConvertible", "CGRect"]
 - !private ["Ps23CustomStringConvertible", "ColorSelectorTableViewCell"]
@@ -174,10 +185,12 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIBarButtonItem"]
+- !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIPickerView"]
 - !private ["Ps23CustomStringConvertible", "UIToolbar"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - ["Ps23CustomStringConvertible", "awakeFromNib"]
+- !private ["Ps23CustomStringConvertible", "clearColor"]
 - ["Ps23CustomStringConvertible", "colorPickerData"]
 - ["Ps23CustomStringConvertible", "colorSelection"]
 - ["Ps23CustomStringConvertible", "colorTextField"]
@@ -196,6 +209,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "setSelected"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "tintColor"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "CGRect"]
 - !private ["Ps9Equatable", "ColorSelectorTableViewCell"]
@@ -204,9 +218,11 @@ depends-member:
 - !private ["Ps9Equatable", "FlexibleSpace"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "UIBarButtonItem"]
+- !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIPickerView"]
 - !private ["Ps9Equatable", "UIToolbar"]
 - ["Ps9Equatable", "awakeFromNib"]
+- !private ["Ps9Equatable", "clearColor"]
 - ["Ps9Equatable", "colorPickerData"]
 - ["Ps9Equatable", "colorSelection"]
 - ["Ps9Equatable", "colorTextField"]
@@ -222,6 +238,7 @@ depends-member:
 - ["Ps9Equatable", "pickerView"]
 - ["Ps9Equatable", "setSelected"]
 - !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "tintColor"]
 - ["Ps9Equatable", ""]
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
@@ -233,9 +250,11 @@ depends-member:
 - !private ["Ps8Hashable", "FlexibleSpace"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "UIBarButtonItem"]
+- !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIPickerView"]
 - !private ["Ps8Hashable", "UIToolbar"]
 - ["Ps8Hashable", "awakeFromNib"]
+- !private ["Ps8Hashable", "clearColor"]
 - ["Ps8Hashable", "colorPickerData"]
 - ["Ps8Hashable", "colorSelection"]
 - ["Ps8Hashable", "colorTextField"]
@@ -251,6 +270,7 @@ depends-member:
 - ["Ps8Hashable", "pickerView"]
 - ["Ps8Hashable", "setSelected"]
 - !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "tintColor"]
 - ["Ps8Hashable", ""]
 - ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Generator"]
@@ -299,9 +319,11 @@ depends-member:
 - !private ["PSo8NSCoding", "CGRect"]
 - !private ["PSo8NSCoding", "ColorSelectorTableViewCell"]
 - !private ["PSo8NSCoding", "UIBarButtonItem"]
+- !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIPickerView"]
 - !private ["PSo8NSCoding", "UIToolbar"]
 - ["PSo8NSCoding", "awakeFromNib"]
+- !private ["PSo8NSCoding", "clearColor"]
 - ["PSo8NSCoding", "colorPickerData"]
 - ["PSo8NSCoding", "colorSelection"]
 - ["PSo8NSCoding", "colorTextField"]
@@ -317,7 +339,9 @@ depends-member:
 - ["PSo8NSCoding", "pickerView"]
 - ["PSo8NSCoding", "setSelected"]
 - !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "tintColor"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "clearColor"]
 - ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGRect"]
@@ -325,10 +349,12 @@ depends-member:
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIBarButtonItem"]
+- !private ["CSo8NSObject", "UIColor"]
 - ["CSo8NSObject", "UIPickerView"]
 - ["CSo8NSObject", "UITextField"]
 - !private ["CSo8NSObject", "UIToolbar"]
 - ["CSo8NSObject", "awakeFromNib"]
+- !private ["CSo8NSObject", "clearColor"]
 - ["CSo8NSObject", "colorPickerData"]
 - ["CSo8NSObject", "colorSelection"]
 - ["CSo8NSObject", "colorTextField"]
@@ -344,12 +370,15 @@ depends-member:
 - ["CSo8NSObject", "pickerView"]
 - ["CSo8NSObject", "setSelected"]
 - !private ["CSo8NSObject", "text"]
+- !private ["CSo8NSObject", "tintColor"]
 - !private ["PSo16NSObjectProtocol", "CGRect"]
 - !private ["PSo16NSObjectProtocol", "ColorSelectorTableViewCell"]
 - !private ["PSo16NSObjectProtocol", "UIBarButtonItem"]
+- !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIPickerView"]
 - !private ["PSo16NSObjectProtocol", "UIToolbar"]
 - ["PSo16NSObjectProtocol", "awakeFromNib"]
+- !private ["PSo16NSObjectProtocol", "clearColor"]
 - ["PSo16NSObjectProtocol", "colorPickerData"]
 - ["PSo16NSObjectProtocol", "colorSelection"]
 - ["PSo16NSObjectProtocol", "colorTextField"]
@@ -365,7 +394,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "pickerView"]
 - ["PSo16NSObjectProtocol", "setSelected"]
 - !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "tintColor"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "clearColor"]
 - !private ["Sq", "deinit"]
 - !private ["Ps21RandomAccessIndexType", "Distance"]
 - !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
@@ -400,6 +431,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "CGRect"]
 - !private ["PSo29UIAccessibilityIdentification", "ColorSelectorTableViewCell"]
 - !private ["PSo29UIAccessibilityIdentification", "UIBarButtonItem"]
+- !private ["PSo29UIAccessibilityIdentification", "UIColor"]
 - !private ["PSo29UIAccessibilityIdentification", "UIPickerView"]
 - !private ["PSo29UIAccessibilityIdentification", "UIToolbar"]
 - ["PSo29UIAccessibilityIdentification", "awakeFromNib"]
@@ -418,10 +450,12 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "pickerView"]
 - ["PSo29UIAccessibilityIdentification", "setSelected"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo29UIAccessibilityIdentification", "tintColor"]
 - ["PSo29UIAccessibilityIdentification", ""]
 - !private ["PSo12UIAppearance", "CGRect"]
 - !private ["PSo12UIAppearance", "ColorSelectorTableViewCell"]
 - !private ["PSo12UIAppearance", "UIBarButtonItem"]
+- !private ["PSo12UIAppearance", "UIColor"]
 - !private ["PSo12UIAppearance", "UIPickerView"]
 - !private ["PSo12UIAppearance", "UIToolbar"]
 - ["PSo12UIAppearance", "awakeFromNib"]
@@ -440,10 +474,12 @@ depends-member:
 - ["PSo12UIAppearance", "pickerView"]
 - ["PSo12UIAppearance", "setSelected"]
 - !private ["PSo12UIAppearance", "text"]
+- !private ["PSo12UIAppearance", "tintColor"]
 - ["PSo12UIAppearance", ""]
 - !private ["PSo21UIAppearanceContainer", "CGRect"]
 - !private ["PSo21UIAppearanceContainer", "ColorSelectorTableViewCell"]
 - !private ["PSo21UIAppearanceContainer", "UIBarButtonItem"]
+- !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIPickerView"]
 - !private ["PSo21UIAppearanceContainer", "UIToolbar"]
 - ["PSo21UIAppearanceContainer", "awakeFromNib"]
@@ -462,6 +498,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "pickerView"]
 - ["PSo21UIAppearanceContainer", "setSelected"]
 - !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "tintColor"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo15UIBarButtonItem", "init"]
 - !private ["OSC21UIBarButtonSystemItem", "Done"]
@@ -469,12 +506,15 @@ depends-member:
 - !private ["CSo9UIBarItem", "init"]
 - !private ["PSo16UIBarPositioning", "init"]
 - !private ["PSo16UIBarPositioning", "items"]
+- !private ["CSo7UIColor", "clearColor"]
 - !private ["CSo9UIControl", "inputAccessoryView"]
 - !private ["CSo9UIControl", "inputView"]
 - !private ["CSo9UIControl", "text"]
+- !private ["CSo9UIControl", "tintColor"]
 - !private ["PSo17UICoordinateSpace", "CGRect"]
 - !private ["PSo17UICoordinateSpace", "ColorSelectorTableViewCell"]
 - !private ["PSo17UICoordinateSpace", "UIBarButtonItem"]
+- !private ["PSo17UICoordinateSpace", "UIColor"]
 - !private ["PSo17UICoordinateSpace", "UIPickerView"]
 - !private ["PSo17UICoordinateSpace", "UIToolbar"]
 - ["PSo17UICoordinateSpace", "awakeFromNib"]
@@ -493,10 +533,12 @@ depends-member:
 - ["PSo17UICoordinateSpace", "pickerView"]
 - ["PSo17UICoordinateSpace", "setSelected"]
 - !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo17UICoordinateSpace", "tintColor"]
 - ["PSo17UICoordinateSpace", ""]
 - !private ["PSo13UIDynamicItem", "CGRect"]
 - !private ["PSo13UIDynamicItem", "ColorSelectorTableViewCell"]
 - !private ["PSo13UIDynamicItem", "UIBarButtonItem"]
+- !private ["PSo13UIDynamicItem", "UIColor"]
 - !private ["PSo13UIDynamicItem", "UIPickerView"]
 - !private ["PSo13UIDynamicItem", "UIToolbar"]
 - ["PSo13UIDynamicItem", "awakeFromNib"]
@@ -515,10 +557,12 @@ depends-member:
 - ["PSo13UIDynamicItem", "pickerView"]
 - ["PSo13UIDynamicItem", "setSelected"]
 - !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo13UIDynamicItem", "tintColor"]
 - ["PSo13UIDynamicItem", ""]
 - !private ["PSo18UIFocusEnvironment", "CGRect"]
 - !private ["PSo18UIFocusEnvironment", "ColorSelectorTableViewCell"]
 - !private ["PSo18UIFocusEnvironment", "UIBarButtonItem"]
+- !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIPickerView"]
 - !private ["PSo18UIFocusEnvironment", "UIToolbar"]
 - ["PSo18UIFocusEnvironment", "awakeFromNib"]
@@ -537,10 +581,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "pickerView"]
 - ["PSo18UIFocusEnvironment", "setSelected"]
 - !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "tintColor"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo27UIGestureRecognizerDelegate", "CGRect"]
 - !private ["PSo27UIGestureRecognizerDelegate", "ColorSelectorTableViewCell"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIBarButtonItem"]
+- !private ["PSo27UIGestureRecognizerDelegate", "UIColor"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIPickerView"]
 - !private ["PSo27UIGestureRecognizerDelegate", "UIToolbar"]
 - ["PSo27UIGestureRecognizerDelegate", "awakeFromNib"]
@@ -557,12 +603,14 @@ depends-member:
 - !private ["PSo10UIKeyInput", "inputAccessoryView"]
 - !private ["PSo10UIKeyInput", "inputView"]
 - !private ["PSo10UIKeyInput", "text"]
+- !private ["PSo10UIKeyInput", "tintColor"]
 - !private ["CSo12UIPickerView", "dataSource"]
 - !private ["CSo12UIPickerView", "delegate"]
 - !private ["CSo12UIPickerView", "init"]
 - !private ["PSo22UIPickerViewDataSource", "CGRect"]
 - !private ["PSo22UIPickerViewDataSource", "ColorSelectorTableViewCell"]
 - !private ["PSo22UIPickerViewDataSource", "UIBarButtonItem"]
+- !private ["PSo22UIPickerViewDataSource", "UIColor"]
 - !private ["PSo22UIPickerViewDataSource", "UIPickerView"]
 - !private ["PSo22UIPickerViewDataSource", "UIToolbar"]
 - !private ["PSo22UIPickerViewDataSource", "colorPickerData"]
@@ -576,6 +624,7 @@ depends-member:
 - !private ["PSo20UIPickerViewDelegate", "CGRect"]
 - !private ["PSo20UIPickerViewDelegate", "ColorSelectorTableViewCell"]
 - !private ["PSo20UIPickerViewDelegate", "UIBarButtonItem"]
+- !private ["PSo20UIPickerViewDelegate", "UIColor"]
 - !private ["PSo20UIPickerViewDelegate", "UIPickerView"]
 - !private ["PSo20UIPickerViewDelegate", "UIToolbar"]
 - !private ["PSo20UIPickerViewDelegate", "colorPickerData"]
@@ -593,6 +642,7 @@ depends-member:
 - ["CSo11UIResponder", "Int"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIBarButtonItem"]
+- !private ["CSo11UIResponder", "UIColor"]
 - ["CSo11UIResponder", "UIPickerView"]
 - ["CSo11UIResponder", "UITextField"]
 - !private ["CSo11UIResponder", "UIToolbar"]
@@ -612,6 +662,7 @@ depends-member:
 - ["CSo11UIResponder", "pickerView"]
 - ["CSo11UIResponder", "setSelected"]
 - !private ["CSo11UIResponder", "text"]
+- !private ["CSo11UIResponder", "tintColor"]
 - ["CSo15UITableViewCell", "AnyObject"]
 - ["CSo15UITableViewCell", "Bool"]
 - !private ["CSo15UITableViewCell", "CGRect"]
@@ -619,6 +670,7 @@ depends-member:
 - ["CSo15UITableViewCell", "Int"]
 - ["CSo15UITableViewCell", "String"]
 - !private ["CSo15UITableViewCell", "UIBarButtonItem"]
+- !private ["CSo15UITableViewCell", "UIColor"]
 - ["CSo15UITableViewCell", "UIPickerView"]
 - ["CSo15UITableViewCell", "UITextField"]
 - !private ["CSo15UITableViewCell", "UIToolbar"]
@@ -639,17 +691,21 @@ depends-member:
 - !private ["CSo11UITextField", "inputAccessoryView"]
 - !private ["CSo11UITextField", "inputView"]
 - !private ["CSo11UITextField", "text"]
+- !private ["CSo11UITextField", "tintColor"]
 - !private ["PSo11UITextInput", "inputAccessoryView"]
 - !private ["PSo11UITextInput", "inputView"]
 - !private ["PSo11UITextInput", "text"]
+- !private ["PSo11UITextInput", "tintColor"]
 - !private ["PSo17UITextInputTraits", "inputAccessoryView"]
 - !private ["PSo17UITextInputTraits", "inputView"]
 - !private ["PSo17UITextInputTraits", "text"]
+- !private ["PSo17UITextInputTraits", "tintColor"]
 - !private ["CSo9UIToolbar", "init"]
 - !private ["CSo9UIToolbar", "items"]
 - !private ["PSo18UITraitEnvironment", "CGRect"]
 - !private ["PSo18UITraitEnvironment", "ColorSelectorTableViewCell"]
 - !private ["PSo18UITraitEnvironment", "UIBarButtonItem"]
+- !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIPickerView"]
 - !private ["PSo18UITraitEnvironment", "UIToolbar"]
 - ["PSo18UITraitEnvironment", "awakeFromNib"]
@@ -668,6 +724,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "pickerView"]
 - ["PSo18UITraitEnvironment", "setSelected"]
 - !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "tintColor"]
 - ["PSo18UITraitEnvironment", ""]
 - ["CSo6UIView", "AnyObject"]
 - ["CSo6UIView", "Bool"]
@@ -676,6 +733,7 @@ depends-member:
 - ["CSo6UIView", "Int"]
 - ["CSo6UIView", "String"]
 - !private ["CSo6UIView", "UIBarButtonItem"]
+- !private ["CSo6UIView", "UIColor"]
 - ["CSo6UIView", "UIPickerView"]
 - ["CSo6UIView", "UITextField"]
 - !private ["CSo6UIView", "UIToolbar"]
@@ -695,6 +753,7 @@ depends-member:
 - ["CSo6UIView", "pickerView"]
 - ["CSo6UIView", "setSelected"]
 - !private ["CSo6UIView", "text"]
+- !private ["CSo6UIView", "tintColor"]
 - ["Ps10_ArrayType", "Element"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
@@ -705,6 +764,7 @@ depends-member:
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
 - !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps24_ColorLiteralConvertible", "clearColor"]
 - ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Generator"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
@@ -740,6 +800,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - !private ["Ps12_Reflectable", "SubSequence"]
 - !private ["Ps12_Reflectable", "UIBarButtonItem"]
+- !private ["Ps12_Reflectable", "UIColor"]
 - !private ["Ps12_Reflectable", "UIPickerView"]
 - !private ["Ps12_Reflectable", "UIToolbar"]
 - !private ["Ps12_Reflectable", "_Element"]
@@ -762,6 +823,7 @@ depends-member:
 - ["Ps12_Reflectable", "setSelected"]
 - !private ["Ps12_Reflectable", "subscript"]
 - !private ["Ps12_Reflectable", "text"]
+- !private ["Ps12_Reflectable", "tintColor"]
 - ["Ps12_Reflectable", ""]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
@@ -794,8 +856,10 @@ depends-nominal:
 - "Ps16MutableIndexable"
 - "Ps16MutableSliceable"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
 - !private "Sq"
 - !private "Ps21RandomAccessIndexType"
 - "Ps30RangeReplaceableCollectionType"
@@ -812,6 +876,7 @@ depends-nominal:
 - !private "OSC21UIBarButtonSystemItem"
 - !private "CSo9UIBarItem"
 - !private "PSo16UIBarPositioning"
+- !private "CSo7UIColor"
 - !private "CSo9UIControl"
 - "PSo17UICoordinateSpace"
 - "PSo13UIDynamicItem"
@@ -832,6 +897,7 @@ depends-nominal:
 - "CSo6UIView"
 - "Ps10_ArrayType"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_ColorLiteralConvertible"
 - "Ps24_DestructorSafeContainer"
 - !private "Ps14_Incrementable"
 - !private "Ps22_IntegerArithmeticType"
@@ -855,4 +921,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "690bdcfde24003f8302e1edd2de99293"
+interface-hash: "8fab5622a90fd12a62de69497ad3bd2e"

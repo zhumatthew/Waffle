@@ -45,6 +45,8 @@
 		97B552DF1D4F4EC500621F98 /* ProjectDirectoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B552DE1D4F4EC500621F98 /* ProjectDirectoryTableViewController.swift */; };
 		97F22DEE1D6937F0001253B2 /* TicketCreationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F22DED1D6937F0001253B2 /* TicketCreationTableViewController.swift */; };
 		B3B131E21D6A6060008EEF03 /* ColorSelectorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B131E11D6A6060008EEF03 /* ColorSelectorTableViewCell.swift */; };
+		B3B131E41D6D83D6008EEF03 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B131E31D6D83D6008EEF03 /* TitleTableViewCell.swift */; };
+		B3B131E61D6D83F1008EEF03 /* ColumnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B131E51D6D83F1008EEF03 /* ColumnTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,6 +142,8 @@
 		97B552DE1D4F4EC500621F98 /* ProjectDirectoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectDirectoryTableViewController.swift; sourceTree = "<group>"; };
 		97F22DED1D6937F0001253B2 /* TicketCreationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TicketCreationTableViewController.swift; path = FinalProject/Source/Controller/TicketCreationTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		B3B131E11D6A6060008EEF03 /* ColorSelectorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectorTableViewCell.swift; sourceTree = "<group>"; };
+		B3B131E31D6D83D6008EEF03 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleTableViewCell.swift; path = View/TitleTableViewCell.swift; sourceTree = "<group>"; };
+		B3B131E51D6D83F1008EEF03 /* ColumnTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColumnTableViewCell.swift; path = View/ColumnTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +373,8 @@
 			isa = PBXGroup;
 			children = (
 				B3B131E11D6A6060008EEF03 /* ColorSelectorTableViewCell.swift */,
+				B3B131E31D6D83D6008EEF03 /* TitleTableViewCell.swift */,
+				B3B131E51D6D83F1008EEF03 /* ColumnTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -592,6 +598,8 @@
 				978B7B3A1D66DDAB00172F1B /* Ticket+CoreDataProperties.swift in Sources */,
 				97B552D71D4F4E1100621F98 /* MenuViewController.swift in Sources */,
 				978B7B381D66DDAB00172F1B /* Project+CoreDataProperties.swift in Sources */,
+				B3B131E61D6D83F1008EEF03 /* ColumnTableViewCell.swift in Sources */,
+				B3B131E41D6D83D6008EEF03 /* TitleTableViewCell.swift in Sources */,
 				978B7AD41D62F85500172F1B /* TicketColumnViewController.swift in Sources */,
 				97B552DF1D4F4EC500621F98 /* ProjectDirectoryTableViewController.swift in Sources */,
 				978B7AE81D661DFD00172F1B /* NSFetchRequest_Service.swift in Sources */,

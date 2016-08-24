@@ -6,9 +6,9 @@ provides-member:
 - ["CSo14NSFetchRequest", "init"]
 provides-dynamic-lookup:
 depends-top-level:
+- "NSFetchRequest"
 - "NSManagedObject"
 - "NamedEntity"
-- "NSFetchRequest"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps11CVarArgType", "init"]

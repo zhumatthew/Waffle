@@ -161,6 +161,16 @@ SWIFT_CLASS("_TtC12FinalProject6Column")
 @property (nonatomic, strong) Project * _Nonnull parentProject;
 @end
 
+
+SWIFT_CLASS("_TtC12FinalProject19ColumnTableViewCell")
+@interface ColumnTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified columnTextField;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class ProjectDirectoryTableViewController;
 @class TicketsPageViewContainerController;
 @class ProjectSettingsTableViewController;
@@ -223,9 +233,12 @@ SWIFT_CLASS("_TtC12FinalProject27NotificationsViewController")
 
 @class UITableView;
 @class NSIndexPath;
+@class UINavigationItem;
 
 SWIFT_CLASS("_TtC12FinalProject34ProjectCreationTableViewController")
 @interface ProjectCreationTableViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navItem;
+- (void)addProject;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
@@ -348,6 +361,16 @@ SWIFT_CLASS("_TtC12FinalProject34TicketsPageViewContainerController")
 - (void)didReceiveMemoryWarning;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC12FinalProject18TitleTableViewCell")
+@interface TitleTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleTextField;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
