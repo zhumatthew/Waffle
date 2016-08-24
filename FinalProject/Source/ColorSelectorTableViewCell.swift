@@ -13,6 +13,11 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
     
     let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
     var colorSelection: String!
+
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        colorSelection = colorPickerData[row]
+        colorTextField.text = colorSelection
+    }
     
     dynamic func pickerDidFinish(sender: AnyObject) {
         endEditing(true)

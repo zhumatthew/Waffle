@@ -124,6 +124,7 @@ SWIFT_CLASS("_TtC12FinalProject26ColorSelectorTableViewCell")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified colorTextField;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull colorPickerData;
 @property (nonatomic, copy) NSString * _Null_unspecified colorSelection;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (void)pickerDidFinish:(id _Nonnull)sender;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
