@@ -16,9 +16,11 @@ class ColorSelectorTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         let pickerView = UIPickerView()
+        let toolbar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: 0.0, height: 44.0))
+
         colorTextField.inputView = pickerView
+        colorTextField.inputAccessoryView = toolbar
         
-        colorTextField.text = "Hello World"
         
 //        datePicker = UIDatePicker(frame: CGRectZero)
 //        datePicker.datePickerMode = .DateAndTime
