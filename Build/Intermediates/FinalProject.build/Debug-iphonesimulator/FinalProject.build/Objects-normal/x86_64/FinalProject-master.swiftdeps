@@ -1,6 +1,6 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
 options: "fb489460d5761f545861072c5b0e944a"
-build_time: [525340267, 958607000]
+build_time: [525341032, 648201000]
 inputs:
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Service/TraskService.swift": [525331894, 0]
   "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/Protocol/NamedEntity.swift": [524902619, 0]
@@ -11,7 +11,7 @@ inputs:
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/TicketCreationTableViewController.swift": [525335417, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/ProjectDirectoryTableViewCell.swift": [525117609, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Model/Ticket.swift": [525117614, 0]
-  "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/ColorSelectorTableViewCell.swift": [525335417, 0]
+  "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/ColorSelectorTableViewCell.swift": [525340340, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/TicketsPageViewController.swift": [525132640, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Model/Columns+CoreDataProperties.swift": [525117614, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Model/Ticket+CoreDataProperties.swift": [525117616, 0]
@@ -22,7 +22,7 @@ inputs:
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/TicketColumnViewController.swift": [525117604, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/ProjectDirectoryTableViewController.swift": [525117611, 0]
   "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/Extension/NSFetchRequest_Service.swift": [522346133, 0]
-  "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/ProjectCreationTableViewController.swift": [525340247, 0]
+  "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/ProjectCreationTableViewController.swift": [525341030, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Model/Project.swift": [525117616, 0]
   "/Users/zhumatthew/Desktop/finalProject/FinalProject/Source/Controller/ProjectSettingsTableViewController.swift": [525117601, 0]
   "/Users/zhumatthew/Desktop/finalProject/CoreDataService/Source/CoreDataService.swift": [522346133, 0]

@@ -24,6 +24,8 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         let color = (tableView.cellForRowAtIndexPath(NSIndexPath(forRow: 1, inSection: 0)) as! ColorSelectorTableViewCell).colorTextField.text
         var columns = Array<String>()
         for row in 0...tableView(tableView, numberOfRowsInSection: 1) {
+            let cell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: row, inSection: 1))
+            print( "String(cell.dynamicType) -> \(cell.dynamicType)")
             columns.append((tableView.cellForRowAtIndexPath(NSIndexPath(forRow: row, inSection: 1)) as! ColumnTableViewCell).columnTextField.text!)
         }
 //        TraskService.addProject(name: , mainColor: NSObject, textColor: NSObject, possibleColumnsArray: [String], notificationsStatus: Bool, orderIndex: Int)
@@ -92,8 +94,14 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
             }
         case .ColumnSection:
             if indexPath.row < columnCount {
+                print("section is \(indexPath.section)")
+                print("row is \(indexPath.row)")
+
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationColumnCell") as UITableViewCell!
                 cell.selectionStyle = UITableViewCellSelectionStyle.None
+                if cell is ColumnTableViewCell {
+                    print("cast is fine")
+                }
             } else {
                 cell = tableView.dequeueReusableCellWithIdentifier("ProjectCreationAddColumnCell") as UITableViewCell!
             }
