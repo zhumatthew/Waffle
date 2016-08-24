@@ -94,6 +94,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import CoreData;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -293,23 +294,34 @@ SWIFT_CLASS("_TtC12FinalProject26TicketColumnViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIPickerView;
+@class UIDatePicker;
 @class UILabel;
 
 SWIFT_CLASS("_TtC12FinalProject33TicketCreationTableViewController")
-@interface TicketCreationTableViewController : UITableViewController <UITextFieldDelegate>
+@interface TicketCreationTableViewController : UITableViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate>
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView * _Nonnull)pickerView;
+- (NSInteger)pickerView:(UIPickerView * _Nonnull)pickerView numberOfRowsInComponent:(NSInteger)component;
+- (NSString * _Nullable)pickerView:(UIPickerView * _Nonnull)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component;
+- (void)pickerView:(UIPickerView * _Nonnull)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 - (null_unspecified instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @property (nonatomic, strong) Column * _Null_unspecified selectedColumn;
 @property (nonatomic, strong) Ticket * _Nullable selectedTicket;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified titleTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified descriptionTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified commentsTextField;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified milestoneLabel;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified milestoneTextField;
-@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified groupingDetailLabel;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified assigneeTextField;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified milestoneLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified groupingLabel;
+@property (nonatomic, strong) IBOutlet UIDatePicker * _Null_unspecified milestoneDatePicker;
+@property (nonatomic, strong) IBOutlet UIPickerView * _Null_unspecified groupingPicker;
+- (IBAction)milestoneDataPickerShow:(UIDatePicker * _Nonnull)sender;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull groupingOptions;
 @end
 
 @class UIPageViewController;

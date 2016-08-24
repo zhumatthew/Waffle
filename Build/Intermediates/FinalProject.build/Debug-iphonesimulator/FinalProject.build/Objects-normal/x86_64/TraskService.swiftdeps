@@ -7,30 +7,29 @@ provides-member:
 - ["C12FinalProject12TraskService", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSFetchRequest"
-- !private "NSSortDescriptor"
-- "Int"
-- "TraskService"
-- "Project"
-- "Bool"
-- !private "+"
-- !private "CoreDataService"
-- !private "print"
-- !private "StringLiteralType"
-- !private "-"
-- !private "NSPredicate"
-- "SaveCompletionHandler"
-- "NSDate"
-- "NSNumber"
-- !private "NSEntityDescription"
-- "Column"
 - "NSFetchedResultsController"
-- !private "BooleanLiteralType"
-- "NSObject"
-- "String"
-- "Ticket"
 - "Array"
+- "String"
+- "NSDate"
+- !private "NSSortDescriptor"
+- "NSObject"
+- !private "StringLiteralType"
+- !private "NSEntityDescription"
+- !private "print"
+- "Ticket"
+- !private "+"
 - !private "NSSet"
+- "Project"
+- "Column"
+- !private "BooleanLiteralType"
+- !private "NSPredicate"
+- "TraskService"
+- !private "NSFetchRequest"
+- "Bool"
+- "SaveCompletionHandler"
+- !private "-"
+- "Int"
+- !private "CoreDataService"
 depends-member:
 - !private ["Ps9AnyObject", "Column"]
 - !private ["Ps9AnyObject", "CoreDataService"]
@@ -528,7 +527,6 @@ depends-member:
 - !private ["C12FinalProject12TraskService", "NSEntityDescription"]
 - !private ["C12FinalProject12TraskService", "NSFetchRequest"]
 - ["C12FinalProject12TraskService", "NSFetchedResultsController"]
-- ["C12FinalProject12TraskService", "NSNumber"]
 - ["C12FinalProject12TraskService", "NSObject"]
 - !private ["C12FinalProject12TraskService", "NSPredicate"]
 - !private ["C12FinalProject12TraskService", "NSSet"]
@@ -683,4 +681,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "be4204f4e95808a8189bd23a664b6f9a"
+interface-hash: "4f79aa51fa3607e6c19d6211067accdd"
