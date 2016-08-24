@@ -9,8 +9,9 @@
 import UIKit
 
 class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource {
-
     @IBOutlet weak var colorTextField: UITextField!
+    let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
+    var colorSelection: String!
     
     let colorPickerData = ["Black", "White", "Red", "Blue", "Green", "Yellow", "Purple"]
     var colorSelection: String!
@@ -25,23 +26,7 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
         colorTextField.inputAccessoryView = toolbar
         
         colorSelection = colorPickerData.first
-        
-        colorTextField.text = colorSelection        
-        
-        
-//        datePicker = UIDatePicker(frame: CGRectZero)
-//        datePicker.datePickerMode = .DateAndTime
-//        datePicker.addTarget(self, action: #selector(LentItemDetailViewController.datePickerDidChange(_:)), forControlEvents: .ValueChanged)
-//        let toolbar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: 0.0, height: 44.0))
-//        toolbar.items = [UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil), UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: #selector(LentItemDetailViewController.datePickerDidFinish(_:)))]
-//        dateBorrowedTextField.inputView = datePicker
-//        dateBorrowedTextField.inputAccessoryView = toolbar
-//        dateToReturnTextField.inputView = datePicker
-//        dateToReturnTextField.inputAccessoryView = toolbar
-//        
-//        dateFormatter.dateStyle = .LongStyle
-//        dateFormatter.timeStyle = .MediumStyle
-        // Initialization code
+        colorTextField.text = colorSelection
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
