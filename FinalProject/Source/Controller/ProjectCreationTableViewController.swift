@@ -41,19 +41,15 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
         
         let button = UIButton(type: .Custom)
         button.setTitle("Add", forState: .Normal)
-        //        button.layer.backgroundColor = UIColor(red: 0.0, green: 0.6, blue: 0.0, alpha: 1.0).CGColor
         button.addTarget(self, action: #selector(ProjectCreationTableViewController.addProject), forControlEvents: .TouchUpInside)
         button.bounds = CGRectMake(0,0,70,34)
         button.tintColor = UIColor.redColor()
-        // button.tintColor = self.view.tintColor
         button.titleLabel?.textColor = UIColor.redColor()
         button.enabled = true
         let item = UIBarButtonItem(customView: button)
         item.tintColor = UIColor.redColor()
         item.enabled = true
         self.navItem.rightBarButtonItem = item
-        
-        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -151,7 +147,6 @@ class ProjectCreationTableViewController: UITableViewController, NSFetchedResult
     }
     
     weak var delegate : CreateProjectTableVCDelegate?
-    //var ColumnSection: Int = TraskService.fetchedResultsControllerForColumnsInProject(project).count
     
     // MARK: Properties (Private)
     private var fetchedResultsController: NSFetchedResultsController?
