@@ -13,21 +13,21 @@ provides-member:
 - ["C12FinalProject6Ticket", "ticketTitle"]
 - ["C12FinalProject6Ticket", "parentColumn"]
 provides-dynamic-lookup:
-- "ticketMilestone"
-- "parentColumn"
-- "ticketComments"
-- "ticketTitle"
-- "ticketDetail"
-- "ticketNumber"
-- "ticketCreationDate"
 - "ticketAssignee"
 - "ticketLabel"
+- "parentColumn"
+- "ticketTitle"
+- "ticketDetail"
+- "ticketCreationDate"
+- "ticketComments"
+- "ticketMilestone"
+- "ticketNumber"
 depends-top-level:
-- "Ticket"
+- "NSNumber"
+- "Column"
 - "NSDate"
 - "String"
-- "Column"
-- "NSNumber"
+- "Ticket"
 depends-member:
 - ["Ps9AnyObject", "parentColumn"]
 - ["Ps9AnyObject", "ticketAssignee"]

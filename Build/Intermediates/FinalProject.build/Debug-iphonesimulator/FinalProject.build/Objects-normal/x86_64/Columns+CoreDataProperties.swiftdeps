@@ -9,17 +9,17 @@ provides-member:
 - ["C12FinalProject6Column", "childTicket"]
 - ["C12FinalProject6Column", "parentProject"]
 provides-dynamic-lookup:
+- "parentProject"
+- "columnName"
+- "childTicket"
 - "columnTicketCount"
 - "columnIndex"
-- "childTicket"
-- "columnName"
-- "parentProject"
 depends-top-level:
+- "NSSet"
 - "Project"
+- "String"
 - "NSNumber"
 - "Column"
-- "String"
-- "NSSet"
 depends-member:
 - ["Ps9AnyObject", "childTicket"]
 - ["Ps9AnyObject", "columnIndex"]
