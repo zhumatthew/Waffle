@@ -4,66 +4,66 @@ provides-nominal:
 provides-member:
 - ["C12FinalProject7Project", ""]
 - ["C12FinalProject7Project", "projectColorMain"]
-- ["C12FinalProject7Project", "projectColorSecondary"]
+- ["C12FinalProject7Project", "projectColorText"]
 - ["C12FinalProject7Project", "projectName"]
 - ["C12FinalProject7Project", "projectNotifications"]
 - ["C12FinalProject7Project", "projectCreationDate"]
 - ["C12FinalProject7Project", "projectTicketCount"]
 - ["C12FinalProject7Project", "childColumn"]
 provides-dynamic-lookup:
-- "projectName"
-- "projectNotifications"
-- "childColumn"
-- "projectCreationDate"
-- "projectColorMain"
 - "projectTicketCount"
-- "projectColorSecondary"
+- "childColumn"
+- "projectNotifications"
+- "projectName"
+- "projectColorMain"
+- "projectColorText"
+- "projectCreationDate"
 depends-top-level:
-- "NSSet"
 - "NSNumber"
-- "NSObject"
-- "String"
-- "NSDate"
 - "Project"
+- "NSSet"
+- "NSDate"
+- "String"
+- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "childColumn"]
 - ["Ps9AnyObject", "projectColorMain"]
-- ["Ps9AnyObject", "projectColorSecondary"]
+- ["Ps9AnyObject", "projectColorText"]
 - ["Ps9AnyObject", "projectCreationDate"]
 - ["Ps9AnyObject", "projectName"]
 - ["Ps9AnyObject", "projectNotifications"]
 - ["Ps9AnyObject", "projectTicketCount"]
 - ["Ps11CVarArgType", "childColumn"]
 - ["Ps11CVarArgType", "projectColorMain"]
-- ["Ps11CVarArgType", "projectColorSecondary"]
+- ["Ps11CVarArgType", "projectColorText"]
 - ["Ps11CVarArgType", "projectCreationDate"]
 - ["Ps11CVarArgType", "projectName"]
 - ["Ps11CVarArgType", "projectNotifications"]
 - ["Ps11CVarArgType", "projectTicketCount"]
 - ["Ps28CustomDebugStringConvertible", "childColumn"]
 - ["Ps28CustomDebugStringConvertible", "projectColorMain"]
-- ["Ps28CustomDebugStringConvertible", "projectColorSecondary"]
+- ["Ps28CustomDebugStringConvertible", "projectColorText"]
 - ["Ps28CustomDebugStringConvertible", "projectCreationDate"]
 - ["Ps28CustomDebugStringConvertible", "projectName"]
 - ["Ps28CustomDebugStringConvertible", "projectNotifications"]
 - ["Ps28CustomDebugStringConvertible", "projectTicketCount"]
 - ["Ps23CustomStringConvertible", "childColumn"]
 - ["Ps23CustomStringConvertible", "projectColorMain"]
-- ["Ps23CustomStringConvertible", "projectColorSecondary"]
+- ["Ps23CustomStringConvertible", "projectColorText"]
 - ["Ps23CustomStringConvertible", "projectCreationDate"]
 - ["Ps23CustomStringConvertible", "projectName"]
 - ["Ps23CustomStringConvertible", "projectNotifications"]
 - ["Ps23CustomStringConvertible", "projectTicketCount"]
 - ["Ps9Equatable", "childColumn"]
 - ["Ps9Equatable", "projectColorMain"]
-- ["Ps9Equatable", "projectColorSecondary"]
+- ["Ps9Equatable", "projectColorText"]
 - ["Ps9Equatable", "projectCreationDate"]
 - ["Ps9Equatable", "projectName"]
 - ["Ps9Equatable", "projectNotifications"]
 - ["Ps9Equatable", "projectTicketCount"]
 - ["Ps8Hashable", "childColumn"]
 - ["Ps8Hashable", "projectColorMain"]
-- ["Ps8Hashable", "projectColorSecondary"]
+- ["Ps8Hashable", "projectColorText"]
 - ["Ps8Hashable", "projectCreationDate"]
 - ["Ps8Hashable", "projectName"]
 - ["Ps8Hashable", "projectNotifications"]
@@ -75,7 +75,7 @@ depends-member:
 - ["CSo15NSManagedObject", "String"]
 - ["CSo15NSManagedObject", "childColumn"]
 - ["CSo15NSManagedObject", "projectColorMain"]
-- ["CSo15NSManagedObject", "projectColorSecondary"]
+- ["CSo15NSManagedObject", "projectColorText"]
 - ["CSo15NSManagedObject", "projectCreationDate"]
 - ["CSo15NSManagedObject", "projectName"]
 - ["CSo15NSManagedObject", "projectNotifications"]
@@ -87,14 +87,14 @@ depends-member:
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "childColumn"]
 - ["CSo8NSObject", "projectColorMain"]
-- ["CSo8NSObject", "projectColorSecondary"]
+- ["CSo8NSObject", "projectColorText"]
 - ["CSo8NSObject", "projectCreationDate"]
 - ["CSo8NSObject", "projectName"]
 - ["CSo8NSObject", "projectNotifications"]
 - ["CSo8NSObject", "projectTicketCount"]
 - ["PSo16NSObjectProtocol", "childColumn"]
 - ["PSo16NSObjectProtocol", "projectColorMain"]
-- ["PSo16NSObjectProtocol", "projectColorSecondary"]
+- ["PSo16NSObjectProtocol", "projectColorText"]
 - ["PSo16NSObjectProtocol", "projectCreationDate"]
 - ["PSo16NSObjectProtocol", "projectName"]
 - ["PSo16NSObjectProtocol", "projectNotifications"]
@@ -106,7 +106,7 @@ depends-member:
 - ["C12FinalProject7Project", "String"]
 - ["C12FinalProject7Project", "childColumn"]
 - ["C12FinalProject7Project", "projectColorMain"]
-- ["C12FinalProject7Project", "projectColorSecondary"]
+- ["C12FinalProject7Project", "projectColorText"]
 - ["C12FinalProject7Project", "projectCreationDate"]
 - ["C12FinalProject7Project", "projectName"]
 - ["C12FinalProject7Project", "projectNotifications"]
@@ -137,4 +137,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "1d52288d47715843e19d95a34a865686"
+interface-hash: "677e2c000da9bc78d49a3bbf0402593d"

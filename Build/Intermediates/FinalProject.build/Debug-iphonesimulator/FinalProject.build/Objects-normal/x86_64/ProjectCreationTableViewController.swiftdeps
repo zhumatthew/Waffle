@@ -13,32 +13,32 @@ provides-member:
 - ["OC12FinalProject34ProjectCreationTableViewController8Sections", ""]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", ""]
 provides-dynamic-lookup:
+- "viewDidLoad"
+- "numberOfSectionsInTableView"
+- "didReceiveMemoryWarning"
 - "projectCreationTableView"
 - "tableView"
 - "tableView"
 - "tableView"
-- "numberOfSectionsInTableView"
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
 depends-top-level:
-- !private "+="
 - "BooleanLiteralType"
-- "ProjectCreationTableViewController"
-- !private "ColorSelectorTableViewCell"
-- "Int"
-- "UITableView"
-- "Array"
-- "UITableViewController"
-- !private "&&"
-- "StringLiteralType"
-- "NSFetchedResultsControllerDelegate"
-- "NSFetchedResultsController"
-- "=="
-- "NSIndexPath"
-- "CreateProjectTableVCDelegate"
 - !private "<"
-- !private "+"
+- "CreateProjectTableVCDelegate"
+- "NSFetchedResultsControllerDelegate"
+- "UITableView"
+- "Int"
+- !private "ColorSelectorTableViewCell"
+- "NSFetchedResultsController"
+- "NSIndexPath"
+- "UITableViewController"
+- "StringLiteralType"
+- "ProjectCreationTableViewController"
 - "UITableViewCell"
+- !private "+"
+- !private "&&"
+- "Array"
+- !private "+="
+- "=="
 depends-member:
 - ["Ps9AnyObject", "DefaultColumnName"]
 - ["Ps9AnyObject", "DefaultName"]
@@ -200,7 +200,7 @@ depends-member:
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "DetailRows"]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "MainColorSelector"]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "ProjectTitle"]
-- ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "SecondaryColorSelector"]
+- ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "TextColorSelector"]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "deinit"]
 - ["OC12FinalProject34ProjectCreationTableViewController10DetailRows", "hashValue"]
 - !private ["Ps9Equatable", "AllRows"]
@@ -214,8 +214,8 @@ depends-member:
 - ["Ps9Equatable", "MainColorSelector"]
 - ["Ps9Equatable", "NotificationRow"]
 - ["Ps9Equatable", "ProjectTitle"]
-- ["Ps9Equatable", "SecondaryColorSelector"]
 - !private ["Ps9Equatable", "Sections"]
+- ["Ps9Equatable", "TextColorSelector"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "becomeFirstResponder"]
 - !private ["Ps9Equatable", "colorTextField"]
@@ -255,8 +255,8 @@ depends-member:
 - ["Ps8Hashable", "MainColorSelector"]
 - ["Ps8Hashable", "NotificationRow"]
 - ["Ps8Hashable", "ProjectTitle"]
-- ["Ps8Hashable", "SecondaryColorSelector"]
 - !private ["Ps8Hashable", "Sections"]
+- ["Ps8Hashable", "TextColorSelector"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "becomeFirstResponder"]
 - !private ["Ps8Hashable", "colorTextField"]
@@ -949,4 +949,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "eb1ae1239fff83fb9e791e47cb1bbfce"
+interface-hash: "96fb3ee303edb51690f77b9f2bd64503"
