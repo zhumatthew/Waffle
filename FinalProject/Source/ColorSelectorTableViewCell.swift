@@ -21,8 +21,6 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        
-        
         let pickerView = UIPickerView()
         let toolbar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: 0.0, height: 44.0))
         
