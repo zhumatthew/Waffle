@@ -210,7 +210,7 @@ SWIFT_CLASS("_TtC12FinalProject27NotificationsViewController")
 
 @interface Project (SWIFT_EXTENSION(FinalProject))
 @property (nonatomic, strong) NSObject * _Nonnull projectColorMain;
-@property (nonatomic, strong) NSObject * _Nonnull projectColorSecondary;
+@property (nonatomic, strong) NSObject * _Nonnull projectColorText;
 @property (nonatomic, copy) NSString * _Nonnull projectName;
 @property (nonatomic, strong) NSNumber * _Nonnull projectNotifications;
 @property (nonatomic, strong) NSDate * _Nonnull projectCreationDate;

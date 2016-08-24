@@ -9,27 +9,27 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "CoreDataService"
 - !private "NSSet"
-- !private "BooleanLiteralType"
 - "Ticket"
+- "Bool"
+- "SaveCompletionHandler"
+- "TraskService"
+- !private "StringLiteralType"
 - !private "NSFetchRequest"
+- !private "-"
+- "Int"
+- "Project"
+- !private "NSEntityDescription"
 - "NSDate"
 - "String"
-- "TraskService"
-- "NSObject"
-- !private "-"
-- "Project"
-- "SaveCompletionHandler"
-- !private "NSEntityDescription"
-- !private "print"
-- "Bool"
-- "Int"
-- "Column"
 - "Array"
-- !private "NSSortDescriptor"
-- !private "StringLiteralType"
+- !private "print"
+- "NSObject"
 - !private "NSPredicate"
-- "NSFetchedResultsController"
 - !private "+"
+- "NSFetchedResultsController"
+- !private "BooleanLiteralType"
+- "Column"
+- !private "NSSortDescriptor"
 depends-member:
 - !private ["Ps9AnyObject", "Column"]
 - !private ["Ps9AnyObject", "CoreDataService"]
@@ -62,7 +62,7 @@ depends-member:
 - !private ["Ps9AnyObject", "predicate"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "projectColorMain"]
-- !private ["Ps9AnyObject", "projectColorSecondary"]
+- !private ["Ps9AnyObject", "projectColorText"]
 - !private ["Ps9AnyObject", "projectCreationDate"]
 - !private ["Ps9AnyObject", "projectName"]
 - !private ["Ps9AnyObject", "projectNotifications"]
@@ -117,7 +117,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "performFetch"]
 - !private ["Ps11CVarArgType", "predicate"]
 - !private ["Ps11CVarArgType", "projectColorMain"]
-- !private ["Ps11CVarArgType", "projectColorSecondary"]
+- !private ["Ps11CVarArgType", "projectColorText"]
 - !private ["Ps11CVarArgType", "projectCreationDate"]
 - !private ["Ps11CVarArgType", "projectName"]
 - !private ["Ps11CVarArgType", "projectNotifications"]
@@ -174,7 +174,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "performFetch"]
 - !private ["Ps28CustomDebugStringConvertible", "predicate"]
 - !private ["Ps28CustomDebugStringConvertible", "projectColorMain"]
-- !private ["Ps28CustomDebugStringConvertible", "projectColorSecondary"]
+- !private ["Ps28CustomDebugStringConvertible", "projectColorText"]
 - !private ["Ps28CustomDebugStringConvertible", "projectCreationDate"]
 - !private ["Ps28CustomDebugStringConvertible", "projectName"]
 - !private ["Ps28CustomDebugStringConvertible", "projectNotifications"]
@@ -210,7 +210,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "performFetch"]
 - !private ["Ps23CustomStringConvertible", "predicate"]
 - !private ["Ps23CustomStringConvertible", "projectColorMain"]
-- !private ["Ps23CustomStringConvertible", "projectColorSecondary"]
+- !private ["Ps23CustomStringConvertible", "projectColorText"]
 - !private ["Ps23CustomStringConvertible", "projectCreationDate"]
 - !private ["Ps23CustomStringConvertible", "projectName"]
 - !private ["Ps23CustomStringConvertible", "projectNotifications"]
@@ -242,7 +242,7 @@ depends-member:
 - !private ["Ps9Equatable", "performFetch"]
 - !private ["Ps9Equatable", "predicate"]
 - !private ["Ps9Equatable", "projectColorMain"]
-- !private ["Ps9Equatable", "projectColorSecondary"]
+- !private ["Ps9Equatable", "projectColorText"]
 - !private ["Ps9Equatable", "projectCreationDate"]
 - !private ["Ps9Equatable", "projectName"]
 - !private ["Ps9Equatable", "projectNotifications"]
@@ -278,7 +278,7 @@ depends-member:
 - !private ["Ps8Hashable", "performFetch"]
 - !private ["Ps8Hashable", "predicate"]
 - !private ["Ps8Hashable", "projectColorMain"]
-- !private ["Ps8Hashable", "projectColorSecondary"]
+- !private ["Ps8Hashable", "projectColorText"]
 - !private ["Ps8Hashable", "projectCreationDate"]
 - !private ["Ps8Hashable", "projectName"]
 - !private ["Ps8Hashable", "projectNotifications"]
@@ -360,7 +360,7 @@ depends-member:
 - !private ["CSo15NSManagedObject", "parentColumn"]
 - !private ["CSo15NSManagedObject", "parentProject"]
 - !private ["CSo15NSManagedObject", "projectColorMain"]
-- !private ["CSo15NSManagedObject", "projectColorSecondary"]
+- !private ["CSo15NSManagedObject", "projectColorText"]
 - !private ["CSo15NSManagedObject", "projectCreationDate"]
 - !private ["CSo15NSManagedObject", "projectName"]
 - !private ["CSo15NSManagedObject", "projectNotifications"]
@@ -394,7 +394,7 @@ depends-member:
 - !private ["CSo8NSObject", "performFetch"]
 - !private ["CSo8NSObject", "predicate"]
 - !private ["CSo8NSObject", "projectColorMain"]
-- !private ["CSo8NSObject", "projectColorSecondary"]
+- !private ["CSo8NSObject", "projectColorText"]
 - !private ["CSo8NSObject", "projectCreationDate"]
 - !private ["CSo8NSObject", "projectName"]
 - !private ["CSo8NSObject", "projectNotifications"]
@@ -423,7 +423,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "performFetch"]
 - !private ["PSo16NSObjectProtocol", "predicate"]
 - !private ["PSo16NSObjectProtocol", "projectColorMain"]
-- !private ["PSo16NSObjectProtocol", "projectColorSecondary"]
+- !private ["PSo16NSObjectProtocol", "projectColorText"]
 - !private ["PSo16NSObjectProtocol", "projectCreationDate"]
 - !private ["PSo16NSObjectProtocol", "projectName"]
 - !private ["PSo16NSObjectProtocol", "projectNotifications"]
@@ -455,7 +455,7 @@ depends-member:
 - !private ["P12FinalProject11NamedEntity", "parentColumn"]
 - !private ["P12FinalProject11NamedEntity", "parentProject"]
 - !private ["P12FinalProject11NamedEntity", "projectColorMain"]
-- !private ["P12FinalProject11NamedEntity", "projectColorSecondary"]
+- !private ["P12FinalProject11NamedEntity", "projectColorText"]
 - !private ["P12FinalProject11NamedEntity", "projectCreationDate"]
 - !private ["P12FinalProject11NamedEntity", "projectName"]
 - !private ["P12FinalProject11NamedEntity", "projectNotifications"]
@@ -476,7 +476,7 @@ depends-member:
 - !private ["C12FinalProject7Project", "parentColumn"]
 - !private ["C12FinalProject7Project", "parentProject"]
 - !private ["C12FinalProject7Project", "projectColorMain"]
-- !private ["C12FinalProject7Project", "projectColorSecondary"]
+- !private ["C12FinalProject7Project", "projectColorText"]
 - !private ["C12FinalProject7Project", "projectCreationDate"]
 - !private ["C12FinalProject7Project", "projectName"]
 - !private ["C12FinalProject7Project", "projectNotifications"]
@@ -681,4 +681,4 @@ depends-external:
 - "/Users/zhumatthew/Desktop/finalProject/Build/Intermediates/FinalProject.build/Debug-iphonesimulator/CoreDataService.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "4f79aa51fa3607e6c19d6211067accdd"
+interface-hash: "b78837f007f15a1dcb94458c6c8f6ebb"
