@@ -32,6 +32,9 @@ class ColorSelectorTableViewCell: UITableViewCell, UIPickerViewDelegate, UIPicke
         
         colorSelection = colorPickerData.first
         colorTextField.text = colorSelection
+
+        pickerView.delegate = self
+        pickerView.dataSource = self
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
