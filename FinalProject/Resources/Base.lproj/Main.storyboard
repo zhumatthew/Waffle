@@ -338,8 +338,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFy-mm-OML">
-                                            <rect key="frame" x="98" y="0.5" width="502" height="49.5"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iFy-mm-OML">
+                                            <rect key="frame" x="98" y="0.5" width="487" height="49.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -348,7 +348,7 @@
                                         <constraint firstItem="dYN-Br-OYq" firstAttribute="centerY" secondItem="bdJ-Ji-s3B" secondAttribute="centerY" id="9yZ-kJ-QY8"/>
                                         <constraint firstItem="iFy-mm-OML" firstAttribute="centerY" secondItem="bdJ-Ji-s3B" secondAttribute="centerY" id="J53-Tb-0zI"/>
                                         <constraint firstItem="iFy-mm-OML" firstAttribute="height" secondItem="bdJ-Ji-s3B" secondAttribute="height" id="aHK-Qg-Rh3"/>
-                                        <constraint firstAttribute="trailing" secondItem="iFy-mm-OML" secondAttribute="trailing" id="bRO-3b-vH1"/>
+                                        <constraint firstAttribute="trailing" secondItem="iFy-mm-OML" secondAttribute="trailing" constant="15" id="bRO-3b-vH1"/>
                                         <constraint firstItem="dYN-Br-OYq" firstAttribute="leading" secondItem="bdJ-Ji-s3B" secondAttribute="leading" constant="15" id="bU6-Hw-YcT"/>
                                         <constraint firstItem="iFy-mm-OML" firstAttribute="leading" secondItem="dYN-Br-OYq" secondAttribute="trailing" id="nCX-JU-P31"/>
                                     </constraints>
@@ -364,8 +364,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EuG-Ca-0J9">
-                                            <rect key="frame" x="93" y="-1" width="507" height="50"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EuG-Ca-0J9">
+                                            <rect key="frame" x="93" y="-1" width="492" height="50"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
@@ -382,7 +382,7 @@
                                         <constraint firstItem="vXu-fw-yWy" firstAttribute="leading" secondItem="Xfk-jl-k3T" secondAttribute="leading" constant="15" id="G24-84-JB5"/>
                                         <constraint firstItem="EuG-Ca-0J9" firstAttribute="leading" secondItem="vXu-fw-yWy" secondAttribute="trailing" id="GuM-JT-Kjr"/>
                                         <constraint firstItem="EuG-Ca-0J9" firstAttribute="centerY" secondItem="Xfk-jl-k3T" secondAttribute="centerY" id="JfJ-Q6-cvA"/>
-                                        <constraint firstAttribute="trailing" secondItem="EuG-Ca-0J9" secondAttribute="trailing" id="j0H-14-dVQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="EuG-Ca-0J9" secondAttribute="trailing" constant="15" id="j0H-14-dVQ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
